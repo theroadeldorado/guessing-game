@@ -45,3 +45,6 @@ pipeline/cache/
 pipeline/.venv/
 public/clips/*
 !public/clips/.gitkeep
+
+# local test artifacts
+.playwright-mcp/
