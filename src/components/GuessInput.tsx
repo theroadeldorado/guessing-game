@@ -53,12 +53,14 @@ export default function GuessInput({ players, disabledIds, onGuess }: {
         placeholder="Name the QB…"
         role="combobox"
         aria-expanded={results.length > 0}
+        aria-controls="qb-listbox"
         aria-autocomplete="list"
         aria-label="Guess the quarterback"
         className="w-full rounded-sm border border-chalk bg-room-deep px-4 py-3 text-paper placeholder:text-chalk-soft focus:border-flag focus:outline-none"
       />
       {results.length > 0 && (
         <ul
+          id="qb-listbox"
           role="listbox"
           className="absolute bottom-full z-10 mb-1 max-h-64 w-full overflow-y-auto rounded-sm border border-chalk bg-room-deep shadow-xl"
         >

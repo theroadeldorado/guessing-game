@@ -14,11 +14,11 @@ import HintChips from './HintChips'
 import RevealCard from './RevealCard'
 import GameOver from './GameOver'
 
+// Rendered client-only (see GameLoader), so the shuffled run and stored
+// best can be created directly in state initializers without SSR mismatch.
 export default function Game() {
-  // The run is created in an effect, not during render: createRun shuffles
-  // with Math.random, which would break SSR hydration.
-  const [state, setState] = useState<RunState | null>(null)
-  const [best, setBest] = useState(0)
+  const [state, setState] = useState<RunState>(() => createRun(getPoolClips()))
+  const [best, setBest] = useState(loadBest)
   const recorded = useRef(false)
 
   const startRun = () => {
@@ -27,18 +27,12 @@ export default function Game() {
     setState(createRun(getPoolClips()))
   }
 
-  useEffect(startRun, [])
-
   useEffect(() => {
-    if (state?.phase === 'over' && !recorded.current) {
+    if (state.phase === 'over' && !recorded.current) {
       recorded.current = true
       recordScore(state.score)
     }
   }, [state])
-
-  if (!state) {
-    return <div className="p-16 text-center font-mono text-sm text-chalk-soft">Rolling tape…</div>
-  }
 
   if (state.phase === 'over') {
     return <GameOver state={state} best={best} onRestart={startRun} />

@@ -1,7 +1,23 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState, useSyncExternalStore } from 'react'
 import PlaceholderSilhouette from './PlaceholderSilhouette'
+
+const REDUCED_MOTION_QUERY = '(prefers-reduced-motion: reduce)'
+
+function subscribeReducedMotion(onChange: () => void) {
+  const mq = window.matchMedia(REDUCED_MOTION_QUERY)
+  mq.addEventListener('change', onChange)
+  return () => mq.removeEventListener('change', onChange)
+}
+
+function useReducedMotion(): boolean {
+  return useSyncExternalStore(
+    subscribeReducedMotion,
+    () => window.matchMedia(REDUCED_MOTION_QUERY).matches,
+    () => false,
+  )
+}
 
 /**
  * The projection screen: a real clip loops muted, or the placeholder
@@ -13,16 +29,8 @@ export default function ClipPlayer({ src, seed, preloadSrc }: {
   seed: string
   preloadSrc?: string
 }) {
-  const [reducedMotion, setReducedMotion] = useState(false)
+  const reducedMotion = useReducedMotion()
   const [playAnyway, setPlayAnyway] = useState(false)
-
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    setReducedMotion(mq.matches)
-    const onChange = (e: MediaQueryListEvent) => setReducedMotion(e.matches)
-    mq.addEventListener('change', onChange)
-    return () => mq.removeEventListener('change', onChange)
-  }, [])
 
   const isVideo = src !== 'placeholder'
   const paused = reducedMotion && !playAnyway
