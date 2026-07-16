@@ -7,16 +7,30 @@ export function getSports(): Sport[] {
   return sportsJson as Sport[]
 }
 
-export function getPlayers(): Player[] {
-  return playersJson as Player[]
+export function getActiveSports(): Sport[] {
+  return getSports().filter((s) => s.active)
+}
+
+export function getSport(id: string): Sport {
+  const s = getSports().find((s) => s.id === id)
+  if (!s) throw new Error(`Unknown sport: ${id}`)
+  return s
+}
+
+export function getPlayers(sportId?: string): Player[] {
+  const players = playersJson as Player[]
+  return sportId ? players.filter((p) => p.sportId === sportId) : players
 }
 
 export function getPlayer(id: string): Player {
-  const p = getPlayers().find((p) => p.id === id)
+  const p = (playersJson as Player[]).find((p) => p.id === id)
   if (!p) throw new Error(`Unknown player: ${id}`)
   return p
 }
 
-export function getPoolClips(): Clip[] {
-  return clipsJson as Clip[]
+export function getPoolClips(sportId?: string): Clip[] {
+  const clips = clipsJson as Clip[]
+  if (!sportId) return clips
+  const sportPlayerIds = new Set(getPlayers(sportId).map((p) => p.id))
+  return clips.filter((c) => sportPlayerIds.has(c.playerId))
 }

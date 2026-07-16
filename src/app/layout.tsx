@@ -19,9 +19,9 @@ const splineMono = Spline_Sans_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ShadowForm — guess the QB from the silhouette",
+  title: "ShadowForm — guess the athlete from the silhouette",
   description:
-    "A looping silhouette of an NFL quarterback's throwing motion. Three guesses. How long can you keep the run alive?",
+    "A looping silhouette of an athlete's signature motion. Three guesses. How long can you keep the run alive?",
 };
 
 export default function RootLayout({

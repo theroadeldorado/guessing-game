@@ -27,6 +27,15 @@ body {
   100% { transform: rotate(150deg); }
 }
 
+/* golf-swing cycle for the placeholder silhouette */
+@keyframes sf-swing {
+  0%, 20% { transform: rotate(0deg); }      /* address */
+  45% { transform: rotate(115deg); }        /* backswing */
+  55% { transform: rotate(115deg); }        /* pause at the top */
+  62% { transform: rotate(-95deg); }        /* impact + follow-through */
+  75%, 100% { transform: rotate(-95deg); }  /* hold the finish */
+}
+
 /* wrong-guess feedback */
 @keyframes sf-shake {
   0%, 100% { transform: translateX(0); }

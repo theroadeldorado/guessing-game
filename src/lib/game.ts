@@ -80,8 +80,13 @@ export function advance(state: RunState): RunState {
 const resultEmoji = (r: ClipResult): string =>
   !r.solved ? '💀' : r.guessesUsed === 1 ? '💯' : r.guessesUsed === 2 ? '🎯' : '🤏'
 
-export function shareText(state: RunState): string {
+export interface ShareSport {
+  emoji: string
+  athleteNounPlural: string
+}
+
+export function shareText(state: RunState, sport: ShareSport): string {
   const solved = state.history.filter((r) => r.solved).length
   const emoji = state.history.map(resultEmoji).join('')
-  return `🏈 ShadowForm — ${state.score} pts, ${solved} QBs\n${emoji}`
+  return `${sport.emoji} ShadowForm — ${state.score} pts, ${solved} ${sport.athleteNounPlural}\n${emoji}`
 }

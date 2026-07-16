@@ -4,7 +4,7 @@
     "name": "Johnny Unitas",
     "sportId": "nfl-qb",
     "era": "1950s–1970s",
-    "teams": [
+    "detail": [
       "Colts"
     ],
     "yearsActive": "1956–1973",
@@ -15,7 +15,7 @@
     "name": "Bart Starr",
     "sportId": "nfl-qb",
     "era": "1950s–1970s",
-    "teams": [
+    "detail": [
       "Packers"
     ],
     "yearsActive": "1956–1971",
@@ -26,7 +26,7 @@
     "name": "Joe Namath",
     "sportId": "nfl-qb",
     "era": "1960s–1970s",
-    "teams": [
+    "detail": [
       "Jets"
     ],
     "yearsActive": "1965–1977",
@@ -37,7 +37,7 @@
     "name": "Roger Staubach",
     "sportId": "nfl-qb",
     "era": "1960s–1970s",
-    "teams": [
+    "detail": [
       "Cowboys"
     ],
     "yearsActive": "1969–1979",
@@ -48,7 +48,7 @@
     "name": "Fran Tarkenton",
     "sportId": "nfl-qb",
     "era": "1960s–1970s",
-    "teams": [
+    "detail": [
       "Vikings",
       "Giants"
     ],
@@ -60,7 +60,7 @@
     "name": "Terry Bradshaw",
     "sportId": "nfl-qb",
     "era": "1970s–1980s",
-    "teams": [
+    "detail": [
       "Steelers"
     ],
     "yearsActive": "1970–1983",
@@ -71,7 +71,7 @@
     "name": "Ken Stabler",
     "sportId": "nfl-qb",
     "era": "1970s–1980s",
-    "teams": [
+    "detail": [
       "Raiders"
     ],
     "yearsActive": "1970–1984",
@@ -82,7 +82,7 @@
     "name": "Dan Fouts",
     "sportId": "nfl-qb",
     "era": "1970s–1980s",
-    "teams": [
+    "detail": [
       "Chargers"
     ],
     "yearsActive": "1973–1987",
@@ -93,7 +93,7 @@
     "name": "Archie Manning",
     "sportId": "nfl-qb",
     "era": "1970s–1980s",
-    "teams": [
+    "detail": [
       "Saints"
     ],
     "yearsActive": "1971–1984",
@@ -104,7 +104,7 @@
     "name": "Joe Montana",
     "sportId": "nfl-qb",
     "era": "1970s–1990s",
-    "teams": [
+    "detail": [
       "49ers",
       "Chiefs"
     ],
@@ -116,7 +116,7 @@
     "name": "Dan Marino",
     "sportId": "nfl-qb",
     "era": "1980s–1990s",
-    "teams": [
+    "detail": [
       "Dolphins"
     ],
     "yearsActive": "1983–1999",
@@ -127,7 +127,7 @@
     "name": "John Elway",
     "sportId": "nfl-qb",
     "era": "1980s–1990s",
-    "teams": [
+    "detail": [
       "Broncos"
     ],
     "yearsActive": "1983–1998",
@@ -138,7 +138,7 @@
     "name": "Jim Kelly",
     "sportId": "nfl-qb",
     "era": "1980s–1990s",
-    "teams": [
+    "detail": [
       "Bills"
     ],
     "yearsActive": "1986–1996",
@@ -149,7 +149,7 @@
     "name": "Warren Moon",
     "sportId": "nfl-qb",
     "era": "1980s–2000s",
-    "teams": [
+    "detail": [
       "Oilers",
       "Vikings"
     ],
@@ -161,7 +161,7 @@
     "name": "Boomer Esiason",
     "sportId": "nfl-qb",
     "era": "1980s–1990s",
-    "teams": [
+    "detail": [
       "Bengals",
       "Jets"
     ],
@@ -173,7 +173,7 @@
     "name": "Randall Cunningham",
     "sportId": "nfl-qb",
     "era": "1980s–2000s",
-    "teams": [
+    "detail": [
       "Eagles",
       "Vikings"
     ],
@@ -185,7 +185,7 @@
     "name": "Phil Simms",
     "sportId": "nfl-qb",
     "era": "1970s–1990s",
-    "teams": [
+    "detail": [
       "Giants"
     ],
     "yearsActive": "1979–1993",
@@ -196,7 +196,7 @@
     "name": "Steve Young",
     "sportId": "nfl-qb",
     "era": "1980s–1990s",
-    "teams": [
+    "detail": [
       "49ers",
       "Buccaneers"
     ],
@@ -208,7 +208,7 @@
     "name": "Troy Aikman",
     "sportId": "nfl-qb",
     "era": "1980s–2000s",
-    "teams": [
+    "detail": [
       "Cowboys"
     ],
     "yearsActive": "1989–2000",
@@ -219,7 +219,7 @@
     "name": "Brett Favre",
     "sportId": "nfl-qb",
     "era": "1990s–2010s",
-    "teams": [
+    "detail": [
       "Packers",
       "Jets",
       "Vikings"
@@ -232,7 +232,7 @@
     "name": "Kurt Warner",
     "sportId": "nfl-qb",
     "era": "1990s–2000s",
-    "teams": [
+    "detail": [
       "Rams",
       "Cardinals"
     ],
@@ -244,7 +244,7 @@
     "name": "Peyton Manning",
     "sportId": "nfl-qb",
     "era": "1990s–2010s",
-    "teams": [
+    "detail": [
       "Colts",
       "Broncos"
     ],
@@ -256,7 +256,7 @@
     "name": "Tom Brady",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Patriots",
       "Buccaneers"
     ],
@@ -268,7 +268,7 @@
     "name": "Drew Brees",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Chargers",
       "Saints"
     ],
@@ -280,7 +280,7 @@
     "name": "Donovan McNabb",
     "sportId": "nfl-qb",
     "era": "1990s–2010s",
-    "teams": [
+    "detail": [
       "Eagles"
     ],
     "yearsActive": "1999–2011",
@@ -291,7 +291,7 @@
     "name": "Michael Vick",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Falcons",
       "Eagles"
     ],
@@ -303,7 +303,7 @@
     "name": "Steve McNair",
     "sportId": "nfl-qb",
     "era": "1990s–2000s",
-    "teams": [
+    "detail": [
       "Titans",
       "Ravens"
     ],
@@ -315,7 +315,7 @@
     "name": "Ben Roethlisberger",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Steelers"
     ],
     "yearsActive": "2004–2021",
@@ -326,7 +326,7 @@
     "name": "Eli Manning",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Giants"
     ],
     "yearsActive": "2004–2019",
@@ -337,7 +337,7 @@
     "name": "Philip Rivers",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Chargers",
       "Colts"
     ],
@@ -349,7 +349,7 @@
     "name": "Tony Romo",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Cowboys"
     ],
     "yearsActive": "2003–2016",
@@ -360,7 +360,7 @@
     "name": "Aaron Rodgers",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Packers",
       "Jets",
       "Steelers"
@@ -373,7 +373,7 @@
     "name": "Matt Ryan",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Falcons",
       "Colts"
     ],
@@ -385,7 +385,7 @@
     "name": "Cam Newton",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Panthers",
       "Patriots"
     ],
@@ -397,7 +397,7 @@
     "name": "Russell Wilson",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Seahawks",
       "Broncos",
       "Steelers",
@@ -411,7 +411,7 @@
     "name": "Andrew Luck",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Colts"
     ],
     "yearsActive": "2012–2018",
@@ -422,7 +422,7 @@
     "name": "Matthew Stafford",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Lions",
       "Rams"
     ],
@@ -434,7 +434,7 @@
     "name": "Colin Kaepernick",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "49ers"
     ],
     "yearsActive": "2011–2016",
@@ -445,7 +445,7 @@
     "name": "Kirk Cousins",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Commanders",
       "Vikings",
       "Falcons"
@@ -458,7 +458,7 @@
     "name": "Dak Prescott",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Cowboys"
     ],
     "yearsActive": "2016–",
@@ -469,7 +469,7 @@
     "name": "Patrick Mahomes",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Chiefs"
     ],
     "yearsActive": "2017–",
@@ -480,7 +480,7 @@
     "name": "Josh Allen",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Bills"
     ],
     "yearsActive": "2018–",
@@ -491,7 +491,7 @@
     "name": "Lamar Jackson",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Ravens"
     ],
     "yearsActive": "2018–",
@@ -502,7 +502,7 @@
     "name": "Baker Mayfield",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Browns",
       "Buccaneers"
     ],
@@ -514,7 +514,7 @@
     "name": "Kyler Murray",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Cardinals"
     ],
     "yearsActive": "2019–",
@@ -525,7 +525,7 @@
     "name": "Joe Burrow",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Bengals"
     ],
     "yearsActive": "2020–",
@@ -536,7 +536,7 @@
     "name": "Justin Herbert",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Chargers"
     ],
     "yearsActive": "2020–",
@@ -547,7 +547,7 @@
     "name": "Jalen Hurts",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Eagles"
     ],
     "yearsActive": "2020–",
@@ -558,7 +558,7 @@
     "name": "Tua Tagovailoa",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Dolphins"
     ],
     "yearsActive": "2020–",
@@ -569,7 +569,7 @@
     "name": "Brock Purdy",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "49ers"
     ],
     "yearsActive": "2022–",
@@ -580,7 +580,7 @@
     "name": "Otto Graham",
     "sportId": "nfl-qb",
     "era": "1940s–1950s",
-    "teams": [
+    "detail": [
       "Browns"
     ],
     "yearsActive": "1946–1955",
@@ -591,7 +591,7 @@
     "name": "Y.A. Tittle",
     "sportId": "nfl-qb",
     "era": "1940s–1960s",
-    "teams": [
+    "detail": [
       "49ers",
       "Giants"
     ],
@@ -603,7 +603,7 @@
     "name": "Sonny Jurgensen",
     "sportId": "nfl-qb",
     "era": "1950s–1970s",
-    "teams": [
+    "detail": [
       "Eagles",
       "Commanders"
     ],
@@ -615,7 +615,7 @@
     "name": "Len Dawson",
     "sportId": "nfl-qb",
     "era": "1950s–1970s",
-    "teams": [
+    "detail": [
       "Chiefs"
     ],
     "yearsActive": "1957–1975",
@@ -626,7 +626,7 @@
     "name": "Bob Griese",
     "sportId": "nfl-qb",
     "era": "1960s–1980s",
-    "teams": [
+    "detail": [
       "Dolphins"
     ],
     "yearsActive": "1967–1980",
@@ -637,7 +637,7 @@
     "name": "Jim Plunkett",
     "sportId": "nfl-qb",
     "era": "1970s–1980s",
-    "teams": [
+    "detail": [
       "Patriots",
       "Raiders"
     ],
@@ -649,7 +649,7 @@
     "name": "Bert Jones",
     "sportId": "nfl-qb",
     "era": "1970s–1980s",
-    "teams": [
+    "detail": [
       "Colts"
     ],
     "yearsActive": "1973–1982",
@@ -660,7 +660,7 @@
     "name": "Ken Anderson",
     "sportId": "nfl-qb",
     "era": "1970s–1980s",
-    "teams": [
+    "detail": [
       "Bengals"
     ],
     "yearsActive": "1971–1986",
@@ -671,7 +671,7 @@
     "name": "Doug Williams",
     "sportId": "nfl-qb",
     "era": "1970s–1980s",
-    "teams": [
+    "detail": [
       "Buccaneers",
       "Commanders"
     ],
@@ -683,7 +683,7 @@
     "name": "Jim McMahon",
     "sportId": "nfl-qb",
     "era": "1980s–1990s",
-    "teams": [
+    "detail": [
       "Bears"
     ],
     "yearsActive": "1982–1996",
@@ -694,7 +694,7 @@
     "name": "Bernie Kosar",
     "sportId": "nfl-qb",
     "era": "1980s–1990s",
-    "teams": [
+    "detail": [
       "Browns"
     ],
     "yearsActive": "1985–1996",
@@ -705,7 +705,7 @@
     "name": "Vinny Testaverde",
     "sportId": "nfl-qb",
     "era": "1980s–2000s",
-    "teams": [
+    "detail": [
       "Buccaneers",
       "Jets"
     ],
@@ -717,7 +717,7 @@
     "name": "Rich Gannon",
     "sportId": "nfl-qb",
     "era": "1980s–2000s",
-    "teams": [
+    "detail": [
       "Vikings",
       "Chiefs",
       "Raiders"
@@ -730,7 +730,7 @@
     "name": "Doug Flutie",
     "sportId": "nfl-qb",
     "era": "1980s–2000s",
-    "teams": [
+    "detail": [
       "Bills",
       "Chargers",
       "Patriots"
@@ -743,7 +743,7 @@
     "name": "Mark Brunell",
     "sportId": "nfl-qb",
     "era": "1990s–2010s",
-    "teams": [
+    "detail": [
       "Jaguars"
     ],
     "yearsActive": "1994–2011",
@@ -754,7 +754,7 @@
     "name": "Drew Bledsoe",
     "sportId": "nfl-qb",
     "era": "1990s–2000s",
-    "teams": [
+    "detail": [
       "Patriots",
       "Bills",
       "Cowboys"
@@ -767,7 +767,7 @@
     "name": "Kerry Collins",
     "sportId": "nfl-qb",
     "era": "1990s–2010s",
-    "teams": [
+    "detail": [
       "Panthers",
       "Giants",
       "Titans"
@@ -780,7 +780,7 @@
     "name": "Trent Green",
     "sportId": "nfl-qb",
     "era": "1990s–2000s",
-    "teams": [
+    "detail": [
       "Rams",
       "Chiefs"
     ],
@@ -792,7 +792,7 @@
     "name": "Jake Plummer",
     "sportId": "nfl-qb",
     "era": "1990s–2000s",
-    "teams": [
+    "detail": [
       "Cardinals",
       "Broncos"
     ],
@@ -804,7 +804,7 @@
     "name": "Daunte Culpepper",
     "sportId": "nfl-qb",
     "era": "1990s–2000s",
-    "teams": [
+    "detail": [
       "Vikings"
     ],
     "yearsActive": "1999–2009",
@@ -815,7 +815,7 @@
     "name": "Jeff Garcia",
     "sportId": "nfl-qb",
     "era": "1990s–2000s",
-    "teams": [
+    "detail": [
       "49ers",
       "Eagles",
       "Buccaneers"
@@ -828,7 +828,7 @@
     "name": "Matt Hasselbeck",
     "sportId": "nfl-qb",
     "era": "1990s–2010s",
-    "teams": [
+    "detail": [
       "Seahawks",
       "Titans"
     ],
@@ -840,7 +840,7 @@
     "name": "Chad Pennington",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Jets",
       "Dolphins"
     ],
@@ -852,7 +852,7 @@
     "name": "Marc Bulger",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Rams"
     ],
     "yearsActive": "2002–2009",
@@ -863,7 +863,7 @@
     "name": "Jake Delhomme",
     "sportId": "nfl-qb",
     "era": "1990s–2010s",
-    "teams": [
+    "detail": [
       "Panthers",
       "Saints"
     ],
@@ -875,7 +875,7 @@
     "name": "Byron Leftwich",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Jaguars",
       "Steelers"
     ],
@@ -887,7 +887,7 @@
     "name": "David Carr",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Texans",
       "Giants"
     ],
@@ -899,7 +899,7 @@
     "name": "Carson Palmer",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Bengals",
       "Raiders",
       "Cardinals"
@@ -912,7 +912,7 @@
     "name": "Alex Smith",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "49ers",
       "Chiefs",
       "Commanders"
@@ -925,7 +925,7 @@
     "name": "Jay Cutler",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Broncos",
       "Bears",
       "Dolphins"
@@ -938,7 +938,7 @@
     "name": "Ryan Fitzpatrick",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Bills",
       "Jets",
       "Dolphins"
@@ -951,7 +951,7 @@
     "name": "Mark Sanchez",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Jets",
       "Eagles"
     ],
@@ -963,7 +963,7 @@
     "name": "Matt Schaub",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Texans",
       "Falcons"
     ],
@@ -975,7 +975,7 @@
     "name": "Josh McCown",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Cardinals",
       "Bears",
       "Jets"
@@ -988,7 +988,7 @@
     "name": "Andy Dalton",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Bengals",
       "Cowboys",
       "Panthers"
@@ -1001,7 +1001,7 @@
     "name": "Nick Foles",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Eagles",
       "Jaguars",
       "Bears"
@@ -1014,7 +1014,7 @@
     "name": "Teddy Bridgewater",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Vikings",
       "Saints",
       "Panthers"
@@ -1027,7 +1027,7 @@
     "name": "Ryan Tannehill",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Dolphins",
       "Titans"
     ],
@@ -1039,7 +1039,7 @@
     "name": "Blake Bortles",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Jaguars"
     ],
     "yearsActive": "2014–2019",
@@ -1050,7 +1050,7 @@
     "name": "Jameis Winston",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Buccaneers",
       "Saints",
       "Browns",
@@ -1064,7 +1064,7 @@
     "name": "Marcus Mariota",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Titans",
       "Falcons",
       "Commanders"
@@ -1077,7 +1077,7 @@
     "name": "Jared Goff",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Rams",
       "Lions"
     ],
@@ -1089,7 +1089,7 @@
     "name": "Deshaun Watson",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Texans",
       "Browns"
     ],
@@ -1101,7 +1101,7 @@
     "name": "Sam Darnold",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Jets",
       "Panthers",
       "Vikings",
@@ -1115,7 +1115,7 @@
     "name": "Case Keenum",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Texans",
       "Vikings",
       "Broncos"
@@ -1128,7 +1128,7 @@
     "name": "Geno Smith",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Jets",
       "Seahawks",
       "Raiders"
@@ -1141,7 +1141,7 @@
     "name": "Derek Carr",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Raiders",
       "Saints"
     ],
@@ -1153,7 +1153,7 @@
     "name": "Jordan Love",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Packers"
     ],
     "yearsActive": "2020–",
@@ -1164,7 +1164,7 @@
     "name": "Justin Fields",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Bears",
       "Steelers",
       "Jets"
@@ -1177,7 +1177,7 @@
     "name": "Mac Jones",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Patriots",
       "Jaguars",
       "49ers"
@@ -1190,7 +1190,7 @@
     "name": "Trevor Lawrence",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Jaguars"
     ],
     "yearsActive": "2021–",
@@ -1201,7 +1201,7 @@
     "name": "Zach Wilson",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Jets",
       "Broncos",
       "Dolphins"
@@ -1214,7 +1214,7 @@
     "name": "Bryce Young",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Panthers"
     ],
     "yearsActive": "2023–",
@@ -1225,7 +1225,7 @@
     "name": "C.J. Stroud",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Texans"
     ],
     "yearsActive": "2023–",
@@ -1236,7 +1236,7 @@
     "name": "Anthony Richardson",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Colts"
     ],
     "yearsActive": "2023–",
@@ -1247,7 +1247,7 @@
     "name": "Will Levis",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Titans"
     ],
     "yearsActive": "2023–",
@@ -1258,7 +1258,7 @@
     "name": "Bo Nix",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Broncos"
     ],
     "yearsActive": "2024–",
@@ -1269,7 +1269,7 @@
     "name": "Drake Maye",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Patriots"
     ],
     "yearsActive": "2024–",
@@ -1280,7 +1280,7 @@
     "name": "Jayden Daniels",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Commanders"
     ],
     "yearsActive": "2024–",
@@ -1291,7 +1291,7 @@
     "name": "Caleb Williams",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Bears"
     ],
     "yearsActive": "2024–",
@@ -1302,7 +1302,7 @@
     "name": "Michael Penix Jr.",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Falcons"
     ],
     "yearsActive": "2024–",
@@ -1313,7 +1313,7 @@
     "name": "J.J. McCarthy",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Vikings"
     ],
     "yearsActive": "2025–",
@@ -1324,7 +1324,7 @@
     "name": "Robert Griffin III",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Commanders",
       "Ravens"
     ],
@@ -1336,7 +1336,7 @@
     "name": "Rex Grossman",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Bears",
       "Commanders"
     ],
@@ -1348,7 +1348,7 @@
     "name": "Kyle Orton",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Bears",
       "Broncos",
       "Chiefs",
@@ -1363,7 +1363,7 @@
     "name": "Matt Cassel",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Patriots",
       "Chiefs",
       "Vikings",
@@ -1378,7 +1378,7 @@
     "name": "Seneca Wallace",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Seahawks",
       "Browns",
       "Packers"
@@ -1391,7 +1391,7 @@
     "name": "Derek Anderson",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Browns",
       "Cardinals",
       "Panthers",
@@ -1405,7 +1405,7 @@
     "name": "Jason Campbell",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Commanders",
       "Raiders",
       "Bears",
@@ -1419,7 +1419,7 @@
     "name": "Tarvaris Jackson",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Vikings",
       "Seahawks"
     ],
@@ -1431,7 +1431,7 @@
     "name": "Kellen Clemens",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Jets",
       "Rams"
     ],
@@ -1443,7 +1443,7 @@
     "name": "Matt Moore",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Panthers",
       "Dolphins",
       "Chiefs"
@@ -1456,7 +1456,7 @@
     "name": "Shaun Hill",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "49ers",
       "Lions",
       "Rams",
@@ -1470,7 +1470,7 @@
     "name": "Brady Quinn",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Browns",
       "Chiefs"
     ],
@@ -1482,7 +1482,7 @@
     "name": "Dan Orlovsky",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Lions",
       "Colts"
     ],
@@ -1494,7 +1494,7 @@
     "name": "Joe Flacco",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Ravens",
       "Broncos",
       "Jets",
@@ -1510,7 +1510,7 @@
     "name": "Chad Henne",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Dolphins",
       "Jaguars",
       "Chiefs"
@@ -1523,7 +1523,7 @@
     "name": "Drew Stanton",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Lions",
       "Cardinals"
     ],
@@ -1535,7 +1535,7 @@
     "name": "Josh Freeman",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Buccaneers",
       "Vikings",
       "Colts"
@@ -1548,7 +1548,7 @@
     "name": "Josh Johnson",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Buccaneers",
       "Commanders",
       "Ravens"
@@ -1561,7 +1561,7 @@
     "name": "Kevin Kolb",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Eagles",
       "Cardinals"
     ],
@@ -1573,7 +1573,7 @@
     "name": "Charlie Whitehurst",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Seahawks",
       "Titans"
     ],
@@ -1585,7 +1585,7 @@
     "name": "Colt McCoy",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Browns",
       "Commanders",
       "Giants",
@@ -1599,7 +1599,7 @@
     "name": "Jimmy Clausen",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Panthers",
       "Bears",
       "Ravens"
@@ -1612,7 +1612,7 @@
     "name": "John Skelton",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Cardinals"
     ],
     "yearsActive": "2010–2012",
@@ -1623,7 +1623,7 @@
     "name": "Matt Flynn",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Packers",
       "Raiders"
     ],
@@ -1635,7 +1635,7 @@
     "name": "Sam Bradford",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Rams",
       "Eagles",
       "Vikings",
@@ -1649,7 +1649,7 @@
     "name": "Tim Tebow",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Broncos"
     ],
     "yearsActive": "2010–2011",
@@ -1660,7 +1660,7 @@
     "name": "Blaine Gabbert",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Jaguars",
       "49ers",
       "Cardinals",
@@ -1676,7 +1676,7 @@
     "name": "Caleb Hanie",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Bears"
     ],
     "yearsActive": "2008–2011",
@@ -1687,7 +1687,7 @@
     "name": "Christian Ponder",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Vikings"
     ],
     "yearsActive": "2011–2014",
@@ -1698,7 +1698,7 @@
     "name": "Curtis Painter",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Colts"
     ],
     "yearsActive": "2009–2011",
@@ -1709,7 +1709,7 @@
     "name": "T.J. Yates",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Texans"
     ],
     "yearsActive": "2011–2017",
@@ -1720,7 +1720,7 @@
     "name": "Tyler Palko",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Chiefs"
     ],
     "yearsActive": "2007–2011",
@@ -1731,7 +1731,7 @@
     "name": "Brandon Weeden",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Browns",
       "Cowboys",
       "Texans"
@@ -1744,7 +1744,7 @@
     "name": "Brian Hoyer",
     "sportId": "nfl-qb",
     "era": "2000s–2020s",
-    "teams": [
+    "detail": [
       "Cardinals",
       "Browns",
       "Texans",
@@ -1762,7 +1762,7 @@
     "name": "Jake Locker",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Titans"
     ],
     "yearsActive": "2012–2014",
@@ -1773,7 +1773,7 @@
     "name": "Ryan Lindley",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Cardinals"
     ],
     "yearsActive": "2012–2014",
@@ -1784,7 +1784,7 @@
     "name": "Terrelle Pryor",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Raiders"
     ],
     "yearsActive": "2011–2013",
@@ -1795,7 +1795,7 @@
     "name": "Thaddeus Lewis",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Browns",
       "Bills"
     ],
@@ -1807,7 +1807,7 @@
     "name": "Tyrod Taylor",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Ravens",
       "Bills",
       "Browns",
@@ -1824,7 +1824,7 @@
     "name": "Chase Daniel",
     "sportId": "nfl-qb",
     "era": "2000s–2010s",
-    "teams": [
+    "detail": [
       "Chiefs",
       "Bears"
     ],
@@ -1836,7 +1836,7 @@
     "name": "EJ Manuel",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Bills",
       "Raiders"
     ],
@@ -1848,7 +1848,7 @@
     "name": "Matt McGloin",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Raiders"
     ],
     "yearsActive": "2013–2016",
@@ -1859,7 +1859,7 @@
     "name": "Mike Glennon",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Buccaneers",
       "Bears",
       "Jaguars",
@@ -1873,7 +1873,7 @@
     "name": "Scott Tolzien",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Packers",
       "Colts"
     ],
@@ -1885,7 +1885,7 @@
     "name": "Austin Davis",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Rams",
       "Browns"
     ],
@@ -1897,7 +1897,7 @@
     "name": "Jimmy Garoppolo",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Patriots",
       "49ers",
       "Raiders",
@@ -1911,7 +1911,7 @@
     "name": "Johnny Manziel",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Browns"
     ],
     "yearsActive": "2014–2015",
@@ -1922,7 +1922,7 @@
     "name": "Ryan Mallett",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Texans",
       "Ravens"
     ],
@@ -1934,7 +1934,7 @@
     "name": "Zach Mettenberger",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Titans"
     ],
     "yearsActive": "2014–2015",
@@ -1945,7 +1945,7 @@
     "name": "A.J. McCarron",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Bengals",
       "Texans"
     ],
@@ -1957,7 +1957,7 @@
     "name": "Brock Osweiler",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Broncos",
       "Texans",
       "Dolphins"
@@ -1970,7 +1970,7 @@
     "name": "Landry Jones",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Steelers"
     ],
     "yearsActive": "2013–2017",
@@ -1981,7 +1981,7 @@
     "name": "Bryce Petty",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Jets"
     ],
     "yearsActive": "2016–2017",
@@ -1992,7 +1992,7 @@
     "name": "Carson Wentz",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Eagles",
       "Colts",
       "Commanders",
@@ -2008,7 +2008,7 @@
     "name": "Cody Kessler",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Browns",
       "Jaguars"
     ],
@@ -2020,7 +2020,7 @@
     "name": "Jacoby Brissett",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Patriots",
       "Colts",
       "Dolphins",
@@ -2035,7 +2035,7 @@
     "name": "Matt Barkley",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Bears",
       "Bills"
     ],
@@ -2047,7 +2047,7 @@
     "name": "Paxton Lynch",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Broncos"
     ],
     "yearsActive": "2016–2017",
@@ -2058,7 +2058,7 @@
     "name": "Tom Savage",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Texans"
     ],
     "yearsActive": "2014–2017",
@@ -2069,7 +2069,7 @@
     "name": "Trevor Siemian",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Broncos",
       "Jets",
       "Saints",
@@ -2083,7 +2083,7 @@
     "name": "Brett Hundley",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Packers"
     ],
     "yearsActive": "2015–2017",
@@ -2094,7 +2094,7 @@
     "name": "C.J. Beathard",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "49ers",
       "Jaguars"
     ],
@@ -2106,7 +2106,7 @@
     "name": "DeShone Kizer",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Browns",
       "Packers"
     ],
@@ -2118,7 +2118,7 @@
     "name": "Mitch Trubisky",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Bears",
       "Steelers",
       "Bills"
@@ -2131,7 +2131,7 @@
     "name": "Nathan Peterman",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Bills",
       "Bears"
     ],
@@ -2143,7 +2143,7 @@
     "name": "Jeff Driskel",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Bengals",
       "Lions",
       "Broncos",
@@ -2157,7 +2157,7 @@
     "name": "Josh Rosen",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Cardinals",
       "Dolphins"
     ],
@@ -2169,7 +2169,7 @@
     "name": "Kyle Allen",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Panthers",
       "Commanders",
       "Texans"
@@ -2182,7 +2182,7 @@
     "name": "Nick Mullens",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "49ers",
       "Browns",
       "Vikings"
@@ -2195,7 +2195,7 @@
     "name": "Taylor Heinicke",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Panthers",
       "Commanders",
       "Falcons"
@@ -2208,7 +2208,7 @@
     "name": "Brandon Allen",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Broncos",
       "Bengals",
       "49ers"
@@ -2221,7 +2221,7 @@
     "name": "Daniel Jones",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Giants",
       "Colts"
     ],
@@ -2233,7 +2233,7 @@
     "name": "David Blough",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Lions",
       "Cardinals"
     ],
@@ -2245,7 +2245,7 @@
     "name": "Devlin Hodges",
     "sportId": "nfl-qb",
     "era": "2010s",
-    "teams": [
+    "detail": [
       "Steelers"
     ],
     "yearsActive": "2019–2019",
@@ -2256,7 +2256,7 @@
     "name": "Drew Lock",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Broncos",
       "Seahawks",
       "Giants"
@@ -2269,7 +2269,7 @@
     "name": "Dwayne Haskins",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Commanders"
     ],
     "yearsActive": "2019–2020",
@@ -2280,7 +2280,7 @@
     "name": "Gardner Minshew",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Jaguars",
       "Eagles",
       "Colts",
@@ -2295,7 +2295,7 @@
     "name": "Mason Rudolph",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Steelers",
       "Titans"
     ],
@@ -2307,7 +2307,7 @@
     "name": "Ryan Finley",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Bengals"
     ],
     "yearsActive": "2019–2020",
@@ -2318,7 +2318,7 @@
     "name": "Brett Rypien",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Broncos",
       "Rams"
     ],
@@ -2330,7 +2330,7 @@
     "name": "P.J. Walker",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Panthers",
       "Browns"
     ],
@@ -2342,7 +2342,7 @@
     "name": "Taysom Hill",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Saints"
     ],
     "yearsActive": "2017–2021",
@@ -2353,7 +2353,7 @@
     "name": "Cooper Rush",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Cowboys",
       "Ravens"
     ],
@@ -2365,7 +2365,7 @@
     "name": "Davis Mills",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Texans"
     ],
     "yearsActive": "2021–",
@@ -2376,7 +2376,7 @@
     "name": "Mike White",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Jets"
     ],
     "yearsActive": "2018–2022",
@@ -2387,7 +2387,7 @@
     "name": "Tim Boyle",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Lions",
       "Jets",
       "Dolphins"
@@ -2400,7 +2400,7 @@
     "name": "Trey Lance",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "49ers",
       "Cowboys",
       "Chargers"
@@ -2413,7 +2413,7 @@
     "name": "Tyler Huntley",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Ravens",
       "Dolphins"
     ],
@@ -2425,7 +2425,7 @@
     "name": "Bailey Zappe",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Patriots",
       "Browns"
     ],
@@ -2437,7 +2437,7 @@
     "name": "Desmond Ridder",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Falcons"
     ],
     "yearsActive": "2022–2023",
@@ -2448,7 +2448,7 @@
     "name": "Jarrett Stidham",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Raiders",
       "Broncos"
     ],
@@ -2460,7 +2460,7 @@
     "name": "Joshua Dobbs",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Titans",
       "Cardinals",
       "Vikings",
@@ -2474,7 +2474,7 @@
     "name": "Kenny Pickett",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Steelers",
       "Raiders"
     ],
@@ -2486,7 +2486,7 @@
     "name": "Malik Willis",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Titans",
       "Packers"
     ],
@@ -2498,7 +2498,7 @@
     "name": "Sam Ehlinger",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Colts"
     ],
     "yearsActive": "2022–2022",
@@ -2509,7 +2509,7 @@
     "name": "Sam Howell",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Commanders"
     ],
     "yearsActive": "2022–2023",
@@ -2520,7 +2520,7 @@
     "name": "Aidan O'Connell",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Raiders"
     ],
     "yearsActive": "2023–2024",
@@ -2531,7 +2531,7 @@
     "name": "Easton Stick",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Chargers"
     ],
     "yearsActive": "2019–2023",
@@ -2542,7 +2542,7 @@
     "name": "Jake Browning",
     "sportId": "nfl-qb",
     "era": "2010s–2020s",
-    "teams": [
+    "detail": [
       "Bengals"
     ],
     "yearsActive": "2019–",
@@ -2553,7 +2553,7 @@
     "name": "Tommy DeVito",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Giants"
     ],
     "yearsActive": "2023–2024",
@@ -2564,7 +2564,7 @@
     "name": "Tyson Bagent",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Bears"
     ],
     "yearsActive": "2023–2023",
@@ -2575,7 +2575,7 @@
     "name": "Spencer Rattler",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Saints"
     ],
     "yearsActive": "2024–",
@@ -2586,7 +2586,7 @@
     "name": "Cam Ward",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Titans"
     ],
     "yearsActive": "2025–",
@@ -2597,7 +2597,7 @@
     "name": "Dillon Gabriel",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Browns"
     ],
     "yearsActive": "2025–",
@@ -2608,7 +2608,7 @@
     "name": "Jaxson Dart",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Giants"
     ],
     "yearsActive": "2025–",
@@ -2619,7 +2619,7 @@
     "name": "Shedeur Sanders",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Browns"
     ],
     "yearsActive": "2025–",
@@ -2630,10 +2630,1242 @@
     "name": "Tyler Shough",
     "sportId": "nfl-qb",
     "era": "2020s",
-    "teams": [
+    "detail": [
       "Saints"
     ],
     "yearsActive": "2025–",
     "inPool": true
+  },
+  {
+    "id": "bobby-jones",
+    "name": "Bobby Jones",
+    "sportId": "golf",
+    "era": "1920s–1930s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1916–1930",
+    "inPool": true
+  },
+  {
+    "id": "gene-sarazen",
+    "name": "Gene Sarazen",
+    "sportId": "golf",
+    "era": "1920s–1940s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1920–1941",
+    "inPool": true
+  },
+  {
+    "id": "byron-nelson-golf",
+    "name": "Byron Nelson",
+    "sportId": "golf",
+    "era": "1930s–1940s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1932–1946",
+    "inPool": true
+  },
+  {
+    "id": "ben-hogan",
+    "name": "Ben Hogan",
+    "sportId": "golf",
+    "era": "1930s–1950s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1930–1959",
+    "inPool": true
+  },
+  {
+    "id": "sam-snead",
+    "name": "Sam Snead",
+    "sportId": "golf",
+    "era": "1930s–1960s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1934–1965",
+    "inPool": true
+  },
+  {
+    "id": "arnold-palmer",
+    "name": "Arnold Palmer",
+    "sportId": "golf",
+    "era": "1950s–1970s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1954–1975",
+    "inPool": true
+  },
+  {
+    "id": "jack-nicklaus",
+    "name": "Jack Nicklaus",
+    "sportId": "golf",
+    "era": "1960s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1961–1986",
+    "inPool": true
+  },
+  {
+    "id": "gary-player",
+    "name": "Gary Player",
+    "sportId": "golf",
+    "era": "1950s–1970s",
+    "detail": [
+      "South Africa"
+    ],
+    "yearsActive": "1953–1978",
+    "inPool": true
+  },
+  {
+    "id": "lee-trevino",
+    "name": "Lee Trevino",
+    "sportId": "golf",
+    "era": "1960s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1966–1984",
+    "inPool": true
+  },
+  {
+    "id": "tom-watson",
+    "name": "Tom Watson",
+    "sportId": "golf",
+    "era": "1970s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1971–1998",
+    "inPool": true
+  },
+  {
+    "id": "johnny-miller",
+    "name": "Johnny Miller",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1969–1989",
+    "inPool": true
+  },
+  {
+    "id": "seve-ballesteros",
+    "name": "Seve Ballesteros",
+    "sportId": "golf",
+    "era": "1970s–1990s",
+    "detail": [
+      "Spain"
+    ],
+    "yearsActive": "1974–1995",
+    "inPool": true
+  },
+  {
+    "id": "nick-faldo",
+    "name": "Nick Faldo",
+    "sportId": "golf",
+    "era": "1970s–1990s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "1976–1997",
+    "inPool": true
+  },
+  {
+    "id": "greg-norman",
+    "name": "Greg Norman",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1976–1998",
+    "inPool": true
+  },
+  {
+    "id": "bernhard-langer",
+    "name": "Bernhard Langer",
+    "sportId": "golf",
+    "era": "1970s–2000s",
+    "detail": [
+      "Germany"
+    ],
+    "yearsActive": "1972–",
+    "inPool": true
+  },
+  {
+    "id": "ian-woosnam",
+    "name": "Ian Woosnam",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "Wales"
+    ],
+    "yearsActive": "1976–2000",
+    "inPool": true
+  },
+  {
+    "id": "sandy-lyle",
+    "name": "Sandy Lyle",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "Scotland"
+    ],
+    "yearsActive": "1977–1998",
+    "inPool": true
+  },
+  {
+    "id": "payne-stewart",
+    "name": "Payne Stewart",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1979–1999",
+    "inPool": true
+  },
+  {
+    "id": "fred-couples",
+    "name": "Fred Couples",
+    "sportId": "golf",
+    "era": "1980s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1980–2010",
+    "inPool": true
+  },
+  {
+    "id": "nick-price",
+    "name": "Nick Price",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "Zimbabwe"
+    ],
+    "yearsActive": "1977–2002",
+    "inPool": true
+  },
+  {
+    "id": "vijay-singh",
+    "name": "Vijay Singh",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "Fiji"
+    ],
+    "yearsActive": "1982–2010",
+    "inPool": true
+  },
+  {
+    "id": "ernie-els",
+    "name": "Ernie Els",
+    "sportId": "golf",
+    "era": "1990s–2010s",
+    "detail": [
+      "South Africa"
+    ],
+    "yearsActive": "1989–2018",
+    "inPool": true
+  },
+  {
+    "id": "phil-mickelson",
+    "name": "Phil Mickelson",
+    "sportId": "golf",
+    "era": "1990s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1992–",
+    "inPool": true
+  },
+  {
+    "id": "tiger-woods",
+    "name": "Tiger Woods",
+    "sportId": "golf",
+    "era": "1990s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1996–",
+    "inPool": true
+  },
+  {
+    "id": "david-duval",
+    "name": "David Duval",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1993–2011",
+    "inPool": true
+  },
+  {
+    "id": "jim-furyk",
+    "name": "Jim Furyk",
+    "sportId": "golf",
+    "era": "1990s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1992–2019",
+    "inPool": true
+  },
+  {
+    "id": "retief-goosen",
+    "name": "Retief Goosen",
+    "sportId": "golf",
+    "era": "1990s–2010s",
+    "detail": [
+      "South Africa"
+    ],
+    "yearsActive": "1990–2016",
+    "inPool": true
+  },
+  {
+    "id": "padraig-harrington",
+    "name": "Pádraig Harrington",
+    "sportId": "golf",
+    "era": "1990s–2010s",
+    "detail": [
+      "Ireland"
+    ],
+    "yearsActive": "1995–",
+    "inPool": true
+  },
+  {
+    "id": "sergio-garcia",
+    "name": "Sergio García",
+    "sportId": "golf",
+    "era": "1990s–2020s",
+    "detail": [
+      "Spain"
+    ],
+    "yearsActive": "1999–",
+    "inPool": true
+  },
+  {
+    "id": "adam-scott",
+    "name": "Adam Scott",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "2000–",
+    "inPool": true
+  },
+  {
+    "id": "justin-rose",
+    "name": "Justin Rose",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "1998–",
+    "inPool": true
+  },
+  {
+    "id": "henrik-stenson",
+    "name": "Henrik Stenson",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "Sweden"
+    ],
+    "yearsActive": "1999–",
+    "inPool": true
+  },
+  {
+    "id": "bubba-watson",
+    "name": "Bubba Watson",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2003–",
+    "inPool": true
+  },
+  {
+    "id": "dustin-johnson",
+    "name": "Dustin Johnson",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2007–",
+    "inPool": true
+  },
+  {
+    "id": "jason-day",
+    "name": "Jason Day",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "2006–",
+    "inPool": true
+  },
+  {
+    "id": "jordan-spieth",
+    "name": "Jordan Spieth",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2012–",
+    "inPool": true
+  },
+  {
+    "id": "rory-mcilroy",
+    "name": "Rory McIlroy",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "Northern Ireland"
+    ],
+    "yearsActive": "2007–",
+    "inPool": true
+  },
+  {
+    "id": "justin-thomas",
+    "name": "Justin Thomas",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2013–",
+    "inPool": true
+  },
+  {
+    "id": "brooks-koepka",
+    "name": "Brooks Koepka",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2012–",
+    "inPool": true
+  },
+  {
+    "id": "bryson-dechambeau",
+    "name": "Bryson DeChambeau",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2016–",
+    "inPool": true
+  },
+  {
+    "id": "jon-rahm",
+    "name": "Jon Rahm",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Spain"
+    ],
+    "yearsActive": "2016–",
+    "inPool": true
+  },
+  {
+    "id": "collin-morikawa",
+    "name": "Collin Morikawa",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2019–",
+    "inPool": true
+  },
+  {
+    "id": "scottie-scheffler",
+    "name": "Scottie Scheffler",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2018–",
+    "inPool": true
+  },
+  {
+    "id": "xander-schauffele",
+    "name": "Xander Schauffele",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2015–",
+    "inPool": true
+  },
+  {
+    "id": "viktor-hovland",
+    "name": "Viktor Hovland",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Norway"
+    ],
+    "yearsActive": "2019–",
+    "inPool": true
+  },
+  {
+    "id": "ludvig-aberg",
+    "name": "Ludvig Åberg",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "Sweden"
+    ],
+    "yearsActive": "2023–",
+    "inPool": true
+  },
+  {
+    "id": "hideki-matsuyama",
+    "name": "Hideki Matsuyama",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Japan"
+    ],
+    "yearsActive": "2013–",
+    "inPool": true
+  },
+  {
+    "id": "cameron-smith",
+    "name": "Cameron Smith",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "2013–",
+    "inPool": true
+  },
+  {
+    "id": "john-daly",
+    "name": "John Daly",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1987–",
+    "inPool": true
+  },
+  {
+    "id": "rickie-fowler",
+    "name": "Rickie Fowler",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2009–",
+    "inPool": true
+  },
+  {
+    "id": "annika-sorenstam",
+    "name": "Annika Sörenstam",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "Sweden"
+    ],
+    "yearsActive": "1992–2008",
+    "inPool": true
+  },
+  {
+    "id": "nelly-korda",
+    "name": "Nelly Korda",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2016–",
+    "inPool": true
+  },
+  {
+    "id": "walter-hagen",
+    "name": "Walter Hagen",
+    "sportId": "golf",
+    "era": "1910s–1930s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1912–1936",
+    "inPool": false
+  },
+  {
+    "id": "tommy-armour",
+    "name": "Tommy Armour",
+    "sportId": "golf",
+    "era": "1920s–1930s",
+    "detail": [
+      "Scotland"
+    ],
+    "yearsActive": "1924–1935",
+    "inPool": false
+  },
+  {
+    "id": "billy-casper",
+    "name": "Billy Casper",
+    "sportId": "golf",
+    "era": "1950s–1970s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1954–1975",
+    "inPool": false
+  },
+  {
+    "id": "julius-boros",
+    "name": "Julius Boros",
+    "sportId": "golf",
+    "era": "1950s–1960s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1949–1968",
+    "inPool": false
+  },
+  {
+    "id": "raymond-floyd",
+    "name": "Raymond Floyd",
+    "sportId": "golf",
+    "era": "1960s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1963–1992",
+    "inPool": false
+  },
+  {
+    "id": "hale-irwin",
+    "name": "Hale Irwin",
+    "sportId": "golf",
+    "era": "1970s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1968–1995",
+    "inPool": false
+  },
+  {
+    "id": "tom-kite",
+    "name": "Tom Kite",
+    "sportId": "golf",
+    "era": "1970s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1972–1993",
+    "inPool": false
+  },
+  {
+    "id": "ben-crenshaw",
+    "name": "Ben Crenshaw",
+    "sportId": "golf",
+    "era": "1970s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1973–1995",
+    "inPool": false
+  },
+  {
+    "id": "curtis-strange",
+    "name": "Curtis Strange",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1977–1996",
+    "inPool": false
+  },
+  {
+    "id": "craig-stadler",
+    "name": "Craig Stadler",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1975–2003",
+    "inPool": false
+  },
+  {
+    "id": "mark-omeara",
+    "name": "Mark O'Meara",
+    "sportId": "golf",
+    "era": "1980s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1980–2005",
+    "inPool": false
+  },
+  {
+    "id": "davis-love-iii",
+    "name": "Davis Love III",
+    "sportId": "golf",
+    "era": "1980s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1985–2015",
+    "inPool": false
+  },
+  {
+    "id": "corey-pavin",
+    "name": "Corey Pavin",
+    "sportId": "golf",
+    "era": "1980s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1982–2006",
+    "inPool": false
+  },
+  {
+    "id": "colin-montgomerie",
+    "name": "Colin Montgomerie",
+    "sportId": "golf",
+    "era": "1980s–2000s",
+    "detail": [
+      "Scotland"
+    ],
+    "yearsActive": "1987–2010",
+    "inPool": false
+  },
+  {
+    "id": "lee-westwood",
+    "name": "Lee Westwood",
+    "sportId": "golf",
+    "era": "1990s–2020s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "1993–",
+    "inPool": false
+  },
+  {
+    "id": "luke-donald",
+    "name": "Luke Donald",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "2001–",
+    "inPool": false
+  },
+  {
+    "id": "ian-poulter",
+    "name": "Ian Poulter",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "1999–",
+    "inPool": false
+  },
+  {
+    "id": "graeme-mcdowell",
+    "name": "Graeme McDowell",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "Northern Ireland"
+    ],
+    "yearsActive": "2002–",
+    "inPool": false
+  },
+  {
+    "id": "martin-kaymer",
+    "name": "Martin Kaymer",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "Germany"
+    ],
+    "yearsActive": "2005–",
+    "inPool": false
+  },
+  {
+    "id": "louis-oosthuizen",
+    "name": "Louis Oosthuizen",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "South Africa"
+    ],
+    "yearsActive": "2002–",
+    "inPool": false
+  },
+  {
+    "id": "charl-schwartzel",
+    "name": "Charl Schwartzel",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "South Africa"
+    ],
+    "yearsActive": "2002–",
+    "inPool": false
+  },
+  {
+    "id": "angel-cabrera",
+    "name": "Ángel Cabrera",
+    "sportId": "golf",
+    "era": "1990s–2010s",
+    "detail": [
+      "Argentina"
+    ],
+    "yearsActive": "1989–",
+    "inPool": false
+  },
+  {
+    "id": "trevor-immelman",
+    "name": "Trevor Immelman",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "South Africa"
+    ],
+    "yearsActive": "1999–2015",
+    "inPool": false
+  },
+  {
+    "id": "francesco-molinari",
+    "name": "Francesco Molinari",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "Italy"
+    ],
+    "yearsActive": "2004–",
+    "inPool": false
+  },
+  {
+    "id": "danny-willett",
+    "name": "Danny Willett",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "2008–",
+    "inPool": false
+  },
+  {
+    "id": "shane-lowry",
+    "name": "Shane Lowry",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Ireland"
+    ],
+    "yearsActive": "2009–",
+    "inPool": false
+  },
+  {
+    "id": "gary-woodland",
+    "name": "Gary Woodland",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2009–",
+    "inPool": false
+  },
+  {
+    "id": "zach-johnson",
+    "name": "Zach Johnson",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1998–",
+    "inPool": false
+  },
+  {
+    "id": "webb-simpson",
+    "name": "Webb Simpson",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2008–",
+    "inPool": false
+  },
+  {
+    "id": "keegan-bradley",
+    "name": "Keegan Bradley",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2008–",
+    "inPool": false
+  },
+  {
+    "id": "patrick-reed",
+    "name": "Patrick Reed",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2011–",
+    "inPool": false
+  },
+  {
+    "id": "patrick-cantlay",
+    "name": "Patrick Cantlay",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2011–",
+    "inPool": false
+  },
+  {
+    "id": "tony-finau",
+    "name": "Tony Finau",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2007–",
+    "inPool": false
+  },
+  {
+    "id": "matt-fitzpatrick",
+    "name": "Matt Fitzpatrick",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "2014–",
+    "inPool": false
+  },
+  {
+    "id": "will-zalatoris",
+    "name": "Will Zalatoris",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2018–",
+    "inPool": false
+  },
+  {
+    "id": "joaquin-niemann",
+    "name": "Joaquín Niemann",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Chile"
+    ],
+    "yearsActive": "2018–",
+    "inPool": false
+  },
+  {
+    "id": "tom-kim",
+    "name": "Tom Kim",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "South Korea"
+    ],
+    "yearsActive": "2021–",
+    "inPool": false
+  },
+  {
+    "id": "min-woo-lee",
+    "name": "Min Woo Lee",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "2019–",
+    "inPool": false
+  },
+  {
+    "id": "cameron-young",
+    "name": "Cameron Young",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2019–",
+    "inPool": false
+  },
+  {
+    "id": "sahith-theegala",
+    "name": "Sahith Theegala",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2020–",
+    "inPool": false
+  },
+  {
+    "id": "akshay-bhatia",
+    "name": "Akshay Bhatia",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2019–",
+    "inPool": false
+  },
+  {
+    "id": "moe-norman",
+    "name": "Moe Norman",
+    "sportId": "golf",
+    "era": "1950s–1970s",
+    "detail": [
+      "Canada"
+    ],
+    "yearsActive": "1949–1979",
+    "inPool": false
+  },
+  {
+    "id": "chi-chi-rodriguez",
+    "name": "Chi Chi Rodríguez",
+    "sportId": "golf",
+    "era": "1960s–1970s",
+    "detail": [
+      "Puerto Rico"
+    ],
+    "yearsActive": "1960–1979",
+    "inPool": false
+  },
+  {
+    "id": "justin-leonard",
+    "name": "Justin Leonard",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1994–2015",
+    "inPool": false
+  },
+  {
+    "id": "steve-stricker",
+    "name": "Steve Stricker",
+    "sportId": "golf",
+    "era": "1990s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1994–",
+    "inPool": false
+  },
+  {
+    "id": "jason-dufner",
+    "name": "Jason Dufner",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2000–",
+    "inPool": false
+  },
+  {
+    "id": "lorena-ochoa",
+    "name": "Lorena Ochoa",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "Mexico"
+    ],
+    "yearsActive": "2003–2010",
+    "inPool": false
+  },
+  {
+    "id": "lydia-ko",
+    "name": "Lydia Ko",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "New Zealand"
+    ],
+    "yearsActive": "2014–",
+    "inPool": false
+  },
+  {
+    "id": "michelle-wie-west",
+    "name": "Michelle Wie West",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2005–2023",
+    "inPool": false
+  },
+  {
+    "id": "inbee-park",
+    "name": "Inbee Park",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "South Korea"
+    ],
+    "yearsActive": "2007–",
+    "inPool": false
+  },
+  {
+    "id": "se-ri-pak",
+    "name": "Se Ri Pak",
+    "sportId": "golf",
+    "era": "1990s–2010s",
+    "detail": [
+      "South Korea"
+    ],
+    "yearsActive": "1998–2016",
+    "inPool": false
+  },
+  {
+    "id": "karrie-webb",
+    "name": "Karrie Webb",
+    "sportId": "golf",
+    "era": "1990s–2010s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1996–2018",
+    "inPool": false
+  },
+  {
+    "id": "nancy-lopez",
+    "name": "Nancy Lopez",
+    "sportId": "golf",
+    "era": "1970s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1977–2002",
+    "inPool": false
+  },
+  {
+    "id": "mickey-wright",
+    "name": "Mickey Wright",
+    "sportId": "golf",
+    "era": "1950s–1960s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1955–1969",
+    "inPool": false
+  },
+  {
+    "id": "kathy-whitworth",
+    "name": "Kathy Whitworth",
+    "sportId": "golf",
+    "era": "1950s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1958–1985",
+    "inPool": false
+  },
+  {
+    "id": "juli-inkster",
+    "name": "Juli Inkster",
+    "sportId": "golf",
+    "era": "1980s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1983–2016",
+    "inPool": false
+  },
+  {
+    "id": "brooke-henderson",
+    "name": "Brooke Henderson",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Canada"
+    ],
+    "yearsActive": "2015–",
+    "inPool": false
+  },
+  {
+    "id": "jin-young-ko",
+    "name": "Jin Young Ko",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "South Korea"
+    ],
+    "yearsActive": "2013–",
+    "inPool": false
+  },
+  {
+    "id": "charley-hull",
+    "name": "Charley Hull",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "2013–",
+    "inPool": false
+  },
+  {
+    "id": "rose-zhang",
+    "name": "Rose Zhang",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2023–",
+    "inPool": false
   }
 ]

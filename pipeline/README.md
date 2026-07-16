@@ -17,18 +17,21 @@ pip install -r requirements.txt   # torch + Robust Video Matting deps (~2GB)
 The first real run downloads the Robust Video Matting model weights from
 torch hub automatically.
 
-## The curation workflow (per QB)
+## The curation workflow (per athlete)
 
-1. Find a highlight video of the QB (YouTube). Best sources: NFL Films
-   retrospectives, single-player highlight reels, slow-motion compilations.
-2. Scrub to a clean **2–4 second window of the throwing motion**: drop-back
-   through release. What makes a good clip:
-   - QB large in frame, ideally side-on or three-quarter angle
-   - a stable camera (avoid whip pans)
+1. Find a highlight video of the athlete (YouTube). Best sources:
+   single-player highlight reels, slow-motion compilations, and for QBs
+   NFL Films retrospectives.
+2. Scrub to a clean **2–4 second window of the signature motion** — a QB's
+   drop-back through release, a golfer's address through follow-through.
+   What makes a good clip:
+   - athlete large in frame, ideally side-on or three-quarter angle
+   - a stable camera (avoid whip pans) — golf's down-the-line and face-on
+     swing cameras are ideal
    - **as few other people in frame as possible** — the matting model
-     extracts *every* person it sees, so a clean pocket shot beats a
-     collapsing-pocket shot
-3. Paste the URL and timestamps into that QB's entry in `manifest.json`:
+     extracts *every* person it sees; golf is friendly here (caddies aside),
+     for QBs a clean pocket shot beats a collapsing-pocket shot
+3. Paste the URL and timestamps into that athlete's entry in `manifest.json`:
 
    ```json
    {

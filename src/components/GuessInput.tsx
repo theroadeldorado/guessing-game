@@ -9,8 +9,9 @@ import { searchPlayers } from '@/lib/search'
  * suggestion (keyboard or pointer) — free text never submits, so spelling
  * never costs a guess. Already-guessed players render dimmed and inert.
  */
-export default function GuessInput({ players, disabledIds, onGuess }: {
+export default function GuessInput({ players, placeholder, disabledIds, onGuess }: {
   players: Player[]
+  placeholder: string
   disabledIds: string[]
   onGuess: (playerId: string) => void
 }) {
@@ -50,17 +51,17 @@ export default function GuessInput({ players, disabledIds, onGuess }: {
           setHighlight(0)
         }}
         onKeyDown={onKeyDown}
-        placeholder="Name the QB…"
+        placeholder={placeholder}
         role="combobox"
         aria-expanded={results.length > 0}
-        aria-controls="qb-listbox"
+        aria-controls="athlete-listbox"
         aria-autocomplete="list"
-        aria-label="Guess the quarterback"
+        aria-label="Guess the athlete"
         className="w-full rounded-sm border border-chalk bg-room-deep px-4 py-3 text-paper placeholder:text-chalk-soft focus:border-flag focus:outline-none"
       />
       {results.length > 0 && (
         <ul
-          id="qb-listbox"
+          id="athlete-listbox"
           role="listbox"
           className="absolute bottom-full z-10 mb-1 max-h-64 w-full overflow-y-auto rounded-sm border border-chalk bg-room-deep shadow-xl"
         >

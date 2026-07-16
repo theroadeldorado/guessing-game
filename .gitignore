@@ -43,8 +43,6 @@ next-env.d.ts
 # pipeline artifacts
 pipeline/cache/
 pipeline/.venv/
-public/clips/*
-!public/clips/.gitkeep
 
 # local test artifacts
 .playwright-mcp/

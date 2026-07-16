@@ -112,7 +112,7 @@ describe('advance', () => {
 })
 
 describe('shareText', () => {
-  it('maps guess counts to emoji and includes score', () => {
+  it('maps guess counts to emoji and includes score and sport', () => {
     let s = run()
     s = submitGuess(s, currentClip(s).playerId) // 💯
     s = advance(s)
@@ -121,6 +121,11 @@ describe('shareText', () => {
     s = advance(s)
     for (let i = 0; i < MAX_GUESSES; i++) s = submitGuess(s, `w${i}`) // 💀
     s = advance(s)
-    expect(shareText(s)).toBe('🏈 ShadowForm — 150 pts, 2 QBs\n💯🎯💀')
+    expect(shareText(s, { emoji: '🏈', athleteNounPlural: 'QBs' })).toBe(
+      '🏈 ShadowForm — 150 pts, 2 QBs\n💯🎯💀',
+    )
+    expect(shareText(s, { emoji: '⛳', athleteNounPlural: 'Golfers' })).toBe(
+      '⛳ ShadowForm — 150 pts, 2 Golfers\n💯🎯💀',
+    )
   })
 })

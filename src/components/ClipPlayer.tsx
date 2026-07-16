@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useSyncExternalStore } from 'react'
-import PlaceholderSilhouette from './PlaceholderSilhouette'
+import PlaceholderSilhouette, { type SilhouetteVariant } from './PlaceholderSilhouette'
 
 const REDUCED_MOTION_QUERY = '(prefers-reduced-motion: reduce)'
 
@@ -24,9 +24,10 @@ function useReducedMotion(): boolean {
  * silhouette animates. Reduced-motion users get a paused frame with an
  * explicit play control. `preloadSrc` warms the next clip while guessing.
  */
-export default function ClipPlayer({ src, seed, preloadSrc }: {
+export default function ClipPlayer({ src, seed, variant, preloadSrc }: {
   src: string
   seed: string
+  variant: SilhouetteVariant
   preloadSrc?: string
 }) {
   const reducedMotion = useReducedMotion()
@@ -49,7 +50,7 @@ export default function ClipPlayer({ src, seed, preloadSrc }: {
         />
       ) : (
         <div className={paused ? 'h-full w-full [&_*]:!animate-none' : 'h-full w-full'}>
-          <PlaceholderSilhouette seed={seed} />
+          <PlaceholderSilhouette seed={seed} variant={variant} />
         </div>
       )}
       {paused && (

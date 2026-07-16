@@ -1,14 +1,15 @@
 'use client'
 
 import { useState } from 'react'
-import { shareText, type RunState, type ClipResult } from '@/lib/game'
+import { shareText, type RunState, type ClipResult, type ShareSport } from '@/lib/game'
 
 const resultEmoji = (r: ClipResult) =>
   !r.solved ? '💀' : r.guessesUsed === 1 ? '💯' : r.guessesUsed === 2 ? '🎯' : '🤏'
 
 /** Final whistle: score, run log, share, run it back. */
-export default function GameOver({ state, best, onRestart }: {
+export default function GameOver({ state, sport, best, onRestart }: {
   state: RunState
+  sport: ShareSport
   best: number
   onRestart: () => void
 }) {
@@ -17,7 +18,7 @@ export default function GameOver({ state, best, onRestart }: {
   const isNewBest = state.score >= best && state.score > 0
 
   const share = async () => {
-    await navigator.clipboard.writeText(shareText(state))
+    await navigator.clipboard.writeText(shareText(state, sport))
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -29,7 +30,9 @@ export default function GameOver({ state, best, onRestart }: {
         {state.score}
         <span className="ml-2 text-2xl text-chalk-soft">pts</span>
       </h2>
-      <p className="font-mono text-sm text-chalk-soft">{solved} QBs identified</p>
+      <p className="font-mono text-sm text-chalk-soft">
+        {solved} {sport.athleteNounPlural} identified
+      </p>
       <p className="text-2xl leading-relaxed break-all">{state.history.map(resultEmoji).join('')}</p>
       <p className={`font-mono text-sm ${isNewBest ? 'text-flag' : 'text-chalk-soft'}`}>
         {isNewBest ? '🏆 New best!' : `Best: ${best}`}

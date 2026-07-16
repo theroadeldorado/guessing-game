@@ -3,7 +3,7 @@ import { normalize, searchPlayers } from '@/lib/search'
 import type { Player } from '@/lib/types'
 
 const P = (id: string, name: string): Player => ({
-  id, name, sportId: 'nfl-qb', era: 'x', teams: ['X'], yearsActive: 'x', inPool: true,
+  id, name, sportId: 'nfl-qb', era: 'x', detail: ['X'], yearsActive: 'x', inPool: true,
 })
 
 const players = [

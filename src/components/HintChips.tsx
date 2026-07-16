@@ -1,10 +1,14 @@
 import type { Player } from '@/lib/types'
 
-/** The scouting report: era unlocks after one wrong guess, teams after two. */
-export default function HintChips({ player, level }: { player: Player; level: number }) {
+/** The scouting report: era unlocks after one wrong guess, the sport's detail (teams/country) after two. */
+export default function HintChips({ player, detailLabel, level }: {
+  player: Player
+  detailLabel: string
+  level: number
+}) {
   const chips = [
     { label: 'Era', value: player.era, unlocked: level >= 1 },
-    { label: 'Teams', value: player.teams.join(' · '), unlocked: level >= 2 },
+    { label: detailLabel, value: player.detail.join(' · '), unlocked: level >= 2 },
   ]
   return (
     <div>

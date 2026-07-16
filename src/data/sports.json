@@ -1,1 +1,22 @@
-[{ "id": "nfl-qb", "label": "NFL Quarterbacks" }]
+[
+  {
+    "id": "nfl-qb",
+    "label": "NFL Quarterbacks",
+    "athleteNoun": "QB",
+    "athleteNounPlural": "QBs",
+    "emoji": "🏈",
+    "detailLabel": "Teams",
+    "inputPlaceholder": "Name the QB…",
+    "active": false
+  },
+  {
+    "id": "golf",
+    "label": "Golfers",
+    "athleteNoun": "Golfer",
+    "athleteNounPlural": "Golfers",
+    "emoji": "⛳",
+    "detailLabel": "Country",
+    "inputPlaceholder": "Name the golfer…",
+    "active": true
+  }
+]
