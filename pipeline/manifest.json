@@ -2,33 +2,33 @@
   {
     "id": "johnny-unitas-01",
     "playerId": "johnny-unitas",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=TGyVIkPijCc",
+    "start": "00:00:17.5",
+    "end": "00:00:20.1",
     "crop": "auto"
   },
   {
     "id": "bart-starr-01",
     "playerId": "bart-starr",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=vQ0Qbq90MJo",
+    "start": "00:00:09.0",
+    "end": "00:00:11.0",
     "crop": "auto"
   },
   {
     "id": "joe-namath-01",
     "playerId": "joe-namath",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=_blBF5mQ4-E",
+    "start": "00:01:00.0",
+    "end": "00:01:03.0",
     "crop": "auto"
   },
   {
     "id": "roger-staubach-01",
     "playerId": "roger-staubach",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=PtjsYkqt1Lw",
+    "start": "00:01:23.0",
+    "end": "00:01:26.0",
     "crop": "auto"
   },
   {
@@ -82,9 +82,9 @@
   {
     "id": "dan-marino-01",
     "playerId": "dan-marino",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://youtu.be/qM6RvOcQPEw",
+    "start": "00:01:25.6",
+    "end": "00:01:30",
     "crop": "auto"
   },
   {
@@ -394,6 +394,1150 @@
   {
     "id": "brock-purdy-01",
     "playerId": "brock-purdy",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "matt-hasselbeck-01",
+    "playerId": "matt-hasselbeck",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "josh-mccown-01",
+    "playerId": "josh-mccown",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "carson-palmer-01",
+    "playerId": "carson-palmer",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "matt-schaub-01",
+    "playerId": "matt-schaub",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "alex-smith-01",
+    "playerId": "alex-smith",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "ryan-fitzpatrick-01",
+    "playerId": "ryan-fitzpatrick",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jay-cutler-01",
+    "playerId": "jay-cutler",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "mark-sanchez-01",
+    "playerId": "mark-sanchez",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "andy-dalton-01",
+    "playerId": "andy-dalton",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "nick-foles-01",
+    "playerId": "nick-foles",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "robert-griffin-iii-01",
+    "playerId": "robert-griffin-iii",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "ryan-tannehill-01",
+    "playerId": "ryan-tannehill",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "case-keenum-01",
+    "playerId": "case-keenum",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "geno-smith-01",
+    "playerId": "geno-smith",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "blake-bortles-01",
+    "playerId": "blake-bortles",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "derek-carr-01",
+    "playerId": "derek-carr",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "teddy-bridgewater-01",
+    "playerId": "teddy-bridgewater",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jameis-winston-01",
+    "playerId": "jameis-winston",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "marcus-mariota-01",
+    "playerId": "marcus-mariota",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jared-goff-01",
+    "playerId": "jared-goff",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "deshaun-watson-01",
+    "playerId": "deshaun-watson",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "sam-darnold-01",
+    "playerId": "sam-darnold",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jordan-love-01",
+    "playerId": "jordan-love",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "justin-fields-01",
+    "playerId": "justin-fields",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "mac-jones-01",
+    "playerId": "mac-jones",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "trevor-lawrence-01",
+    "playerId": "trevor-lawrence",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "zach-wilson-01",
+    "playerId": "zach-wilson",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "anthony-richardson-01",
+    "playerId": "anthony-richardson",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "bryce-young-01",
+    "playerId": "bryce-young",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "cj-stroud-01",
+    "playerId": "cj-stroud",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "will-levis-01",
+    "playerId": "will-levis",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "bo-nix-01",
+    "playerId": "bo-nix",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "caleb-williams-01",
+    "playerId": "caleb-williams",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "drake-maye-01",
+    "playerId": "drake-maye",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jayden-daniels-01",
+    "playerId": "jayden-daniels",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "michael-penix-jr-01",
+    "playerId": "michael-penix-jr",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jj-mccarthy-01",
+    "playerId": "jj-mccarthy",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "rex-grossman-01",
+    "playerId": "rex-grossman",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "kyle-orton-01",
+    "playerId": "kyle-orton",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "matt-cassel-01",
+    "playerId": "matt-cassel",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "seneca-wallace-01",
+    "playerId": "seneca-wallace",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "derek-anderson-01",
+    "playerId": "derek-anderson",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jason-campbell-01",
+    "playerId": "jason-campbell",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tarvaris-jackson-01",
+    "playerId": "tarvaris-jackson",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "kellen-clemens-01",
+    "playerId": "kellen-clemens",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "matt-moore-01",
+    "playerId": "matt-moore",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "shaun-hill-01",
+    "playerId": "shaun-hill",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "brady-quinn-01",
+    "playerId": "brady-quinn",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "dan-orlovsky-01",
+    "playerId": "dan-orlovsky",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "joe-flacco-01",
+    "playerId": "joe-flacco",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "chad-henne-01",
+    "playerId": "chad-henne",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "drew-stanton-01",
+    "playerId": "drew-stanton",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "josh-freeman-01",
+    "playerId": "josh-freeman",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "josh-johnson-01",
+    "playerId": "josh-johnson",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "kevin-kolb-01",
+    "playerId": "kevin-kolb",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "charlie-whitehurst-01",
+    "playerId": "charlie-whitehurst",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "colt-mccoy-01",
+    "playerId": "colt-mccoy",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jimmy-clausen-01",
+    "playerId": "jimmy-clausen",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "john-skelton-01",
+    "playerId": "john-skelton",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "matt-flynn-01",
+    "playerId": "matt-flynn",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "sam-bradford-01",
+    "playerId": "sam-bradford",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tim-tebow-01",
+    "playerId": "tim-tebow",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "blaine-gabbert-01",
+    "playerId": "blaine-gabbert",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "caleb-hanie-01",
+    "playerId": "caleb-hanie",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "christian-ponder-01",
+    "playerId": "christian-ponder",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "curtis-painter-01",
+    "playerId": "curtis-painter",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tj-yates-01",
+    "playerId": "tj-yates",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tyler-palko-01",
+    "playerId": "tyler-palko",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "brandon-weeden-01",
+    "playerId": "brandon-weeden",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "brian-hoyer-01",
+    "playerId": "brian-hoyer",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jake-locker-01",
+    "playerId": "jake-locker",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "ryan-lindley-01",
+    "playerId": "ryan-lindley",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "terrelle-pryor-01",
+    "playerId": "terrelle-pryor",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "thaddeus-lewis-01",
+    "playerId": "thaddeus-lewis",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tyrod-taylor-01",
+    "playerId": "tyrod-taylor",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "chase-daniel-01",
+    "playerId": "chase-daniel",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "ej-manuel-01",
+    "playerId": "ej-manuel",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "matt-mcgloin-01",
+    "playerId": "matt-mcgloin",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "mike-glennon-01",
+    "playerId": "mike-glennon",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "scott-tolzien-01",
+    "playerId": "scott-tolzien",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "austin-davis-01",
+    "playerId": "austin-davis",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jimmy-garoppolo-01",
+    "playerId": "jimmy-garoppolo",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "johnny-manziel-01",
+    "playerId": "johnny-manziel",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "ryan-mallett-01",
+    "playerId": "ryan-mallett",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "zach-mettenberger-01",
+    "playerId": "zach-mettenberger",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "aj-mccarron-01",
+    "playerId": "aj-mccarron",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "brock-osweiler-01",
+    "playerId": "brock-osweiler",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "landry-jones-01",
+    "playerId": "landry-jones",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "bryce-petty-01",
+    "playerId": "bryce-petty",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "carson-wentz-01",
+    "playerId": "carson-wentz",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "cody-kessler-01",
+    "playerId": "cody-kessler",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jacoby-brissett-01",
+    "playerId": "jacoby-brissett",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "matt-barkley-01",
+    "playerId": "matt-barkley",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "paxton-lynch-01",
+    "playerId": "paxton-lynch",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tom-savage-01",
+    "playerId": "tom-savage",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "trevor-siemian-01",
+    "playerId": "trevor-siemian",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "brett-hundley-01",
+    "playerId": "brett-hundley",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "cj-beathard-01",
+    "playerId": "cj-beathard",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "deshone-kizer-01",
+    "playerId": "deshone-kizer",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "mitch-trubisky-01",
+    "playerId": "mitch-trubisky",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "nathan-peterman-01",
+    "playerId": "nathan-peterman",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jeff-driskel-01",
+    "playerId": "jeff-driskel",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "josh-rosen-01",
+    "playerId": "josh-rosen",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "kyle-allen-01",
+    "playerId": "kyle-allen",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "nick-mullens-01",
+    "playerId": "nick-mullens",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "taylor-heinicke-01",
+    "playerId": "taylor-heinicke",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "brandon-allen-01",
+    "playerId": "brandon-allen",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "daniel-jones-01",
+    "playerId": "daniel-jones",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "david-blough-01",
+    "playerId": "david-blough",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "devlin-hodges-01",
+    "playerId": "devlin-hodges",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "drew-lock-01",
+    "playerId": "drew-lock",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "dwayne-haskins-01",
+    "playerId": "dwayne-haskins",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "gardner-minshew-01",
+    "playerId": "gardner-minshew",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "mason-rudolph-01",
+    "playerId": "mason-rudolph",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "ryan-finley-01",
+    "playerId": "ryan-finley",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "brett-rypien-01",
+    "playerId": "brett-rypien",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "pj-walker-01",
+    "playerId": "pj-walker",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "taysom-hill-01",
+    "playerId": "taysom-hill",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "cooper-rush-01",
+    "playerId": "cooper-rush",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "davis-mills-01",
+    "playerId": "davis-mills",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "mike-white-01",
+    "playerId": "mike-white",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tim-boyle-01",
+    "playerId": "tim-boyle",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "trey-lance-01",
+    "playerId": "trey-lance",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tyler-huntley-01",
+    "playerId": "tyler-huntley",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "bailey-zappe-01",
+    "playerId": "bailey-zappe",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "desmond-ridder-01",
+    "playerId": "desmond-ridder",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jarrett-stidham-01",
+    "playerId": "jarrett-stidham",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "joshua-dobbs-01",
+    "playerId": "joshua-dobbs",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "kenny-pickett-01",
+    "playerId": "kenny-pickett",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "malik-willis-01",
+    "playerId": "malik-willis",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "sam-ehlinger-01",
+    "playerId": "sam-ehlinger",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "sam-howell-01",
+    "playerId": "sam-howell",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "aidan-oconnell-01",
+    "playerId": "aidan-oconnell",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "easton-stick-01",
+    "playerId": "easton-stick",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jake-browning-01",
+    "playerId": "jake-browning",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tommy-devito-01",
+    "playerId": "tommy-devito",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tyson-bagent-01",
+    "playerId": "tyson-bagent",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "spencer-rattler-01",
+    "playerId": "spencer-rattler",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "cam-ward-01",
+    "playerId": "cam-ward",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "dillon-gabriel-01",
+    "playerId": "dillon-gabriel",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "jaxson-dart-01",
+    "playerId": "jaxson-dart",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "shedeur-sanders-01",
+    "playerId": "shedeur-sanders",
+    "source": "",
+    "start": "",
+    "end": "",
+    "crop": "auto"
+  },
+  {
+    "id": "tyler-shough-01",
+    "playerId": "tyler-shough",
     "source": "",
     "start": "",
     "end": "",

@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local-only silhouette pipeline (Python venv ships vendored JS).
+    "pipeline/**",
   ]),
 ]);
 

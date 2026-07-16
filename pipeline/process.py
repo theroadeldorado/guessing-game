@@ -55,13 +55,33 @@ def trim(entry: dict, raw: Path) -> Path:
     return trimmed
 
 
+def _fix_rvm_videowriter() -> None:
+    """RVM passes the frame rate to PyAV as a string, which PyAV >= 12 rejects."""
+    import sys
+    from fractions import Fraction
+
+    iu = sys.modules["inference_utils"]
+
+    def _init(self, path, frame_rate, bit_rate=1000000):
+        import av
+
+        self.container = av.open(path, mode="w")
+        rate = Fraction(frame_rate).limit_denominator(65535)
+        self.stream = self.container.add_stream("h264", rate=rate)
+        self.stream.pix_fmt = "yuv420p"
+        self.stream.bit_rate = bit_rate
+
+    iu.VideoWriter.__init__ = _init
+
+
 def matte(entry: dict, trimmed: Path) -> Path:
     """Robust Video Matting -> alpha video (white figure on black)."""
     import torch  # deferred: heavy import, only needed for real processing
 
     pha = CACHE / f"{entry['id']}.pha.mp4"
-    model = torch.hub.load("PeterL1n/RobustVideoMatting", "mobilenetv3").eval()
-    convert_video = torch.hub.load("PeterL1n/RobustVideoMatting", "converter")
+    model = torch.hub.load("PeterL1n/RobustVideoMatting", "mobilenetv3", trust_repo=True).eval()
+    convert_video = torch.hub.load("PeterL1n/RobustVideoMatting", "converter", trust_repo=True)
+    _fix_rvm_videowriter()
     if torch.backends.mps.is_available():
         model = model.to("mps")
     convert_video(

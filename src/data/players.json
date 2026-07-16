@@ -1,115 +1,2639 @@
 [
-  { "id": "johnny-unitas", "name": "Johnny Unitas", "sportId": "nfl-qb", "era": "1950s–1970s", "teams": ["Colts"], "yearsActive": "1956–1973", "inPool": true },
-  { "id": "bart-starr", "name": "Bart Starr", "sportId": "nfl-qb", "era": "1950s–1970s", "teams": ["Packers"], "yearsActive": "1956–1971", "inPool": true },
-  { "id": "joe-namath", "name": "Joe Namath", "sportId": "nfl-qb", "era": "1960s–1970s", "teams": ["Jets"], "yearsActive": "1965–1977", "inPool": true },
-  { "id": "roger-staubach", "name": "Roger Staubach", "sportId": "nfl-qb", "era": "1960s–1970s", "teams": ["Cowboys"], "yearsActive": "1969–1979", "inPool": true },
-  { "id": "fran-tarkenton", "name": "Fran Tarkenton", "sportId": "nfl-qb", "era": "1960s–1970s", "teams": ["Vikings", "Giants"], "yearsActive": "1961–1978", "inPool": true },
-  { "id": "terry-bradshaw", "name": "Terry Bradshaw", "sportId": "nfl-qb", "era": "1970s–1980s", "teams": ["Steelers"], "yearsActive": "1970–1983", "inPool": true },
-  { "id": "ken-stabler", "name": "Ken Stabler", "sportId": "nfl-qb", "era": "1970s–1980s", "teams": ["Raiders"], "yearsActive": "1970–1984", "inPool": true },
-  { "id": "dan-fouts", "name": "Dan Fouts", "sportId": "nfl-qb", "era": "1970s–1980s", "teams": ["Chargers"], "yearsActive": "1973–1987", "inPool": true },
-  { "id": "archie-manning", "name": "Archie Manning", "sportId": "nfl-qb", "era": "1970s–1980s", "teams": ["Saints"], "yearsActive": "1971–1984", "inPool": true },
-  { "id": "joe-montana", "name": "Joe Montana", "sportId": "nfl-qb", "era": "1970s–1990s", "teams": ["49ers", "Chiefs"], "yearsActive": "1979–1994", "inPool": true },
-  { "id": "dan-marino", "name": "Dan Marino", "sportId": "nfl-qb", "era": "1980s–1990s", "teams": ["Dolphins"], "yearsActive": "1983–1999", "inPool": true },
-  { "id": "john-elway", "name": "John Elway", "sportId": "nfl-qb", "era": "1980s–1990s", "teams": ["Broncos"], "yearsActive": "1983–1998", "inPool": true },
-  { "id": "jim-kelly", "name": "Jim Kelly", "sportId": "nfl-qb", "era": "1980s–1990s", "teams": ["Bills"], "yearsActive": "1986–1996", "inPool": true },
-  { "id": "warren-moon", "name": "Warren Moon", "sportId": "nfl-qb", "era": "1980s–2000s", "teams": ["Oilers", "Vikings"], "yearsActive": "1984–2000", "inPool": true },
-  { "id": "boomer-esiason", "name": "Boomer Esiason", "sportId": "nfl-qb", "era": "1980s–1990s", "teams": ["Bengals", "Jets"], "yearsActive": "1984–1997", "inPool": true },
-  { "id": "randall-cunningham", "name": "Randall Cunningham", "sportId": "nfl-qb", "era": "1980s–2000s", "teams": ["Eagles", "Vikings"], "yearsActive": "1985–2001", "inPool": true },
-  { "id": "phil-simms", "name": "Phil Simms", "sportId": "nfl-qb", "era": "1970s–1990s", "teams": ["Giants"], "yearsActive": "1979–1993", "inPool": true },
-  { "id": "steve-young", "name": "Steve Young", "sportId": "nfl-qb", "era": "1980s–1990s", "teams": ["49ers", "Buccaneers"], "yearsActive": "1985–1999", "inPool": true },
-  { "id": "troy-aikman", "name": "Troy Aikman", "sportId": "nfl-qb", "era": "1980s–2000s", "teams": ["Cowboys"], "yearsActive": "1989–2000", "inPool": true },
-  { "id": "brett-favre", "name": "Brett Favre", "sportId": "nfl-qb", "era": "1990s–2010s", "teams": ["Packers", "Jets", "Vikings"], "yearsActive": "1991–2010", "inPool": true },
-  { "id": "kurt-warner", "name": "Kurt Warner", "sportId": "nfl-qb", "era": "1990s–2000s", "teams": ["Rams", "Cardinals"], "yearsActive": "1998–2009", "inPool": true },
-  { "id": "peyton-manning", "name": "Peyton Manning", "sportId": "nfl-qb", "era": "1990s–2010s", "teams": ["Colts", "Broncos"], "yearsActive": "1998–2015", "inPool": true },
-  { "id": "tom-brady", "name": "Tom Brady", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["Patriots", "Buccaneers"], "yearsActive": "2000–2022", "inPool": true },
-  { "id": "drew-brees", "name": "Drew Brees", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["Chargers", "Saints"], "yearsActive": "2001–2020", "inPool": true },
-  { "id": "donovan-mcnabb", "name": "Donovan McNabb", "sportId": "nfl-qb", "era": "1990s–2010s", "teams": ["Eagles"], "yearsActive": "1999–2011", "inPool": true },
-  { "id": "michael-vick", "name": "Michael Vick", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Falcons", "Eagles"], "yearsActive": "2001–2015", "inPool": true },
-  { "id": "steve-mcnair", "name": "Steve McNair", "sportId": "nfl-qb", "era": "1990s–2000s", "teams": ["Titans", "Ravens"], "yearsActive": "1995–2007", "inPool": true },
-  { "id": "ben-roethlisberger", "name": "Ben Roethlisberger", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["Steelers"], "yearsActive": "2004–2021", "inPool": true },
-  { "id": "eli-manning", "name": "Eli Manning", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Giants"], "yearsActive": "2004–2019", "inPool": true },
-  { "id": "philip-rivers", "name": "Philip Rivers", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["Chargers", "Colts"], "yearsActive": "2004–2020", "inPool": true },
-  { "id": "tony-romo", "name": "Tony Romo", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Cowboys"], "yearsActive": "2003–2016", "inPool": true },
-  { "id": "aaron-rodgers", "name": "Aaron Rodgers", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["Packers", "Jets", "Steelers"], "yearsActive": "2005–2025", "inPool": true },
-  { "id": "matt-ryan", "name": "Matt Ryan", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["Falcons", "Colts"], "yearsActive": "2008–2022", "inPool": true },
-  { "id": "cam-newton", "name": "Cam Newton", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Panthers", "Patriots"], "yearsActive": "2011–2021", "inPool": true },
-  { "id": "russell-wilson", "name": "Russell Wilson", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Seahawks", "Broncos", "Steelers", "Giants"], "yearsActive": "2012–", "inPool": true },
-  { "id": "andrew-luck", "name": "Andrew Luck", "sportId": "nfl-qb", "era": "2010s", "teams": ["Colts"], "yearsActive": "2012–2018", "inPool": true },
-  { "id": "matthew-stafford", "name": "Matthew Stafford", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["Lions", "Rams"], "yearsActive": "2009–", "inPool": true },
-  { "id": "colin-kaepernick", "name": "Colin Kaepernick", "sportId": "nfl-qb", "era": "2010s", "teams": ["49ers"], "yearsActive": "2011–2016", "inPool": true },
-  { "id": "kirk-cousins", "name": "Kirk Cousins", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Commanders", "Vikings", "Falcons"], "yearsActive": "2012–", "inPool": true },
-  { "id": "dak-prescott", "name": "Dak Prescott", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Cowboys"], "yearsActive": "2016–", "inPool": true },
-  { "id": "patrick-mahomes", "name": "Patrick Mahomes", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Chiefs"], "yearsActive": "2017–", "inPool": true },
-  { "id": "josh-allen", "name": "Josh Allen", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Bills"], "yearsActive": "2018–", "inPool": true },
-  { "id": "lamar-jackson", "name": "Lamar Jackson", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Ravens"], "yearsActive": "2018–", "inPool": true },
-  { "id": "baker-mayfield", "name": "Baker Mayfield", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Browns", "Buccaneers"], "yearsActive": "2018–", "inPool": true },
-  { "id": "kyler-murray", "name": "Kyler Murray", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Cardinals"], "yearsActive": "2019–", "inPool": true },
-  { "id": "joe-burrow", "name": "Joe Burrow", "sportId": "nfl-qb", "era": "2020s", "teams": ["Bengals"], "yearsActive": "2020–", "inPool": true },
-  { "id": "justin-herbert", "name": "Justin Herbert", "sportId": "nfl-qb", "era": "2020s", "teams": ["Chargers"], "yearsActive": "2020–", "inPool": true },
-  { "id": "jalen-hurts", "name": "Jalen Hurts", "sportId": "nfl-qb", "era": "2020s", "teams": ["Eagles"], "yearsActive": "2020–", "inPool": true },
-  { "id": "tua-tagovailoa", "name": "Tua Tagovailoa", "sportId": "nfl-qb", "era": "2020s", "teams": ["Dolphins"], "yearsActive": "2020–", "inPool": true },
-  { "id": "brock-purdy", "name": "Brock Purdy", "sportId": "nfl-qb", "era": "2020s", "teams": ["49ers"], "yearsActive": "2022–", "inPool": true },
-  { "id": "otto-graham", "name": "Otto Graham", "sportId": "nfl-qb", "era": "1940s–1950s", "teams": ["Browns"], "yearsActive": "1946–1955", "inPool": false },
-  { "id": "ya-tittle", "name": "Y.A. Tittle", "sportId": "nfl-qb", "era": "1940s–1960s", "teams": ["49ers", "Giants"], "yearsActive": "1948–1964", "inPool": false },
-  { "id": "sonny-jurgensen", "name": "Sonny Jurgensen", "sportId": "nfl-qb", "era": "1950s–1970s", "teams": ["Eagles", "Commanders"], "yearsActive": "1957–1974", "inPool": false },
-  { "id": "len-dawson", "name": "Len Dawson", "sportId": "nfl-qb", "era": "1950s–1970s", "teams": ["Chiefs"], "yearsActive": "1957–1975", "inPool": false },
-  { "id": "bob-griese", "name": "Bob Griese", "sportId": "nfl-qb", "era": "1960s–1980s", "teams": ["Dolphins"], "yearsActive": "1967–1980", "inPool": false },
-  { "id": "jim-plunkett", "name": "Jim Plunkett", "sportId": "nfl-qb", "era": "1970s–1980s", "teams": ["Patriots", "Raiders"], "yearsActive": "1971–1986", "inPool": false },
-  { "id": "bert-jones", "name": "Bert Jones", "sportId": "nfl-qb", "era": "1970s–1980s", "teams": ["Colts"], "yearsActive": "1973–1982", "inPool": false },
-  { "id": "ken-anderson", "name": "Ken Anderson", "sportId": "nfl-qb", "era": "1970s–1980s", "teams": ["Bengals"], "yearsActive": "1971–1986", "inPool": false },
-  { "id": "doug-williams", "name": "Doug Williams", "sportId": "nfl-qb", "era": "1970s–1980s", "teams": ["Buccaneers", "Commanders"], "yearsActive": "1978–1989", "inPool": false },
-  { "id": "jim-mcmahon", "name": "Jim McMahon", "sportId": "nfl-qb", "era": "1980s–1990s", "teams": ["Bears"], "yearsActive": "1982–1996", "inPool": false },
-  { "id": "bernie-kosar", "name": "Bernie Kosar", "sportId": "nfl-qb", "era": "1980s–1990s", "teams": ["Browns"], "yearsActive": "1985–1996", "inPool": false },
-  { "id": "vinny-testaverde", "name": "Vinny Testaverde", "sportId": "nfl-qb", "era": "1980s–2000s", "teams": ["Buccaneers", "Jets"], "yearsActive": "1987–2007", "inPool": false },
-  { "id": "rich-gannon", "name": "Rich Gannon", "sportId": "nfl-qb", "era": "1980s–2000s", "teams": ["Vikings", "Chiefs", "Raiders"], "yearsActive": "1987–2004", "inPool": false },
-  { "id": "doug-flutie", "name": "Doug Flutie", "sportId": "nfl-qb", "era": "1980s–2000s", "teams": ["Bills", "Chargers", "Patriots"], "yearsActive": "1986–2005", "inPool": false },
-  { "id": "mark-brunell", "name": "Mark Brunell", "sportId": "nfl-qb", "era": "1990s–2010s", "teams": ["Jaguars"], "yearsActive": "1994–2011", "inPool": false },
-  { "id": "drew-bledsoe", "name": "Drew Bledsoe", "sportId": "nfl-qb", "era": "1990s–2000s", "teams": ["Patriots", "Bills", "Cowboys"], "yearsActive": "1993–2006", "inPool": false },
-  { "id": "kerry-collins", "name": "Kerry Collins", "sportId": "nfl-qb", "era": "1990s–2010s", "teams": ["Panthers", "Giants", "Titans"], "yearsActive": "1995–2011", "inPool": false },
-  { "id": "trent-green", "name": "Trent Green", "sportId": "nfl-qb", "era": "1990s–2000s", "teams": ["Rams", "Chiefs"], "yearsActive": "1997–2008", "inPool": false },
-  { "id": "jake-plummer", "name": "Jake Plummer", "sportId": "nfl-qb", "era": "1990s–2000s", "teams": ["Cardinals", "Broncos"], "yearsActive": "1997–2006", "inPool": false },
-  { "id": "daunte-culpepper", "name": "Daunte Culpepper", "sportId": "nfl-qb", "era": "1990s–2000s", "teams": ["Vikings"], "yearsActive": "1999–2009", "inPool": false },
-  { "id": "jeff-garcia", "name": "Jeff Garcia", "sportId": "nfl-qb", "era": "1990s–2000s", "teams": ["49ers", "Eagles", "Buccaneers"], "yearsActive": "1999–2011", "inPool": false },
-  { "id": "matt-hasselbeck", "name": "Matt Hasselbeck", "sportId": "nfl-qb", "era": "1990s–2010s", "teams": ["Seahawks", "Titans"], "yearsActive": "1999–2015", "inPool": false },
-  { "id": "chad-pennington", "name": "Chad Pennington", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Jets", "Dolphins"], "yearsActive": "2000–2010", "inPool": false },
-  { "id": "marc-bulger", "name": "Marc Bulger", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Rams"], "yearsActive": "2002–2009", "inPool": false },
-  { "id": "jake-delhomme", "name": "Jake Delhomme", "sportId": "nfl-qb", "era": "1990s–2010s", "teams": ["Panthers", "Saints"], "yearsActive": "1999–2011", "inPool": false },
-  { "id": "byron-leftwich", "name": "Byron Leftwich", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Jaguars", "Steelers"], "yearsActive": "2003–2012", "inPool": false },
-  { "id": "david-carr", "name": "David Carr", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Texans", "Giants"], "yearsActive": "2002–2012", "inPool": false },
-  { "id": "carson-palmer", "name": "Carson Palmer", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Bengals", "Raiders", "Cardinals"], "yearsActive": "2003–2016", "inPool": false },
-  { "id": "alex-smith", "name": "Alex Smith", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["49ers", "Chiefs", "Commanders"], "yearsActive": "2005–2020", "inPool": false },
-  { "id": "jay-cutler", "name": "Jay Cutler", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Broncos", "Bears", "Dolphins"], "yearsActive": "2006–2017", "inPool": false },
-  { "id": "ryan-fitzpatrick", "name": "Ryan Fitzpatrick", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["Bills", "Jets", "Dolphins"], "yearsActive": "2005–2021", "inPool": false },
-  { "id": "mark-sanchez", "name": "Mark Sanchez", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Jets", "Eagles"], "yearsActive": "2009–2018", "inPool": false },
-  { "id": "matt-schaub", "name": "Matt Schaub", "sportId": "nfl-qb", "era": "2000s–2020s", "teams": ["Texans", "Falcons"], "yearsActive": "2004–2020", "inPool": false },
-  { "id": "josh-mccown", "name": "Josh McCown", "sportId": "nfl-qb", "era": "2000s–2010s", "teams": ["Cardinals", "Bears", "Jets"], "yearsActive": "2002–2019", "inPool": false },
-  { "id": "andy-dalton", "name": "Andy Dalton", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Bengals", "Cowboys", "Panthers"], "yearsActive": "2011–", "inPool": false },
-  { "id": "nick-foles", "name": "Nick Foles", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Eagles", "Jaguars", "Bears"], "yearsActive": "2012–2022", "inPool": false },
-  { "id": "teddy-bridgewater", "name": "Teddy Bridgewater", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Vikings", "Saints", "Panthers"], "yearsActive": "2014–2024", "inPool": false },
-  { "id": "ryan-tannehill", "name": "Ryan Tannehill", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Dolphins", "Titans"], "yearsActive": "2012–2023", "inPool": false },
-  { "id": "blake-bortles", "name": "Blake Bortles", "sportId": "nfl-qb", "era": "2010s", "teams": ["Jaguars"], "yearsActive": "2014–2019", "inPool": false },
-  { "id": "jameis-winston", "name": "Jameis Winston", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Buccaneers", "Saints", "Browns", "Giants"], "yearsActive": "2015–", "inPool": false },
-  { "id": "marcus-mariota", "name": "Marcus Mariota", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Titans", "Falcons", "Commanders"], "yearsActive": "2015–", "inPool": false },
-  { "id": "jared-goff", "name": "Jared Goff", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Rams", "Lions"], "yearsActive": "2016–", "inPool": false },
-  { "id": "deshaun-watson", "name": "Deshaun Watson", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Texans", "Browns"], "yearsActive": "2017–", "inPool": false },
-  { "id": "sam-darnold", "name": "Sam Darnold", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Jets", "Panthers", "Vikings", "Seahawks"], "yearsActive": "2018–", "inPool": false },
-  { "id": "case-keenum", "name": "Case Keenum", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Texans", "Vikings", "Broncos"], "yearsActive": "2012–", "inPool": false },
-  { "id": "geno-smith", "name": "Geno Smith", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Jets", "Seahawks", "Raiders"], "yearsActive": "2013–", "inPool": false },
-  { "id": "derek-carr", "name": "Derek Carr", "sportId": "nfl-qb", "era": "2010s–2020s", "teams": ["Raiders", "Saints"], "yearsActive": "2014–2024", "inPool": false },
-  { "id": "jordan-love", "name": "Jordan Love", "sportId": "nfl-qb", "era": "2020s", "teams": ["Packers"], "yearsActive": "2020–", "inPool": false },
-  { "id": "justin-fields", "name": "Justin Fields", "sportId": "nfl-qb", "era": "2020s", "teams": ["Bears", "Steelers", "Jets"], "yearsActive": "2021–", "inPool": false },
-  { "id": "mac-jones", "name": "Mac Jones", "sportId": "nfl-qb", "era": "2020s", "teams": ["Patriots", "Jaguars", "49ers"], "yearsActive": "2021–", "inPool": false },
-  { "id": "trevor-lawrence", "name": "Trevor Lawrence", "sportId": "nfl-qb", "era": "2020s", "teams": ["Jaguars"], "yearsActive": "2021–", "inPool": false },
-  { "id": "zach-wilson", "name": "Zach Wilson", "sportId": "nfl-qb", "era": "2020s", "teams": ["Jets", "Broncos", "Dolphins"], "yearsActive": "2021–", "inPool": false },
-  { "id": "bryce-young", "name": "Bryce Young", "sportId": "nfl-qb", "era": "2020s", "teams": ["Panthers"], "yearsActive": "2023–", "inPool": false },
-  { "id": "cj-stroud", "name": "C.J. Stroud", "sportId": "nfl-qb", "era": "2020s", "teams": ["Texans"], "yearsActive": "2023–", "inPool": false },
-  { "id": "anthony-richardson", "name": "Anthony Richardson", "sportId": "nfl-qb", "era": "2020s", "teams": ["Colts"], "yearsActive": "2023–", "inPool": false },
-  { "id": "will-levis", "name": "Will Levis", "sportId": "nfl-qb", "era": "2020s", "teams": ["Titans"], "yearsActive": "2023–", "inPool": false },
-  { "id": "bo-nix", "name": "Bo Nix", "sportId": "nfl-qb", "era": "2020s", "teams": ["Broncos"], "yearsActive": "2024–", "inPool": false },
-  { "id": "drake-maye", "name": "Drake Maye", "sportId": "nfl-qb", "era": "2020s", "teams": ["Patriots"], "yearsActive": "2024–", "inPool": false },
-  { "id": "jayden-daniels", "name": "Jayden Daniels", "sportId": "nfl-qb", "era": "2020s", "teams": ["Commanders"], "yearsActive": "2024–", "inPool": false },
-  { "id": "caleb-williams", "name": "Caleb Williams", "sportId": "nfl-qb", "era": "2020s", "teams": ["Bears"], "yearsActive": "2024–", "inPool": false },
-  { "id": "michael-penix-jr", "name": "Michael Penix Jr.", "sportId": "nfl-qb", "era": "2020s", "teams": ["Falcons"], "yearsActive": "2024–", "inPool": false },
-  { "id": "jj-mccarthy", "name": "J.J. McCarthy", "sportId": "nfl-qb", "era": "2020s", "teams": ["Vikings"], "yearsActive": "2025–", "inPool": false },
-  { "id": "robert-griffin-iii", "name": "Robert Griffin III", "sportId": "nfl-qb", "era": "2010s", "teams": ["Commanders", "Ravens"], "yearsActive": "2012–2020", "inPool": false }
+  {
+    "id": "johnny-unitas",
+    "name": "Johnny Unitas",
+    "sportId": "nfl-qb",
+    "era": "1950s–1970s",
+    "teams": [
+      "Colts"
+    ],
+    "yearsActive": "1956–1973",
+    "inPool": true
+  },
+  {
+    "id": "bart-starr",
+    "name": "Bart Starr",
+    "sportId": "nfl-qb",
+    "era": "1950s–1970s",
+    "teams": [
+      "Packers"
+    ],
+    "yearsActive": "1956–1971",
+    "inPool": true
+  },
+  {
+    "id": "joe-namath",
+    "name": "Joe Namath",
+    "sportId": "nfl-qb",
+    "era": "1960s–1970s",
+    "teams": [
+      "Jets"
+    ],
+    "yearsActive": "1965–1977",
+    "inPool": true
+  },
+  {
+    "id": "roger-staubach",
+    "name": "Roger Staubach",
+    "sportId": "nfl-qb",
+    "era": "1960s–1970s",
+    "teams": [
+      "Cowboys"
+    ],
+    "yearsActive": "1969–1979",
+    "inPool": true
+  },
+  {
+    "id": "fran-tarkenton",
+    "name": "Fran Tarkenton",
+    "sportId": "nfl-qb",
+    "era": "1960s–1970s",
+    "teams": [
+      "Vikings",
+      "Giants"
+    ],
+    "yearsActive": "1961–1978",
+    "inPool": true
+  },
+  {
+    "id": "terry-bradshaw",
+    "name": "Terry Bradshaw",
+    "sportId": "nfl-qb",
+    "era": "1970s–1980s",
+    "teams": [
+      "Steelers"
+    ],
+    "yearsActive": "1970–1983",
+    "inPool": true
+  },
+  {
+    "id": "ken-stabler",
+    "name": "Ken Stabler",
+    "sportId": "nfl-qb",
+    "era": "1970s–1980s",
+    "teams": [
+      "Raiders"
+    ],
+    "yearsActive": "1970–1984",
+    "inPool": true
+  },
+  {
+    "id": "dan-fouts",
+    "name": "Dan Fouts",
+    "sportId": "nfl-qb",
+    "era": "1970s–1980s",
+    "teams": [
+      "Chargers"
+    ],
+    "yearsActive": "1973–1987",
+    "inPool": true
+  },
+  {
+    "id": "archie-manning",
+    "name": "Archie Manning",
+    "sportId": "nfl-qb",
+    "era": "1970s–1980s",
+    "teams": [
+      "Saints"
+    ],
+    "yearsActive": "1971–1984",
+    "inPool": true
+  },
+  {
+    "id": "joe-montana",
+    "name": "Joe Montana",
+    "sportId": "nfl-qb",
+    "era": "1970s–1990s",
+    "teams": [
+      "49ers",
+      "Chiefs"
+    ],
+    "yearsActive": "1979–1994",
+    "inPool": true
+  },
+  {
+    "id": "dan-marino",
+    "name": "Dan Marino",
+    "sportId": "nfl-qb",
+    "era": "1980s–1990s",
+    "teams": [
+      "Dolphins"
+    ],
+    "yearsActive": "1983–1999",
+    "inPool": true
+  },
+  {
+    "id": "john-elway",
+    "name": "John Elway",
+    "sportId": "nfl-qb",
+    "era": "1980s–1990s",
+    "teams": [
+      "Broncos"
+    ],
+    "yearsActive": "1983–1998",
+    "inPool": true
+  },
+  {
+    "id": "jim-kelly",
+    "name": "Jim Kelly",
+    "sportId": "nfl-qb",
+    "era": "1980s–1990s",
+    "teams": [
+      "Bills"
+    ],
+    "yearsActive": "1986–1996",
+    "inPool": true
+  },
+  {
+    "id": "warren-moon",
+    "name": "Warren Moon",
+    "sportId": "nfl-qb",
+    "era": "1980s–2000s",
+    "teams": [
+      "Oilers",
+      "Vikings"
+    ],
+    "yearsActive": "1984–2000",
+    "inPool": true
+  },
+  {
+    "id": "boomer-esiason",
+    "name": "Boomer Esiason",
+    "sportId": "nfl-qb",
+    "era": "1980s–1990s",
+    "teams": [
+      "Bengals",
+      "Jets"
+    ],
+    "yearsActive": "1984–1997",
+    "inPool": true
+  },
+  {
+    "id": "randall-cunningham",
+    "name": "Randall Cunningham",
+    "sportId": "nfl-qb",
+    "era": "1980s–2000s",
+    "teams": [
+      "Eagles",
+      "Vikings"
+    ],
+    "yearsActive": "1985–2001",
+    "inPool": true
+  },
+  {
+    "id": "phil-simms",
+    "name": "Phil Simms",
+    "sportId": "nfl-qb",
+    "era": "1970s–1990s",
+    "teams": [
+      "Giants"
+    ],
+    "yearsActive": "1979–1993",
+    "inPool": true
+  },
+  {
+    "id": "steve-young",
+    "name": "Steve Young",
+    "sportId": "nfl-qb",
+    "era": "1980s–1990s",
+    "teams": [
+      "49ers",
+      "Buccaneers"
+    ],
+    "yearsActive": "1985–1999",
+    "inPool": true
+  },
+  {
+    "id": "troy-aikman",
+    "name": "Troy Aikman",
+    "sportId": "nfl-qb",
+    "era": "1980s–2000s",
+    "teams": [
+      "Cowboys"
+    ],
+    "yearsActive": "1989–2000",
+    "inPool": true
+  },
+  {
+    "id": "brett-favre",
+    "name": "Brett Favre",
+    "sportId": "nfl-qb",
+    "era": "1990s–2010s",
+    "teams": [
+      "Packers",
+      "Jets",
+      "Vikings"
+    ],
+    "yearsActive": "1991–2010",
+    "inPool": true
+  },
+  {
+    "id": "kurt-warner",
+    "name": "Kurt Warner",
+    "sportId": "nfl-qb",
+    "era": "1990s–2000s",
+    "teams": [
+      "Rams",
+      "Cardinals"
+    ],
+    "yearsActive": "1998–2009",
+    "inPool": true
+  },
+  {
+    "id": "peyton-manning",
+    "name": "Peyton Manning",
+    "sportId": "nfl-qb",
+    "era": "1990s–2010s",
+    "teams": [
+      "Colts",
+      "Broncos"
+    ],
+    "yearsActive": "1998–2015",
+    "inPool": true
+  },
+  {
+    "id": "tom-brady",
+    "name": "Tom Brady",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Patriots",
+      "Buccaneers"
+    ],
+    "yearsActive": "2000–2022",
+    "inPool": true
+  },
+  {
+    "id": "drew-brees",
+    "name": "Drew Brees",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Chargers",
+      "Saints"
+    ],
+    "yearsActive": "2001–2020",
+    "inPool": true
+  },
+  {
+    "id": "donovan-mcnabb",
+    "name": "Donovan McNabb",
+    "sportId": "nfl-qb",
+    "era": "1990s–2010s",
+    "teams": [
+      "Eagles"
+    ],
+    "yearsActive": "1999–2011",
+    "inPool": true
+  },
+  {
+    "id": "michael-vick",
+    "name": "Michael Vick",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Falcons",
+      "Eagles"
+    ],
+    "yearsActive": "2001–2015",
+    "inPool": true
+  },
+  {
+    "id": "steve-mcnair",
+    "name": "Steve McNair",
+    "sportId": "nfl-qb",
+    "era": "1990s–2000s",
+    "teams": [
+      "Titans",
+      "Ravens"
+    ],
+    "yearsActive": "1995–2007",
+    "inPool": true
+  },
+  {
+    "id": "ben-roethlisberger",
+    "name": "Ben Roethlisberger",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Steelers"
+    ],
+    "yearsActive": "2004–2021",
+    "inPool": true
+  },
+  {
+    "id": "eli-manning",
+    "name": "Eli Manning",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Giants"
+    ],
+    "yearsActive": "2004–2019",
+    "inPool": true
+  },
+  {
+    "id": "philip-rivers",
+    "name": "Philip Rivers",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Chargers",
+      "Colts"
+    ],
+    "yearsActive": "2004–2020",
+    "inPool": true
+  },
+  {
+    "id": "tony-romo",
+    "name": "Tony Romo",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Cowboys"
+    ],
+    "yearsActive": "2003–2016",
+    "inPool": true
+  },
+  {
+    "id": "aaron-rodgers",
+    "name": "Aaron Rodgers",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Packers",
+      "Jets",
+      "Steelers"
+    ],
+    "yearsActive": "2005–2025",
+    "inPool": true
+  },
+  {
+    "id": "matt-ryan",
+    "name": "Matt Ryan",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Falcons",
+      "Colts"
+    ],
+    "yearsActive": "2008–2022",
+    "inPool": true
+  },
+  {
+    "id": "cam-newton",
+    "name": "Cam Newton",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Panthers",
+      "Patriots"
+    ],
+    "yearsActive": "2011–2021",
+    "inPool": true
+  },
+  {
+    "id": "russell-wilson",
+    "name": "Russell Wilson",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Seahawks",
+      "Broncos",
+      "Steelers",
+      "Giants"
+    ],
+    "yearsActive": "2012–",
+    "inPool": true
+  },
+  {
+    "id": "andrew-luck",
+    "name": "Andrew Luck",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Colts"
+    ],
+    "yearsActive": "2012–2018",
+    "inPool": true
+  },
+  {
+    "id": "matthew-stafford",
+    "name": "Matthew Stafford",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Lions",
+      "Rams"
+    ],
+    "yearsActive": "2009–",
+    "inPool": true
+  },
+  {
+    "id": "colin-kaepernick",
+    "name": "Colin Kaepernick",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "49ers"
+    ],
+    "yearsActive": "2011–2016",
+    "inPool": true
+  },
+  {
+    "id": "kirk-cousins",
+    "name": "Kirk Cousins",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Commanders",
+      "Vikings",
+      "Falcons"
+    ],
+    "yearsActive": "2012–",
+    "inPool": true
+  },
+  {
+    "id": "dak-prescott",
+    "name": "Dak Prescott",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Cowboys"
+    ],
+    "yearsActive": "2016–",
+    "inPool": true
+  },
+  {
+    "id": "patrick-mahomes",
+    "name": "Patrick Mahomes",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Chiefs"
+    ],
+    "yearsActive": "2017–",
+    "inPool": true
+  },
+  {
+    "id": "josh-allen",
+    "name": "Josh Allen",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Bills"
+    ],
+    "yearsActive": "2018–",
+    "inPool": true
+  },
+  {
+    "id": "lamar-jackson",
+    "name": "Lamar Jackson",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Ravens"
+    ],
+    "yearsActive": "2018–",
+    "inPool": true
+  },
+  {
+    "id": "baker-mayfield",
+    "name": "Baker Mayfield",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Browns",
+      "Buccaneers"
+    ],
+    "yearsActive": "2018–",
+    "inPool": true
+  },
+  {
+    "id": "kyler-murray",
+    "name": "Kyler Murray",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Cardinals"
+    ],
+    "yearsActive": "2019–",
+    "inPool": true
+  },
+  {
+    "id": "joe-burrow",
+    "name": "Joe Burrow",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Bengals"
+    ],
+    "yearsActive": "2020–",
+    "inPool": true
+  },
+  {
+    "id": "justin-herbert",
+    "name": "Justin Herbert",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Chargers"
+    ],
+    "yearsActive": "2020–",
+    "inPool": true
+  },
+  {
+    "id": "jalen-hurts",
+    "name": "Jalen Hurts",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Eagles"
+    ],
+    "yearsActive": "2020–",
+    "inPool": true
+  },
+  {
+    "id": "tua-tagovailoa",
+    "name": "Tua Tagovailoa",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Dolphins"
+    ],
+    "yearsActive": "2020–",
+    "inPool": true
+  },
+  {
+    "id": "brock-purdy",
+    "name": "Brock Purdy",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "49ers"
+    ],
+    "yearsActive": "2022–",
+    "inPool": true
+  },
+  {
+    "id": "otto-graham",
+    "name": "Otto Graham",
+    "sportId": "nfl-qb",
+    "era": "1940s–1950s",
+    "teams": [
+      "Browns"
+    ],
+    "yearsActive": "1946–1955",
+    "inPool": false
+  },
+  {
+    "id": "ya-tittle",
+    "name": "Y.A. Tittle",
+    "sportId": "nfl-qb",
+    "era": "1940s–1960s",
+    "teams": [
+      "49ers",
+      "Giants"
+    ],
+    "yearsActive": "1948–1964",
+    "inPool": false
+  },
+  {
+    "id": "sonny-jurgensen",
+    "name": "Sonny Jurgensen",
+    "sportId": "nfl-qb",
+    "era": "1950s–1970s",
+    "teams": [
+      "Eagles",
+      "Commanders"
+    ],
+    "yearsActive": "1957–1974",
+    "inPool": false
+  },
+  {
+    "id": "len-dawson",
+    "name": "Len Dawson",
+    "sportId": "nfl-qb",
+    "era": "1950s–1970s",
+    "teams": [
+      "Chiefs"
+    ],
+    "yearsActive": "1957–1975",
+    "inPool": false
+  },
+  {
+    "id": "bob-griese",
+    "name": "Bob Griese",
+    "sportId": "nfl-qb",
+    "era": "1960s–1980s",
+    "teams": [
+      "Dolphins"
+    ],
+    "yearsActive": "1967–1980",
+    "inPool": false
+  },
+  {
+    "id": "jim-plunkett",
+    "name": "Jim Plunkett",
+    "sportId": "nfl-qb",
+    "era": "1970s–1980s",
+    "teams": [
+      "Patriots",
+      "Raiders"
+    ],
+    "yearsActive": "1971–1986",
+    "inPool": false
+  },
+  {
+    "id": "bert-jones",
+    "name": "Bert Jones",
+    "sportId": "nfl-qb",
+    "era": "1970s–1980s",
+    "teams": [
+      "Colts"
+    ],
+    "yearsActive": "1973–1982",
+    "inPool": false
+  },
+  {
+    "id": "ken-anderson",
+    "name": "Ken Anderson",
+    "sportId": "nfl-qb",
+    "era": "1970s–1980s",
+    "teams": [
+      "Bengals"
+    ],
+    "yearsActive": "1971–1986",
+    "inPool": false
+  },
+  {
+    "id": "doug-williams",
+    "name": "Doug Williams",
+    "sportId": "nfl-qb",
+    "era": "1970s–1980s",
+    "teams": [
+      "Buccaneers",
+      "Commanders"
+    ],
+    "yearsActive": "1978–1989",
+    "inPool": false
+  },
+  {
+    "id": "jim-mcmahon",
+    "name": "Jim McMahon",
+    "sportId": "nfl-qb",
+    "era": "1980s–1990s",
+    "teams": [
+      "Bears"
+    ],
+    "yearsActive": "1982–1996",
+    "inPool": false
+  },
+  {
+    "id": "bernie-kosar",
+    "name": "Bernie Kosar",
+    "sportId": "nfl-qb",
+    "era": "1980s–1990s",
+    "teams": [
+      "Browns"
+    ],
+    "yearsActive": "1985–1996",
+    "inPool": false
+  },
+  {
+    "id": "vinny-testaverde",
+    "name": "Vinny Testaverde",
+    "sportId": "nfl-qb",
+    "era": "1980s–2000s",
+    "teams": [
+      "Buccaneers",
+      "Jets"
+    ],
+    "yearsActive": "1987–2007",
+    "inPool": false
+  },
+  {
+    "id": "rich-gannon",
+    "name": "Rich Gannon",
+    "sportId": "nfl-qb",
+    "era": "1980s–2000s",
+    "teams": [
+      "Vikings",
+      "Chiefs",
+      "Raiders"
+    ],
+    "yearsActive": "1987–2004",
+    "inPool": false
+  },
+  {
+    "id": "doug-flutie",
+    "name": "Doug Flutie",
+    "sportId": "nfl-qb",
+    "era": "1980s–2000s",
+    "teams": [
+      "Bills",
+      "Chargers",
+      "Patriots"
+    ],
+    "yearsActive": "1986–2005",
+    "inPool": false
+  },
+  {
+    "id": "mark-brunell",
+    "name": "Mark Brunell",
+    "sportId": "nfl-qb",
+    "era": "1990s–2010s",
+    "teams": [
+      "Jaguars"
+    ],
+    "yearsActive": "1994–2011",
+    "inPool": false
+  },
+  {
+    "id": "drew-bledsoe",
+    "name": "Drew Bledsoe",
+    "sportId": "nfl-qb",
+    "era": "1990s–2000s",
+    "teams": [
+      "Patriots",
+      "Bills",
+      "Cowboys"
+    ],
+    "yearsActive": "1993–2006",
+    "inPool": false
+  },
+  {
+    "id": "kerry-collins",
+    "name": "Kerry Collins",
+    "sportId": "nfl-qb",
+    "era": "1990s–2010s",
+    "teams": [
+      "Panthers",
+      "Giants",
+      "Titans"
+    ],
+    "yearsActive": "1995–2011",
+    "inPool": false
+  },
+  {
+    "id": "trent-green",
+    "name": "Trent Green",
+    "sportId": "nfl-qb",
+    "era": "1990s–2000s",
+    "teams": [
+      "Rams",
+      "Chiefs"
+    ],
+    "yearsActive": "1997–2008",
+    "inPool": false
+  },
+  {
+    "id": "jake-plummer",
+    "name": "Jake Plummer",
+    "sportId": "nfl-qb",
+    "era": "1990s–2000s",
+    "teams": [
+      "Cardinals",
+      "Broncos"
+    ],
+    "yearsActive": "1997–2006",
+    "inPool": false
+  },
+  {
+    "id": "daunte-culpepper",
+    "name": "Daunte Culpepper",
+    "sportId": "nfl-qb",
+    "era": "1990s–2000s",
+    "teams": [
+      "Vikings"
+    ],
+    "yearsActive": "1999–2009",
+    "inPool": false
+  },
+  {
+    "id": "jeff-garcia",
+    "name": "Jeff Garcia",
+    "sportId": "nfl-qb",
+    "era": "1990s–2000s",
+    "teams": [
+      "49ers",
+      "Eagles",
+      "Buccaneers"
+    ],
+    "yearsActive": "1999–2011",
+    "inPool": false
+  },
+  {
+    "id": "matt-hasselbeck",
+    "name": "Matt Hasselbeck",
+    "sportId": "nfl-qb",
+    "era": "1990s–2010s",
+    "teams": [
+      "Seahawks",
+      "Titans"
+    ],
+    "yearsActive": "1999–2015",
+    "inPool": true
+  },
+  {
+    "id": "chad-pennington",
+    "name": "Chad Pennington",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Jets",
+      "Dolphins"
+    ],
+    "yearsActive": "2000–2010",
+    "inPool": false
+  },
+  {
+    "id": "marc-bulger",
+    "name": "Marc Bulger",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Rams"
+    ],
+    "yearsActive": "2002–2009",
+    "inPool": false
+  },
+  {
+    "id": "jake-delhomme",
+    "name": "Jake Delhomme",
+    "sportId": "nfl-qb",
+    "era": "1990s–2010s",
+    "teams": [
+      "Panthers",
+      "Saints"
+    ],
+    "yearsActive": "1999–2011",
+    "inPool": false
+  },
+  {
+    "id": "byron-leftwich",
+    "name": "Byron Leftwich",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Jaguars",
+      "Steelers"
+    ],
+    "yearsActive": "2003–2012",
+    "inPool": false
+  },
+  {
+    "id": "david-carr",
+    "name": "David Carr",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Texans",
+      "Giants"
+    ],
+    "yearsActive": "2002–2012",
+    "inPool": false
+  },
+  {
+    "id": "carson-palmer",
+    "name": "Carson Palmer",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Bengals",
+      "Raiders",
+      "Cardinals"
+    ],
+    "yearsActive": "2003–2016",
+    "inPool": true
+  },
+  {
+    "id": "alex-smith",
+    "name": "Alex Smith",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "49ers",
+      "Chiefs",
+      "Commanders"
+    ],
+    "yearsActive": "2005–2020",
+    "inPool": true
+  },
+  {
+    "id": "jay-cutler",
+    "name": "Jay Cutler",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Broncos",
+      "Bears",
+      "Dolphins"
+    ],
+    "yearsActive": "2006–2017",
+    "inPool": true
+  },
+  {
+    "id": "ryan-fitzpatrick",
+    "name": "Ryan Fitzpatrick",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Bills",
+      "Jets",
+      "Dolphins"
+    ],
+    "yearsActive": "2005–2021",
+    "inPool": true
+  },
+  {
+    "id": "mark-sanchez",
+    "name": "Mark Sanchez",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Jets",
+      "Eagles"
+    ],
+    "yearsActive": "2009–2018",
+    "inPool": true
+  },
+  {
+    "id": "matt-schaub",
+    "name": "Matt Schaub",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Texans",
+      "Falcons"
+    ],
+    "yearsActive": "2004–2020",
+    "inPool": true
+  },
+  {
+    "id": "josh-mccown",
+    "name": "Josh McCown",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Cardinals",
+      "Bears",
+      "Jets"
+    ],
+    "yearsActive": "2002–2019",
+    "inPool": true
+  },
+  {
+    "id": "andy-dalton",
+    "name": "Andy Dalton",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Bengals",
+      "Cowboys",
+      "Panthers"
+    ],
+    "yearsActive": "2011–",
+    "inPool": true
+  },
+  {
+    "id": "nick-foles",
+    "name": "Nick Foles",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Eagles",
+      "Jaguars",
+      "Bears"
+    ],
+    "yearsActive": "2012–2022",
+    "inPool": true
+  },
+  {
+    "id": "teddy-bridgewater",
+    "name": "Teddy Bridgewater",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Vikings",
+      "Saints",
+      "Panthers"
+    ],
+    "yearsActive": "2014–2024",
+    "inPool": true
+  },
+  {
+    "id": "ryan-tannehill",
+    "name": "Ryan Tannehill",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Dolphins",
+      "Titans"
+    ],
+    "yearsActive": "2012–2023",
+    "inPool": true
+  },
+  {
+    "id": "blake-bortles",
+    "name": "Blake Bortles",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Jaguars"
+    ],
+    "yearsActive": "2014–2019",
+    "inPool": true
+  },
+  {
+    "id": "jameis-winston",
+    "name": "Jameis Winston",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Buccaneers",
+      "Saints",
+      "Browns",
+      "Giants"
+    ],
+    "yearsActive": "2015–",
+    "inPool": true
+  },
+  {
+    "id": "marcus-mariota",
+    "name": "Marcus Mariota",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Titans",
+      "Falcons",
+      "Commanders"
+    ],
+    "yearsActive": "2015–",
+    "inPool": true
+  },
+  {
+    "id": "jared-goff",
+    "name": "Jared Goff",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Rams",
+      "Lions"
+    ],
+    "yearsActive": "2016–",
+    "inPool": true
+  },
+  {
+    "id": "deshaun-watson",
+    "name": "Deshaun Watson",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Texans",
+      "Browns"
+    ],
+    "yearsActive": "2017–",
+    "inPool": true
+  },
+  {
+    "id": "sam-darnold",
+    "name": "Sam Darnold",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Jets",
+      "Panthers",
+      "Vikings",
+      "Seahawks"
+    ],
+    "yearsActive": "2018–",
+    "inPool": true
+  },
+  {
+    "id": "case-keenum",
+    "name": "Case Keenum",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Texans",
+      "Vikings",
+      "Broncos"
+    ],
+    "yearsActive": "2012–",
+    "inPool": true
+  },
+  {
+    "id": "geno-smith",
+    "name": "Geno Smith",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Jets",
+      "Seahawks",
+      "Raiders"
+    ],
+    "yearsActive": "2013–",
+    "inPool": true
+  },
+  {
+    "id": "derek-carr",
+    "name": "Derek Carr",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Raiders",
+      "Saints"
+    ],
+    "yearsActive": "2014–2024",
+    "inPool": true
+  },
+  {
+    "id": "jordan-love",
+    "name": "Jordan Love",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Packers"
+    ],
+    "yearsActive": "2020–",
+    "inPool": true
+  },
+  {
+    "id": "justin-fields",
+    "name": "Justin Fields",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Bears",
+      "Steelers",
+      "Jets"
+    ],
+    "yearsActive": "2021–",
+    "inPool": true
+  },
+  {
+    "id": "mac-jones",
+    "name": "Mac Jones",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Patriots",
+      "Jaguars",
+      "49ers"
+    ],
+    "yearsActive": "2021–",
+    "inPool": true
+  },
+  {
+    "id": "trevor-lawrence",
+    "name": "Trevor Lawrence",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Jaguars"
+    ],
+    "yearsActive": "2021–",
+    "inPool": true
+  },
+  {
+    "id": "zach-wilson",
+    "name": "Zach Wilson",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Jets",
+      "Broncos",
+      "Dolphins"
+    ],
+    "yearsActive": "2021–",
+    "inPool": true
+  },
+  {
+    "id": "bryce-young",
+    "name": "Bryce Young",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Panthers"
+    ],
+    "yearsActive": "2023–",
+    "inPool": true
+  },
+  {
+    "id": "cj-stroud",
+    "name": "C.J. Stroud",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Texans"
+    ],
+    "yearsActive": "2023–",
+    "inPool": true
+  },
+  {
+    "id": "anthony-richardson",
+    "name": "Anthony Richardson",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Colts"
+    ],
+    "yearsActive": "2023–",
+    "inPool": true
+  },
+  {
+    "id": "will-levis",
+    "name": "Will Levis",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Titans"
+    ],
+    "yearsActive": "2023–",
+    "inPool": true
+  },
+  {
+    "id": "bo-nix",
+    "name": "Bo Nix",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Broncos"
+    ],
+    "yearsActive": "2024–",
+    "inPool": true
+  },
+  {
+    "id": "drake-maye",
+    "name": "Drake Maye",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Patriots"
+    ],
+    "yearsActive": "2024–",
+    "inPool": true
+  },
+  {
+    "id": "jayden-daniels",
+    "name": "Jayden Daniels",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Commanders"
+    ],
+    "yearsActive": "2024–",
+    "inPool": true
+  },
+  {
+    "id": "caleb-williams",
+    "name": "Caleb Williams",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Bears"
+    ],
+    "yearsActive": "2024–",
+    "inPool": true
+  },
+  {
+    "id": "michael-penix-jr",
+    "name": "Michael Penix Jr.",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Falcons"
+    ],
+    "yearsActive": "2024–",
+    "inPool": true
+  },
+  {
+    "id": "jj-mccarthy",
+    "name": "J.J. McCarthy",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Vikings"
+    ],
+    "yearsActive": "2025–",
+    "inPool": true
+  },
+  {
+    "id": "robert-griffin-iii",
+    "name": "Robert Griffin III",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Commanders",
+      "Ravens"
+    ],
+    "yearsActive": "2012–2020",
+    "inPool": true
+  },
+  {
+    "id": "rex-grossman",
+    "name": "Rex Grossman",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Bears",
+      "Commanders"
+    ],
+    "yearsActive": "2003–2011",
+    "inPool": true
+  },
+  {
+    "id": "kyle-orton",
+    "name": "Kyle Orton",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Bears",
+      "Broncos",
+      "Chiefs",
+      "Cowboys",
+      "Bills"
+    ],
+    "yearsActive": "2005–2014",
+    "inPool": true
+  },
+  {
+    "id": "matt-cassel",
+    "name": "Matt Cassel",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Patriots",
+      "Chiefs",
+      "Vikings",
+      "Cowboys",
+      "Titans"
+    ],
+    "yearsActive": "2005–2017",
+    "inPool": true
+  },
+  {
+    "id": "seneca-wallace",
+    "name": "Seneca Wallace",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Seahawks",
+      "Browns",
+      "Packers"
+    ],
+    "yearsActive": "2003–2013",
+    "inPool": true
+  },
+  {
+    "id": "derek-anderson",
+    "name": "Derek Anderson",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Browns",
+      "Cardinals",
+      "Panthers",
+      "Bills"
+    ],
+    "yearsActive": "2005–2018",
+    "inPool": true
+  },
+  {
+    "id": "jason-campbell",
+    "name": "Jason Campbell",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Commanders",
+      "Raiders",
+      "Bears",
+      "Browns"
+    ],
+    "yearsActive": "2005–2013",
+    "inPool": true
+  },
+  {
+    "id": "tarvaris-jackson",
+    "name": "Tarvaris Jackson",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Vikings",
+      "Seahawks"
+    ],
+    "yearsActive": "2006–2011",
+    "inPool": true
+  },
+  {
+    "id": "kellen-clemens",
+    "name": "Kellen Clemens",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Jets",
+      "Rams"
+    ],
+    "yearsActive": "2006–2013",
+    "inPool": true
+  },
+  {
+    "id": "matt-moore",
+    "name": "Matt Moore",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Panthers",
+      "Dolphins",
+      "Chiefs"
+    ],
+    "yearsActive": "2007–2019",
+    "inPool": true
+  },
+  {
+    "id": "shaun-hill",
+    "name": "Shaun Hill",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "49ers",
+      "Lions",
+      "Rams",
+      "Vikings"
+    ],
+    "yearsActive": "2002–2016",
+    "inPool": true
+  },
+  {
+    "id": "brady-quinn",
+    "name": "Brady Quinn",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Browns",
+      "Chiefs"
+    ],
+    "yearsActive": "2007–2012",
+    "inPool": true
+  },
+  {
+    "id": "dan-orlovsky",
+    "name": "Dan Orlovsky",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Lions",
+      "Colts"
+    ],
+    "yearsActive": "2005–2011",
+    "inPool": true
+  },
+  {
+    "id": "joe-flacco",
+    "name": "Joe Flacco",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Ravens",
+      "Broncos",
+      "Jets",
+      "Browns",
+      "Colts",
+      "Bengals"
+    ],
+    "yearsActive": "2008–",
+    "inPool": true
+  },
+  {
+    "id": "chad-henne",
+    "name": "Chad Henne",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Dolphins",
+      "Jaguars",
+      "Chiefs"
+    ],
+    "yearsActive": "2008–2020",
+    "inPool": true
+  },
+  {
+    "id": "drew-stanton",
+    "name": "Drew Stanton",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Lions",
+      "Cardinals"
+    ],
+    "yearsActive": "2007–2017",
+    "inPool": true
+  },
+  {
+    "id": "josh-freeman",
+    "name": "Josh Freeman",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Buccaneers",
+      "Vikings",
+      "Colts"
+    ],
+    "yearsActive": "2009–2015",
+    "inPool": true
+  },
+  {
+    "id": "josh-johnson",
+    "name": "Josh Johnson",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Buccaneers",
+      "Commanders",
+      "Ravens"
+    ],
+    "yearsActive": "2008–",
+    "inPool": true
+  },
+  {
+    "id": "kevin-kolb",
+    "name": "Kevin Kolb",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Eagles",
+      "Cardinals"
+    ],
+    "yearsActive": "2007–2012",
+    "inPool": true
+  },
+  {
+    "id": "charlie-whitehurst",
+    "name": "Charlie Whitehurst",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Seahawks",
+      "Titans"
+    ],
+    "yearsActive": "2006–2014",
+    "inPool": true
+  },
+  {
+    "id": "colt-mccoy",
+    "name": "Colt McCoy",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Browns",
+      "Commanders",
+      "Giants",
+      "Cardinals"
+    ],
+    "yearsActive": "2010–2022",
+    "inPool": true
+  },
+  {
+    "id": "jimmy-clausen",
+    "name": "Jimmy Clausen",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Panthers",
+      "Bears",
+      "Ravens"
+    ],
+    "yearsActive": "2010–2015",
+    "inPool": true
+  },
+  {
+    "id": "john-skelton",
+    "name": "John Skelton",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Cardinals"
+    ],
+    "yearsActive": "2010–2012",
+    "inPool": true
+  },
+  {
+    "id": "matt-flynn",
+    "name": "Matt Flynn",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Packers",
+      "Raiders"
+    ],
+    "yearsActive": "2008–2013",
+    "inPool": true
+  },
+  {
+    "id": "sam-bradford",
+    "name": "Sam Bradford",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Rams",
+      "Eagles",
+      "Vikings",
+      "Cardinals"
+    ],
+    "yearsActive": "2010–2018",
+    "inPool": true
+  },
+  {
+    "id": "tim-tebow",
+    "name": "Tim Tebow",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Broncos"
+    ],
+    "yearsActive": "2010–2011",
+    "inPool": true
+  },
+  {
+    "id": "blaine-gabbert",
+    "name": "Blaine Gabbert",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Jaguars",
+      "49ers",
+      "Cardinals",
+      "Titans",
+      "Buccaneers",
+      "Chiefs"
+    ],
+    "yearsActive": "2011–2023",
+    "inPool": true
+  },
+  {
+    "id": "caleb-hanie",
+    "name": "Caleb Hanie",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Bears"
+    ],
+    "yearsActive": "2008–2011",
+    "inPool": true
+  },
+  {
+    "id": "christian-ponder",
+    "name": "Christian Ponder",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Vikings"
+    ],
+    "yearsActive": "2011–2014",
+    "inPool": true
+  },
+  {
+    "id": "curtis-painter",
+    "name": "Curtis Painter",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Colts"
+    ],
+    "yearsActive": "2009–2011",
+    "inPool": true
+  },
+  {
+    "id": "tj-yates",
+    "name": "T.J. Yates",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Texans"
+    ],
+    "yearsActive": "2011–2017",
+    "inPool": true
+  },
+  {
+    "id": "tyler-palko",
+    "name": "Tyler Palko",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Chiefs"
+    ],
+    "yearsActive": "2007–2011",
+    "inPool": true
+  },
+  {
+    "id": "brandon-weeden",
+    "name": "Brandon Weeden",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Browns",
+      "Cowboys",
+      "Texans"
+    ],
+    "yearsActive": "2012–2015",
+    "inPool": true
+  },
+  {
+    "id": "brian-hoyer",
+    "name": "Brian Hoyer",
+    "sportId": "nfl-qb",
+    "era": "2000s–2020s",
+    "teams": [
+      "Cardinals",
+      "Browns",
+      "Texans",
+      "Bears",
+      "49ers",
+      "Colts",
+      "Patriots",
+      "Raiders"
+    ],
+    "yearsActive": "2009–2023",
+    "inPool": true
+  },
+  {
+    "id": "jake-locker",
+    "name": "Jake Locker",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Titans"
+    ],
+    "yearsActive": "2012–2014",
+    "inPool": true
+  },
+  {
+    "id": "ryan-lindley",
+    "name": "Ryan Lindley",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Cardinals"
+    ],
+    "yearsActive": "2012–2014",
+    "inPool": true
+  },
+  {
+    "id": "terrelle-pryor",
+    "name": "Terrelle Pryor",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Raiders"
+    ],
+    "yearsActive": "2011–2013",
+    "inPool": true
+  },
+  {
+    "id": "thaddeus-lewis",
+    "name": "Thaddeus Lewis",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Browns",
+      "Bills"
+    ],
+    "yearsActive": "2010–2013",
+    "inPool": true
+  },
+  {
+    "id": "tyrod-taylor",
+    "name": "Tyrod Taylor",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Ravens",
+      "Bills",
+      "Browns",
+      "Chargers",
+      "Texans",
+      "Giants",
+      "Jets"
+    ],
+    "yearsActive": "2011–",
+    "inPool": true
+  },
+  {
+    "id": "chase-daniel",
+    "name": "Chase Daniel",
+    "sportId": "nfl-qb",
+    "era": "2000s–2010s",
+    "teams": [
+      "Chiefs",
+      "Bears"
+    ],
+    "yearsActive": "2009–2019",
+    "inPool": true
+  },
+  {
+    "id": "ej-manuel",
+    "name": "EJ Manuel",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Bills",
+      "Raiders"
+    ],
+    "yearsActive": "2013–2017",
+    "inPool": true
+  },
+  {
+    "id": "matt-mcgloin",
+    "name": "Matt McGloin",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Raiders"
+    ],
+    "yearsActive": "2013–2016",
+    "inPool": true
+  },
+  {
+    "id": "mike-glennon",
+    "name": "Mike Glennon",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Buccaneers",
+      "Bears",
+      "Jaguars",
+      "Giants"
+    ],
+    "yearsActive": "2013–2021",
+    "inPool": true
+  },
+  {
+    "id": "scott-tolzien",
+    "name": "Scott Tolzien",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Packers",
+      "Colts"
+    ],
+    "yearsActive": "2011–2017",
+    "inPool": true
+  },
+  {
+    "id": "austin-davis",
+    "name": "Austin Davis",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Rams",
+      "Browns"
+    ],
+    "yearsActive": "2012–2015",
+    "inPool": true
+  },
+  {
+    "id": "jimmy-garoppolo",
+    "name": "Jimmy Garoppolo",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Patriots",
+      "49ers",
+      "Raiders",
+      "Rams"
+    ],
+    "yearsActive": "2014–2024",
+    "inPool": true
+  },
+  {
+    "id": "johnny-manziel",
+    "name": "Johnny Manziel",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Browns"
+    ],
+    "yearsActive": "2014–2015",
+    "inPool": true
+  },
+  {
+    "id": "ryan-mallett",
+    "name": "Ryan Mallett",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Texans",
+      "Ravens"
+    ],
+    "yearsActive": "2011–2015",
+    "inPool": true
+  },
+  {
+    "id": "zach-mettenberger",
+    "name": "Zach Mettenberger",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Titans"
+    ],
+    "yearsActive": "2014–2015",
+    "inPool": true
+  },
+  {
+    "id": "aj-mccarron",
+    "name": "A.J. McCarron",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Bengals",
+      "Texans"
+    ],
+    "yearsActive": "2014–2019",
+    "inPool": true
+  },
+  {
+    "id": "brock-osweiler",
+    "name": "Brock Osweiler",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Broncos",
+      "Texans",
+      "Dolphins"
+    ],
+    "yearsActive": "2012–2018",
+    "inPool": true
+  },
+  {
+    "id": "landry-jones",
+    "name": "Landry Jones",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Steelers"
+    ],
+    "yearsActive": "2013–2017",
+    "inPool": true
+  },
+  {
+    "id": "bryce-petty",
+    "name": "Bryce Petty",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Jets"
+    ],
+    "yearsActive": "2016–2017",
+    "inPool": true
+  },
+  {
+    "id": "carson-wentz",
+    "name": "Carson Wentz",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Eagles",
+      "Colts",
+      "Commanders",
+      "Rams",
+      "Chiefs",
+      "Vikings"
+    ],
+    "yearsActive": "2016–",
+    "inPool": true
+  },
+  {
+    "id": "cody-kessler",
+    "name": "Cody Kessler",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Browns",
+      "Jaguars"
+    ],
+    "yearsActive": "2016–2018",
+    "inPool": true
+  },
+  {
+    "id": "jacoby-brissett",
+    "name": "Jacoby Brissett",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Patriots",
+      "Colts",
+      "Dolphins",
+      "Browns",
+      "Cardinals"
+    ],
+    "yearsActive": "2016–",
+    "inPool": true
+  },
+  {
+    "id": "matt-barkley",
+    "name": "Matt Barkley",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Bears",
+      "Bills"
+    ],
+    "yearsActive": "2013–2019",
+    "inPool": true
+  },
+  {
+    "id": "paxton-lynch",
+    "name": "Paxton Lynch",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Broncos"
+    ],
+    "yearsActive": "2016–2017",
+    "inPool": true
+  },
+  {
+    "id": "tom-savage",
+    "name": "Tom Savage",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Texans"
+    ],
+    "yearsActive": "2014–2017",
+    "inPool": true
+  },
+  {
+    "id": "trevor-siemian",
+    "name": "Trevor Siemian",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Broncos",
+      "Jets",
+      "Saints",
+      "Bears"
+    ],
+    "yearsActive": "2015–2023",
+    "inPool": true
+  },
+  {
+    "id": "brett-hundley",
+    "name": "Brett Hundley",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Packers"
+    ],
+    "yearsActive": "2015–2017",
+    "inPool": true
+  },
+  {
+    "id": "cj-beathard",
+    "name": "C.J. Beathard",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "49ers",
+      "Jaguars"
+    ],
+    "yearsActive": "2017–2023",
+    "inPool": true
+  },
+  {
+    "id": "deshone-kizer",
+    "name": "DeShone Kizer",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Browns",
+      "Packers"
+    ],
+    "yearsActive": "2017–2018",
+    "inPool": true
+  },
+  {
+    "id": "mitch-trubisky",
+    "name": "Mitch Trubisky",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Bears",
+      "Steelers",
+      "Bills"
+    ],
+    "yearsActive": "2017–",
+    "inPool": true
+  },
+  {
+    "id": "nathan-peterman",
+    "name": "Nathan Peterman",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Bills",
+      "Bears"
+    ],
+    "yearsActive": "2017–2022",
+    "inPool": true
+  },
+  {
+    "id": "jeff-driskel",
+    "name": "Jeff Driskel",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Bengals",
+      "Lions",
+      "Broncos",
+      "Browns"
+    ],
+    "yearsActive": "2016–2023",
+    "inPool": true
+  },
+  {
+    "id": "josh-rosen",
+    "name": "Josh Rosen",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Cardinals",
+      "Dolphins"
+    ],
+    "yearsActive": "2018–2019",
+    "inPool": true
+  },
+  {
+    "id": "kyle-allen",
+    "name": "Kyle Allen",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Panthers",
+      "Commanders",
+      "Texans"
+    ],
+    "yearsActive": "2018–2022",
+    "inPool": true
+  },
+  {
+    "id": "nick-mullens",
+    "name": "Nick Mullens",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "49ers",
+      "Browns",
+      "Vikings"
+    ],
+    "yearsActive": "2017–2023",
+    "inPool": true
+  },
+  {
+    "id": "taylor-heinicke",
+    "name": "Taylor Heinicke",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Panthers",
+      "Commanders",
+      "Falcons"
+    ],
+    "yearsActive": "2015–2023",
+    "inPool": true
+  },
+  {
+    "id": "brandon-allen",
+    "name": "Brandon Allen",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Broncos",
+      "Bengals",
+      "49ers"
+    ],
+    "yearsActive": "2016–2024",
+    "inPool": true
+  },
+  {
+    "id": "daniel-jones",
+    "name": "Daniel Jones",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Giants",
+      "Colts"
+    ],
+    "yearsActive": "2019–",
+    "inPool": true
+  },
+  {
+    "id": "david-blough",
+    "name": "David Blough",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Lions",
+      "Cardinals"
+    ],
+    "yearsActive": "2019–2022",
+    "inPool": true
+  },
+  {
+    "id": "devlin-hodges",
+    "name": "Devlin Hodges",
+    "sportId": "nfl-qb",
+    "era": "2010s",
+    "teams": [
+      "Steelers"
+    ],
+    "yearsActive": "2019–2019",
+    "inPool": true
+  },
+  {
+    "id": "drew-lock",
+    "name": "Drew Lock",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Broncos",
+      "Seahawks",
+      "Giants"
+    ],
+    "yearsActive": "2019–2024",
+    "inPool": true
+  },
+  {
+    "id": "dwayne-haskins",
+    "name": "Dwayne Haskins",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Commanders"
+    ],
+    "yearsActive": "2019–2020",
+    "inPool": true
+  },
+  {
+    "id": "gardner-minshew",
+    "name": "Gardner Minshew",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Jaguars",
+      "Eagles",
+      "Colts",
+      "Raiders",
+      "Chiefs"
+    ],
+    "yearsActive": "2019–",
+    "inPool": true
+  },
+  {
+    "id": "mason-rudolph",
+    "name": "Mason Rudolph",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Steelers",
+      "Titans"
+    ],
+    "yearsActive": "2018–",
+    "inPool": true
+  },
+  {
+    "id": "ryan-finley",
+    "name": "Ryan Finley",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Bengals"
+    ],
+    "yearsActive": "2019–2020",
+    "inPool": true
+  },
+  {
+    "id": "brett-rypien",
+    "name": "Brett Rypien",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Broncos",
+      "Rams"
+    ],
+    "yearsActive": "2019–2023",
+    "inPool": true
+  },
+  {
+    "id": "pj-walker",
+    "name": "P.J. Walker",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Panthers",
+      "Browns"
+    ],
+    "yearsActive": "2020–2023",
+    "inPool": true
+  },
+  {
+    "id": "taysom-hill",
+    "name": "Taysom Hill",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Saints"
+    ],
+    "yearsActive": "2017–2021",
+    "inPool": true
+  },
+  {
+    "id": "cooper-rush",
+    "name": "Cooper Rush",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Cowboys",
+      "Ravens"
+    ],
+    "yearsActive": "2017–",
+    "inPool": true
+  },
+  {
+    "id": "davis-mills",
+    "name": "Davis Mills",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Texans"
+    ],
+    "yearsActive": "2021–",
+    "inPool": true
+  },
+  {
+    "id": "mike-white",
+    "name": "Mike White",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Jets"
+    ],
+    "yearsActive": "2018–2022",
+    "inPool": true
+  },
+  {
+    "id": "tim-boyle",
+    "name": "Tim Boyle",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Lions",
+      "Jets",
+      "Dolphins"
+    ],
+    "yearsActive": "2018–2024",
+    "inPool": true
+  },
+  {
+    "id": "trey-lance",
+    "name": "Trey Lance",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "49ers",
+      "Cowboys",
+      "Chargers"
+    ],
+    "yearsActive": "2021–",
+    "inPool": true
+  },
+  {
+    "id": "tyler-huntley",
+    "name": "Tyler Huntley",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Ravens",
+      "Dolphins"
+    ],
+    "yearsActive": "2020–",
+    "inPool": true
+  },
+  {
+    "id": "bailey-zappe",
+    "name": "Bailey Zappe",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Patriots",
+      "Browns"
+    ],
+    "yearsActive": "2022–2024",
+    "inPool": true
+  },
+  {
+    "id": "desmond-ridder",
+    "name": "Desmond Ridder",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Falcons"
+    ],
+    "yearsActive": "2022–2023",
+    "inPool": true
+  },
+  {
+    "id": "jarrett-stidham",
+    "name": "Jarrett Stidham",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Raiders",
+      "Broncos"
+    ],
+    "yearsActive": "2019–2023",
+    "inPool": true
+  },
+  {
+    "id": "joshua-dobbs",
+    "name": "Joshua Dobbs",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Titans",
+      "Cardinals",
+      "Vikings",
+      "49ers"
+    ],
+    "yearsActive": "2017–2024",
+    "inPool": true
+  },
+  {
+    "id": "kenny-pickett",
+    "name": "Kenny Pickett",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Steelers",
+      "Raiders"
+    ],
+    "yearsActive": "2022–",
+    "inPool": true
+  },
+  {
+    "id": "malik-willis",
+    "name": "Malik Willis",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Titans",
+      "Packers"
+    ],
+    "yearsActive": "2022–",
+    "inPool": true
+  },
+  {
+    "id": "sam-ehlinger",
+    "name": "Sam Ehlinger",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Colts"
+    ],
+    "yearsActive": "2022–2022",
+    "inPool": true
+  },
+  {
+    "id": "sam-howell",
+    "name": "Sam Howell",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Commanders"
+    ],
+    "yearsActive": "2022–2023",
+    "inPool": true
+  },
+  {
+    "id": "aidan-oconnell",
+    "name": "Aidan O'Connell",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Raiders"
+    ],
+    "yearsActive": "2023–2024",
+    "inPool": true
+  },
+  {
+    "id": "easton-stick",
+    "name": "Easton Stick",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Chargers"
+    ],
+    "yearsActive": "2019–2023",
+    "inPool": true
+  },
+  {
+    "id": "jake-browning",
+    "name": "Jake Browning",
+    "sportId": "nfl-qb",
+    "era": "2010s–2020s",
+    "teams": [
+      "Bengals"
+    ],
+    "yearsActive": "2019–",
+    "inPool": true
+  },
+  {
+    "id": "tommy-devito",
+    "name": "Tommy DeVito",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Giants"
+    ],
+    "yearsActive": "2023–2024",
+    "inPool": true
+  },
+  {
+    "id": "tyson-bagent",
+    "name": "Tyson Bagent",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Bears"
+    ],
+    "yearsActive": "2023–2023",
+    "inPool": true
+  },
+  {
+    "id": "spencer-rattler",
+    "name": "Spencer Rattler",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Saints"
+    ],
+    "yearsActive": "2024–",
+    "inPool": true
+  },
+  {
+    "id": "cam-ward",
+    "name": "Cam Ward",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Titans"
+    ],
+    "yearsActive": "2025–",
+    "inPool": true
+  },
+  {
+    "id": "dillon-gabriel",
+    "name": "Dillon Gabriel",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Browns"
+    ],
+    "yearsActive": "2025–",
+    "inPool": true
+  },
+  {
+    "id": "jaxson-dart",
+    "name": "Jaxson Dart",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Giants"
+    ],
+    "yearsActive": "2025–",
+    "inPool": true
+  },
+  {
+    "id": "shedeur-sanders",
+    "name": "Shedeur Sanders",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Browns"
+    ],
+    "yearsActive": "2025–",
+    "inPool": true
+  },
+  {
+    "id": "tyler-shough",
+    "name": "Tyler Shough",
+    "sportId": "nfl-qb",
+    "era": "2020s",
+    "teams": [
+      "Saints"
+    ],
+    "yearsActive": "2025–",
+    "inPool": true
+  }
 ]

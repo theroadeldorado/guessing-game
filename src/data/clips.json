@@ -2,22 +2,22 @@
   {
     "id": "johnny-unitas-01",
     "playerId": "johnny-unitas",
-    "src": "placeholder"
+    "src": "/clips/johnny-unitas-01.webm"
   },
   {
     "id": "bart-starr-01",
     "playerId": "bart-starr",
-    "src": "placeholder"
+    "src": "/clips/bart-starr-01.webm"
   },
   {
     "id": "joe-namath-01",
     "playerId": "joe-namath",
-    "src": "placeholder"
+    "src": "/clips/joe-namath-01.webm"
   },
   {
     "id": "roger-staubach-01",
     "playerId": "roger-staubach",
-    "src": "placeholder"
+    "src": "/clips/roger-staubach-01.webm"
   },
   {
     "id": "fran-tarkenton-01",
@@ -52,7 +52,7 @@
   {
     "id": "dan-marino-01",
     "playerId": "dan-marino",
-    "src": "placeholder"
+    "src": "/clips/dan-marino-01.webm"
   },
   {
     "id": "john-elway-01",
@@ -247,6 +247,721 @@
   {
     "id": "brock-purdy-01",
     "playerId": "brock-purdy",
+    "src": "placeholder"
+  },
+  {
+    "id": "matt-hasselbeck-01",
+    "playerId": "matt-hasselbeck",
+    "src": "placeholder"
+  },
+  {
+    "id": "josh-mccown-01",
+    "playerId": "josh-mccown",
+    "src": "placeholder"
+  },
+  {
+    "id": "carson-palmer-01",
+    "playerId": "carson-palmer",
+    "src": "placeholder"
+  },
+  {
+    "id": "matt-schaub-01",
+    "playerId": "matt-schaub",
+    "src": "placeholder"
+  },
+  {
+    "id": "alex-smith-01",
+    "playerId": "alex-smith",
+    "src": "placeholder"
+  },
+  {
+    "id": "ryan-fitzpatrick-01",
+    "playerId": "ryan-fitzpatrick",
+    "src": "placeholder"
+  },
+  {
+    "id": "jay-cutler-01",
+    "playerId": "jay-cutler",
+    "src": "placeholder"
+  },
+  {
+    "id": "mark-sanchez-01",
+    "playerId": "mark-sanchez",
+    "src": "placeholder"
+  },
+  {
+    "id": "andy-dalton-01",
+    "playerId": "andy-dalton",
+    "src": "placeholder"
+  },
+  {
+    "id": "nick-foles-01",
+    "playerId": "nick-foles",
+    "src": "placeholder"
+  },
+  {
+    "id": "robert-griffin-iii-01",
+    "playerId": "robert-griffin-iii",
+    "src": "placeholder"
+  },
+  {
+    "id": "ryan-tannehill-01",
+    "playerId": "ryan-tannehill",
+    "src": "placeholder"
+  },
+  {
+    "id": "case-keenum-01",
+    "playerId": "case-keenum",
+    "src": "placeholder"
+  },
+  {
+    "id": "geno-smith-01",
+    "playerId": "geno-smith",
+    "src": "placeholder"
+  },
+  {
+    "id": "blake-bortles-01",
+    "playerId": "blake-bortles",
+    "src": "placeholder"
+  },
+  {
+    "id": "derek-carr-01",
+    "playerId": "derek-carr",
+    "src": "placeholder"
+  },
+  {
+    "id": "teddy-bridgewater-01",
+    "playerId": "teddy-bridgewater",
+    "src": "placeholder"
+  },
+  {
+    "id": "jameis-winston-01",
+    "playerId": "jameis-winston",
+    "src": "placeholder"
+  },
+  {
+    "id": "marcus-mariota-01",
+    "playerId": "marcus-mariota",
+    "src": "placeholder"
+  },
+  {
+    "id": "jared-goff-01",
+    "playerId": "jared-goff",
+    "src": "placeholder"
+  },
+  {
+    "id": "deshaun-watson-01",
+    "playerId": "deshaun-watson",
+    "src": "placeholder"
+  },
+  {
+    "id": "sam-darnold-01",
+    "playerId": "sam-darnold",
+    "src": "placeholder"
+  },
+  {
+    "id": "jordan-love-01",
+    "playerId": "jordan-love",
+    "src": "placeholder"
+  },
+  {
+    "id": "justin-fields-01",
+    "playerId": "justin-fields",
+    "src": "placeholder"
+  },
+  {
+    "id": "mac-jones-01",
+    "playerId": "mac-jones",
+    "src": "placeholder"
+  },
+  {
+    "id": "trevor-lawrence-01",
+    "playerId": "trevor-lawrence",
+    "src": "placeholder"
+  },
+  {
+    "id": "zach-wilson-01",
+    "playerId": "zach-wilson",
+    "src": "placeholder"
+  },
+  {
+    "id": "anthony-richardson-01",
+    "playerId": "anthony-richardson",
+    "src": "placeholder"
+  },
+  {
+    "id": "bryce-young-01",
+    "playerId": "bryce-young",
+    "src": "placeholder"
+  },
+  {
+    "id": "cj-stroud-01",
+    "playerId": "cj-stroud",
+    "src": "placeholder"
+  },
+  {
+    "id": "will-levis-01",
+    "playerId": "will-levis",
+    "src": "placeholder"
+  },
+  {
+    "id": "bo-nix-01",
+    "playerId": "bo-nix",
+    "src": "placeholder"
+  },
+  {
+    "id": "caleb-williams-01",
+    "playerId": "caleb-williams",
+    "src": "placeholder"
+  },
+  {
+    "id": "drake-maye-01",
+    "playerId": "drake-maye",
+    "src": "placeholder"
+  },
+  {
+    "id": "jayden-daniels-01",
+    "playerId": "jayden-daniels",
+    "src": "placeholder"
+  },
+  {
+    "id": "michael-penix-jr-01",
+    "playerId": "michael-penix-jr",
+    "src": "placeholder"
+  },
+  {
+    "id": "jj-mccarthy-01",
+    "playerId": "jj-mccarthy",
+    "src": "placeholder"
+  },
+  {
+    "id": "rex-grossman-01",
+    "playerId": "rex-grossman",
+    "src": "placeholder"
+  },
+  {
+    "id": "kyle-orton-01",
+    "playerId": "kyle-orton",
+    "src": "placeholder"
+  },
+  {
+    "id": "matt-cassel-01",
+    "playerId": "matt-cassel",
+    "src": "placeholder"
+  },
+  {
+    "id": "seneca-wallace-01",
+    "playerId": "seneca-wallace",
+    "src": "placeholder"
+  },
+  {
+    "id": "derek-anderson-01",
+    "playerId": "derek-anderson",
+    "src": "placeholder"
+  },
+  {
+    "id": "jason-campbell-01",
+    "playerId": "jason-campbell",
+    "src": "placeholder"
+  },
+  {
+    "id": "tarvaris-jackson-01",
+    "playerId": "tarvaris-jackson",
+    "src": "placeholder"
+  },
+  {
+    "id": "kellen-clemens-01",
+    "playerId": "kellen-clemens",
+    "src": "placeholder"
+  },
+  {
+    "id": "matt-moore-01",
+    "playerId": "matt-moore",
+    "src": "placeholder"
+  },
+  {
+    "id": "shaun-hill-01",
+    "playerId": "shaun-hill",
+    "src": "placeholder"
+  },
+  {
+    "id": "brady-quinn-01",
+    "playerId": "brady-quinn",
+    "src": "placeholder"
+  },
+  {
+    "id": "dan-orlovsky-01",
+    "playerId": "dan-orlovsky",
+    "src": "placeholder"
+  },
+  {
+    "id": "joe-flacco-01",
+    "playerId": "joe-flacco",
+    "src": "placeholder"
+  },
+  {
+    "id": "chad-henne-01",
+    "playerId": "chad-henne",
+    "src": "placeholder"
+  },
+  {
+    "id": "drew-stanton-01",
+    "playerId": "drew-stanton",
+    "src": "placeholder"
+  },
+  {
+    "id": "josh-freeman-01",
+    "playerId": "josh-freeman",
+    "src": "placeholder"
+  },
+  {
+    "id": "josh-johnson-01",
+    "playerId": "josh-johnson",
+    "src": "placeholder"
+  },
+  {
+    "id": "kevin-kolb-01",
+    "playerId": "kevin-kolb",
+    "src": "placeholder"
+  },
+  {
+    "id": "charlie-whitehurst-01",
+    "playerId": "charlie-whitehurst",
+    "src": "placeholder"
+  },
+  {
+    "id": "colt-mccoy-01",
+    "playerId": "colt-mccoy",
+    "src": "placeholder"
+  },
+  {
+    "id": "jimmy-clausen-01",
+    "playerId": "jimmy-clausen",
+    "src": "placeholder"
+  },
+  {
+    "id": "john-skelton-01",
+    "playerId": "john-skelton",
+    "src": "placeholder"
+  },
+  {
+    "id": "matt-flynn-01",
+    "playerId": "matt-flynn",
+    "src": "placeholder"
+  },
+  {
+    "id": "sam-bradford-01",
+    "playerId": "sam-bradford",
+    "src": "placeholder"
+  },
+  {
+    "id": "tim-tebow-01",
+    "playerId": "tim-tebow",
+    "src": "placeholder"
+  },
+  {
+    "id": "blaine-gabbert-01",
+    "playerId": "blaine-gabbert",
+    "src": "placeholder"
+  },
+  {
+    "id": "caleb-hanie-01",
+    "playerId": "caleb-hanie",
+    "src": "placeholder"
+  },
+  {
+    "id": "christian-ponder-01",
+    "playerId": "christian-ponder",
+    "src": "placeholder"
+  },
+  {
+    "id": "curtis-painter-01",
+    "playerId": "curtis-painter",
+    "src": "placeholder"
+  },
+  {
+    "id": "tj-yates-01",
+    "playerId": "tj-yates",
+    "src": "placeholder"
+  },
+  {
+    "id": "tyler-palko-01",
+    "playerId": "tyler-palko",
+    "src": "placeholder"
+  },
+  {
+    "id": "brandon-weeden-01",
+    "playerId": "brandon-weeden",
+    "src": "placeholder"
+  },
+  {
+    "id": "brian-hoyer-01",
+    "playerId": "brian-hoyer",
+    "src": "placeholder"
+  },
+  {
+    "id": "jake-locker-01",
+    "playerId": "jake-locker",
+    "src": "placeholder"
+  },
+  {
+    "id": "ryan-lindley-01",
+    "playerId": "ryan-lindley",
+    "src": "placeholder"
+  },
+  {
+    "id": "terrelle-pryor-01",
+    "playerId": "terrelle-pryor",
+    "src": "placeholder"
+  },
+  {
+    "id": "thaddeus-lewis-01",
+    "playerId": "thaddeus-lewis",
+    "src": "placeholder"
+  },
+  {
+    "id": "tyrod-taylor-01",
+    "playerId": "tyrod-taylor",
+    "src": "placeholder"
+  },
+  {
+    "id": "chase-daniel-01",
+    "playerId": "chase-daniel",
+    "src": "placeholder"
+  },
+  {
+    "id": "ej-manuel-01",
+    "playerId": "ej-manuel",
+    "src": "placeholder"
+  },
+  {
+    "id": "matt-mcgloin-01",
+    "playerId": "matt-mcgloin",
+    "src": "placeholder"
+  },
+  {
+    "id": "mike-glennon-01",
+    "playerId": "mike-glennon",
+    "src": "placeholder"
+  },
+  {
+    "id": "scott-tolzien-01",
+    "playerId": "scott-tolzien",
+    "src": "placeholder"
+  },
+  {
+    "id": "austin-davis-01",
+    "playerId": "austin-davis",
+    "src": "placeholder"
+  },
+  {
+    "id": "jimmy-garoppolo-01",
+    "playerId": "jimmy-garoppolo",
+    "src": "placeholder"
+  },
+  {
+    "id": "johnny-manziel-01",
+    "playerId": "johnny-manziel",
+    "src": "placeholder"
+  },
+  {
+    "id": "ryan-mallett-01",
+    "playerId": "ryan-mallett",
+    "src": "placeholder"
+  },
+  {
+    "id": "zach-mettenberger-01",
+    "playerId": "zach-mettenberger",
+    "src": "placeholder"
+  },
+  {
+    "id": "aj-mccarron-01",
+    "playerId": "aj-mccarron",
+    "src": "placeholder"
+  },
+  {
+    "id": "brock-osweiler-01",
+    "playerId": "brock-osweiler",
+    "src": "placeholder"
+  },
+  {
+    "id": "landry-jones-01",
+    "playerId": "landry-jones",
+    "src": "placeholder"
+  },
+  {
+    "id": "bryce-petty-01",
+    "playerId": "bryce-petty",
+    "src": "placeholder"
+  },
+  {
+    "id": "carson-wentz-01",
+    "playerId": "carson-wentz",
+    "src": "placeholder"
+  },
+  {
+    "id": "cody-kessler-01",
+    "playerId": "cody-kessler",
+    "src": "placeholder"
+  },
+  {
+    "id": "jacoby-brissett-01",
+    "playerId": "jacoby-brissett",
+    "src": "placeholder"
+  },
+  {
+    "id": "matt-barkley-01",
+    "playerId": "matt-barkley",
+    "src": "placeholder"
+  },
+  {
+    "id": "paxton-lynch-01",
+    "playerId": "paxton-lynch",
+    "src": "placeholder"
+  },
+  {
+    "id": "tom-savage-01",
+    "playerId": "tom-savage",
+    "src": "placeholder"
+  },
+  {
+    "id": "trevor-siemian-01",
+    "playerId": "trevor-siemian",
+    "src": "placeholder"
+  },
+  {
+    "id": "brett-hundley-01",
+    "playerId": "brett-hundley",
+    "src": "placeholder"
+  },
+  {
+    "id": "cj-beathard-01",
+    "playerId": "cj-beathard",
+    "src": "placeholder"
+  },
+  {
+    "id": "deshone-kizer-01",
+    "playerId": "deshone-kizer",
+    "src": "placeholder"
+  },
+  {
+    "id": "mitch-trubisky-01",
+    "playerId": "mitch-trubisky",
+    "src": "placeholder"
+  },
+  {
+    "id": "nathan-peterman-01",
+    "playerId": "nathan-peterman",
+    "src": "placeholder"
+  },
+  {
+    "id": "jeff-driskel-01",
+    "playerId": "jeff-driskel",
+    "src": "placeholder"
+  },
+  {
+    "id": "josh-rosen-01",
+    "playerId": "josh-rosen",
+    "src": "placeholder"
+  },
+  {
+    "id": "kyle-allen-01",
+    "playerId": "kyle-allen",
+    "src": "placeholder"
+  },
+  {
+    "id": "nick-mullens-01",
+    "playerId": "nick-mullens",
+    "src": "placeholder"
+  },
+  {
+    "id": "taylor-heinicke-01",
+    "playerId": "taylor-heinicke",
+    "src": "placeholder"
+  },
+  {
+    "id": "brandon-allen-01",
+    "playerId": "brandon-allen",
+    "src": "placeholder"
+  },
+  {
+    "id": "daniel-jones-01",
+    "playerId": "daniel-jones",
+    "src": "placeholder"
+  },
+  {
+    "id": "david-blough-01",
+    "playerId": "david-blough",
+    "src": "placeholder"
+  },
+  {
+    "id": "devlin-hodges-01",
+    "playerId": "devlin-hodges",
+    "src": "placeholder"
+  },
+  {
+    "id": "drew-lock-01",
+    "playerId": "drew-lock",
+    "src": "placeholder"
+  },
+  {
+    "id": "dwayne-haskins-01",
+    "playerId": "dwayne-haskins",
+    "src": "placeholder"
+  },
+  {
+    "id": "gardner-minshew-01",
+    "playerId": "gardner-minshew",
+    "src": "placeholder"
+  },
+  {
+    "id": "mason-rudolph-01",
+    "playerId": "mason-rudolph",
+    "src": "placeholder"
+  },
+  {
+    "id": "ryan-finley-01",
+    "playerId": "ryan-finley",
+    "src": "placeholder"
+  },
+  {
+    "id": "brett-rypien-01",
+    "playerId": "brett-rypien",
+    "src": "placeholder"
+  },
+  {
+    "id": "pj-walker-01",
+    "playerId": "pj-walker",
+    "src": "placeholder"
+  },
+  {
+    "id": "taysom-hill-01",
+    "playerId": "taysom-hill",
+    "src": "placeholder"
+  },
+  {
+    "id": "cooper-rush-01",
+    "playerId": "cooper-rush",
+    "src": "placeholder"
+  },
+  {
+    "id": "davis-mills-01",
+    "playerId": "davis-mills",
+    "src": "placeholder"
+  },
+  {
+    "id": "mike-white-01",
+    "playerId": "mike-white",
+    "src": "placeholder"
+  },
+  {
+    "id": "tim-boyle-01",
+    "playerId": "tim-boyle",
+    "src": "placeholder"
+  },
+  {
+    "id": "trey-lance-01",
+    "playerId": "trey-lance",
+    "src": "placeholder"
+  },
+  {
+    "id": "tyler-huntley-01",
+    "playerId": "tyler-huntley",
+    "src": "placeholder"
+  },
+  {
+    "id": "bailey-zappe-01",
+    "playerId": "bailey-zappe",
+    "src": "placeholder"
+  },
+  {
+    "id": "desmond-ridder-01",
+    "playerId": "desmond-ridder",
+    "src": "placeholder"
+  },
+  {
+    "id": "jarrett-stidham-01",
+    "playerId": "jarrett-stidham",
+    "src": "placeholder"
+  },
+  {
+    "id": "joshua-dobbs-01",
+    "playerId": "joshua-dobbs",
+    "src": "placeholder"
+  },
+  {
+    "id": "kenny-pickett-01",
+    "playerId": "kenny-pickett",
+    "src": "placeholder"
+  },
+  {
+    "id": "malik-willis-01",
+    "playerId": "malik-willis",
+    "src": "placeholder"
+  },
+  {
+    "id": "sam-ehlinger-01",
+    "playerId": "sam-ehlinger",
+    "src": "placeholder"
+  },
+  {
+    "id": "sam-howell-01",
+    "playerId": "sam-howell",
+    "src": "placeholder"
+  },
+  {
+    "id": "aidan-oconnell-01",
+    "playerId": "aidan-oconnell",
+    "src": "placeholder"
+  },
+  {
+    "id": "easton-stick-01",
+    "playerId": "easton-stick",
+    "src": "placeholder"
+  },
+  {
+    "id": "jake-browning-01",
+    "playerId": "jake-browning",
+    "src": "placeholder"
+  },
+  {
+    "id": "tommy-devito-01",
+    "playerId": "tommy-devito",
+    "src": "placeholder"
+  },
+  {
+    "id": "tyson-bagent-01",
+    "playerId": "tyson-bagent",
+    "src": "placeholder"
+  },
+  {
+    "id": "spencer-rattler-01",
+    "playerId": "spencer-rattler",
+    "src": "placeholder"
+  },
+  {
+    "id": "cam-ward-01",
+    "playerId": "cam-ward",
+    "src": "placeholder"
+  },
+  {
+    "id": "dillon-gabriel-01",
+    "playerId": "dillon-gabriel",
+    "src": "placeholder"
+  },
+  {
+    "id": "jaxson-dart-01",
+    "playerId": "jaxson-dart",
+    "src": "placeholder"
+  },
+  {
+    "id": "shedeur-sanders-01",
+    "playerId": "shedeur-sanders",
+    "src": "placeholder"
+  },
+  {
+    "id": "tyler-shough-01",
+    "playerId": "tyler-shough",
     "src": "placeholder"
   }
 ]
