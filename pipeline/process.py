@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """ShadowForm silhouette pipeline.
 
-manifest.json -> public/clips/<id>.webm + .mp4 + .jpg
+manifest.<sport>.json -> public/clips/<id>.webm + .mp4 + .jpg
+
+One manifest per sport (manifest.nfl-qb.json, manifest.golf.json, ...);
+all of them are processed together.
 
 Per entry: yt-dlp download (cached) -> ffmpeg trim -> Robust Video Matting
 alpha matte -> ffmpeg silhouette composite (black figure, light background).
@@ -22,7 +25,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / "cache"
 OUT = ROOT.parent / "public" / "clips"
-MANIFEST = ROOT / "manifest.json"
+
+
+def load_manifest_entries() -> list[dict]:
+    """Concatenate every per-sport manifest (manifest.<sport>.json)."""
+    paths = sorted(ROOT.glob("manifest.*.json"))
+    if not paths:
+        raise SystemExit("no manifest.<sport>.json files found")
+    entries = []
+    for path in paths:
+        entries.extend(json.loads(path.read_text()))
+    return entries
 
 # black figure on this flat warm-paper background — matches the app's
 # --color-paper token (#F5F2EC) so clips blend into the projection frame
@@ -116,7 +129,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    entries = json.loads(MANIFEST.read_text())
+    entries = load_manifest_entries()
 
     # dry-run only validates the manifest; downloading tools aren't needed
     required_tools = () if args.dry_run else ("ffmpeg", "yt-dlp")

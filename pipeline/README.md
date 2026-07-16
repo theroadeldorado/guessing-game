@@ -31,7 +31,9 @@ torch hub automatically.
    - **as few other people in frame as possible** — the matting model
      extracts *every* person it sees; golf is friendly here (caddies aside),
      for QBs a clean pocket shot beats a collapsing-pocket shot
-3. Paste the URL and timestamps into that athlete's entry in `manifest.json`:
+3. Paste the URL and timestamps into that athlete's entry in the sport's
+   manifest — one file per sport: `manifest.golf.json`,
+   `manifest.nfl-qb.json`, … (the pipeline processes all of them):
 
    ```json
    {
