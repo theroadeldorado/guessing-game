@@ -3470,7 +3470,7 @@
       "Italy"
     ],
     "yearsActive": "2004–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "danny-willett",
@@ -3481,7 +3481,7 @@
       "England"
     ],
     "yearsActive": "2008–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "shane-lowry",
@@ -3492,7 +3492,7 @@
       "Ireland"
     ],
     "yearsActive": "2009–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "gary-woodland",
@@ -3503,7 +3503,7 @@
       "USA"
     ],
     "yearsActive": "2009–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "zach-johnson",
@@ -3525,7 +3525,7 @@
       "USA"
     ],
     "yearsActive": "2008–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "keegan-bradley",
@@ -3536,7 +3536,7 @@
       "USA"
     ],
     "yearsActive": "2008–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "patrick-reed",
@@ -3547,7 +3547,7 @@
       "USA"
     ],
     "yearsActive": "2011–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "patrick-cantlay",
@@ -3558,7 +3558,7 @@
       "USA"
     ],
     "yearsActive": "2011–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "tony-finau",
@@ -3569,7 +3569,7 @@
       "USA"
     ],
     "yearsActive": "2007–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "matt-fitzpatrick",
@@ -3580,7 +3580,7 @@
       "England"
     ],
     "yearsActive": "2014–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "will-zalatoris",
@@ -3602,7 +3602,7 @@
       "Chile"
     ],
     "yearsActive": "2018–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "tom-kim",
@@ -3613,7 +3613,7 @@
       "South Korea"
     ],
     "yearsActive": "2021–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "min-woo-lee",
@@ -3624,7 +3624,7 @@
       "Australia"
     ],
     "yearsActive": "2019–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "cameron-young",
@@ -3657,7 +3657,7 @@
       "USA"
     ],
     "yearsActive": "2019–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "moe-norman",
@@ -3867,5 +3867,302 @@
     ],
     "yearsActive": "2023–",
     "inPool": false
+  },
+  {
+    "id": "jimmy-walker",
+    "name": "Jimmy Walker",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2001–2022",
+    "inPool": true
+  },
+  {
+    "id": "wyndham-clark",
+    "name": "Wyndham Clark",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2017–",
+    "inPool": true
+  },
+  {
+    "id": "jj-spaun",
+    "name": "J.J. Spaun",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2016–",
+    "inPool": true
+  },
+  {
+    "id": "brian-harman",
+    "name": "Brian Harman",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2012–",
+    "inPool": true
+  },
+  {
+    "id": "max-homa",
+    "name": "Max Homa",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2015–",
+    "inPool": true
+  },
+  {
+    "id": "sam-burns",
+    "name": "Sam Burns",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2017–",
+    "inPool": true
+  },
+  {
+    "id": "daniel-berger",
+    "name": "Daniel Berger",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2013–",
+    "inPool": true
+  },
+  {
+    "id": "billy-horschel",
+    "name": "Billy Horschel",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2009–",
+    "inPool": true
+  },
+  {
+    "id": "harris-english",
+    "name": "Harris English",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2011–",
+    "inPool": true
+  },
+  {
+    "id": "kevin-kisner",
+    "name": "Kevin Kisner",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2006–",
+    "inPool": true
+  },
+  {
+    "id": "kevin-na",
+    "name": "Kevin Na",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2001–",
+    "inPool": true
+  },
+  {
+    "id": "sungjae-im",
+    "name": "Sungjae Im",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "South Korea"
+    ],
+    "yearsActive": "2018–",
+    "inPool": true
+  },
+  {
+    "id": "si-woo-kim",
+    "name": "Si Woo Kim",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "South Korea"
+    ],
+    "yearsActive": "2013–",
+    "inPool": true
+  },
+  {
+    "id": "sepp-straka",
+    "name": "Sepp Straka",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Austria"
+    ],
+    "yearsActive": "2019–",
+    "inPool": true
+  },
+  {
+    "id": "russell-henley",
+    "name": "Russell Henley",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2013–",
+    "inPool": true
+  },
+  {
+    "id": "robert-macintyre",
+    "name": "Robert MacIntyre",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Scotland"
+    ],
+    "yearsActive": "2017–",
+    "inPool": true
+  },
+  {
+    "id": "tommy-fleetwood",
+    "name": "Tommy Fleetwood",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "2010–",
+    "inPool": true
+  },
+  {
+    "id": "tyrrell-hatton",
+    "name": "Tyrrell Hatton",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "2011–",
+    "inPool": true
+  },
+  {
+    "id": "lucas-glover",
+    "name": "Lucas Glover",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2001–",
+    "inPool": true
+  },
+  {
+    "id": "chris-kirk",
+    "name": "Chris Kirk",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2011–",
+    "inPool": true
+  },
+  {
+    "id": "corey-conners",
+    "name": "Corey Conners",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Canada"
+    ],
+    "yearsActive": "2015–",
+    "inPool": true
+  },
+  {
+    "id": "marc-leishman",
+    "name": "Marc Leishman",
+    "sportId": "golf",
+    "era": "2000s–2020s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "2009–",
+    "inPool": true
+  },
+  {
+    "id": "jason-kokrak",
+    "name": "Jason Kokrak",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2011–",
+    "inPool": true
+  },
+  {
+    "id": "brendon-todd",
+    "name": "Brendon Todd",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2007–",
+    "inPool": true
+  },
+  {
+    "id": "cameron-champ",
+    "name": "Cameron Champ",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2018–",
+    "inPool": true
+  },
+  {
+    "id": "matt-kuchar",
+    "name": "Matt Kuchar",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2000–",
+    "inPool": true
+  },
+  {
+    "id": "ben-griffin",
+    "name": "Ben Griffin",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2021–",
+    "inPool": true
   }
 ]
