@@ -8,51 +8,43 @@
     "crop": "auto"
   },
   {
-    "id": "gene-sarazen-01",
-    "playerId": "gene-sarazen",
-    "source": "",
-    "start": "",
-    "end": "",
-    "crop": "auto"
-  },
-  {
     "id": "byron-nelson-golf-01",
     "playerId": "byron-nelson-golf",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=vxN7YIgibZY",
+    "start": "00:00:00",
+    "end": "00:00:02.5",
     "crop": "auto"
   },
   {
     "id": "ben-hogan-01",
     "playerId": "ben-hogan",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=MaR14Dru9i4",
+    "start": "00:00:00",
+    "end": "00:00:05",
     "crop": "auto"
   },
   {
     "id": "sam-snead-01",
     "playerId": "sam-snead",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/shorts/KeLxcxwwK9E",
+    "start": "00:00:00",
+    "end": "00:00:03.5",
     "crop": "auto"
   },
   {
     "id": "arnold-palmer-01",
     "playerId": "arnold-palmer",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=zW62FTmDD-M",
+    "start": "00:00:42",
+    "end": "00:00:44.5",
     "crop": "auto"
   },
   {
     "id": "jack-nicklaus-01",
     "playerId": "jack-nicklaus",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=PFm8nRYVVjQ",
+    "start": "00:00:57",
+    "end": "00:01:01",
     "crop": "auto"
   },
   {
@@ -98,7 +90,7 @@
   {
     "id": "nick-faldo-01",
     "playerId": "nick-faldo",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/a41vLpNu38o",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -106,9 +98,9 @@
   {
     "id": "greg-norman-01",
     "playerId": "greg-norman",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/shorts/ise02PwFazA",
+    "start": "00:00:00",
+    "end": "00:00:02",
     "crop": "auto"
   },
   {
@@ -146,9 +138,9 @@
   {
     "id": "fred-couples-01",
     "playerId": "fred-couples",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/shorts/dMSSSl7PWio",
+    "start": "00:00:00",
+    "end": "00:00:02",
     "crop": "auto"
   },
   {
@@ -162,7 +154,7 @@
   {
     "id": "vijay-singh-01",
     "playerId": "vijay-singh",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/3vpVt55z6zQ",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -170,15 +162,15 @@
   {
     "id": "ernie-els-01",
     "playerId": "ernie-els",
-    "source": "",
-    "start": "",
+    "source": "https://www.youtube.com/shorts/7x-1BsS3iBU",
+    "start": "00:00:10",
     "end": "",
     "crop": "auto"
   },
   {
     "id": "phil-mickelson-01",
     "playerId": "phil-mickelson",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/nk1NI4nnoGE",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -186,7 +178,7 @@
   {
     "id": "tiger-woods-01",
     "playerId": "tiger-woods",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/0DQkWyvVNYA",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -194,15 +186,15 @@
   {
     "id": "david-duval-01",
     "playerId": "david-duval",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=nXGK5iPdLH4",
+    "start": "00:00:04",
+    "end": "00:00:08",
     "crop": "auto"
   },
   {
     "id": "jim-furyk-01",
     "playerId": "jim-furyk",
-    "source": "",
+    "source": "https://www.youtube.com/watch?v=d7jePVzL47E",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -210,15 +202,15 @@
   {
     "id": "retief-goosen-01",
     "playerId": "retief-goosen",
-    "source": "",
-    "start": "",
+    "source": "https://www.youtube.com/shorts/AIvlMTvXJ3w",
+    "start": "00:00:03",
     "end": "",
     "crop": "auto"
   },
   {
     "id": "padraig-harrington-01",
     "playerId": "padraig-harrington",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/b5T9FW-GZmo",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -226,7 +218,7 @@
   {
     "id": "sergio-garcia-01",
     "playerId": "sergio-garcia",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/q1SPLarl6j4",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -234,7 +226,7 @@
   {
     "id": "adam-scott-01",
     "playerId": "adam-scott",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/2hG2i0_EKTg",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -242,7 +234,7 @@
   {
     "id": "justin-rose-01",
     "playerId": "justin-rose",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/h86MhMigG6g",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -258,7 +250,7 @@
   {
     "id": "bubba-watson-01",
     "playerId": "bubba-watson",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/gTj0eGIRL5g",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -266,7 +258,7 @@
   {
     "id": "dustin-johnson-01",
     "playerId": "dustin-johnson",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/V-DCr8se7l8",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -274,7 +266,7 @@
   {
     "id": "jason-day-01",
     "playerId": "jason-day",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/WIXbEgic1QI",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -282,7 +274,7 @@
   {
     "id": "jordan-spieth-01",
     "playerId": "jordan-spieth",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/Kw_1rXN97Aw",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -290,7 +282,7 @@
   {
     "id": "rory-mcilroy-01",
     "playerId": "rory-mcilroy",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/A0ty-e8e5cc",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -298,7 +290,7 @@
   {
     "id": "justin-thomas-01",
     "playerId": "justin-thomas",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/ikT3jCvJ2wI",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -306,7 +298,7 @@
   {
     "id": "brooks-koepka-01",
     "playerId": "brooks-koepka",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/nK6DuDiLDlI",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -314,7 +306,7 @@
   {
     "id": "bryson-dechambeau-01",
     "playerId": "bryson-dechambeau",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/yBghZOdCKIo",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -322,7 +314,7 @@
   {
     "id": "jon-rahm-01",
     "playerId": "jon-rahm",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/FsW9p5scXhE",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -330,7 +322,7 @@
   {
     "id": "collin-morikawa-01",
     "playerId": "collin-morikawa",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/7XpbVkPcBNc",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -338,7 +330,7 @@
   {
     "id": "scottie-scheffler-01",
     "playerId": "scottie-scheffler",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/C2hpdHKN6Ag",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -346,7 +338,7 @@
   {
     "id": "xander-schauffele-01",
     "playerId": "xander-schauffele",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/rqo9BC53wWc",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -354,7 +346,7 @@
   {
     "id": "viktor-hovland-01",
     "playerId": "viktor-hovland",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/vfIuY7cFin4",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -362,7 +354,7 @@
   {
     "id": "ludvig-aberg-01",
     "playerId": "ludvig-aberg",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/8LDQwcq-a38",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -370,7 +362,7 @@
   {
     "id": "hideki-matsuyama-01",
     "playerId": "hideki-matsuyama",
-    "source": "",
+    "source": "https://www.youtube.com/shorts/Q5AmqzFUypM",
     "start": "",
     "end": "",
     "crop": "auto"
@@ -378,9 +370,9 @@
   {
     "id": "cameron-smith-01",
     "playerId": "cameron-smith",
-    "source": "",
-    "start": "",
-    "end": "",
+    "source": "https://www.youtube.com/watch?v=P4hZGJGey4A",
+    "start": "00:00:00",
+    "end": "00:00:02",
     "crop": "auto"
   },
   {

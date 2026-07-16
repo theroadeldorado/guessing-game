@@ -61,9 +61,26 @@ def download(entry: dict) -> Path:
     return raw
 
 
+def parse_ts(ts: str) -> float:
+    """'HH:MM:SS.d' / 'MM:SS' / 'SS' -> seconds."""
+    return sum(float(p) * 60 ** i for i, p in enumerate(reversed(ts.split(":"))))
+
+
+DEFAULT_WINDOW = 4.0  # seconds, when an entry has no end timestamp
+
+
+def trim_window(entry: dict) -> tuple[str, str]:
+    """Resolve (start, end), tolerating empty values: start defaults to the
+    beginning, end to start + 4s (Shorts are often already just the swing)."""
+    start = entry.get("start") or "0"
+    end = entry.get("end") or str(parse_ts(start) + DEFAULT_WINDOW)
+    return start, end
+
+
 def trim(entry: dict, raw: Path) -> Path:
     trimmed = CACHE / f"{entry['id']}.trim.mp4"
-    run(["ffmpeg", "-y", "-ss", entry["start"], "-to", entry["end"], "-i", str(raw),
+    start, end = trim_window(entry)
+    run(["ffmpeg", "-y", "-ss", start, "-to", end, "-i", str(raw),
          "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "18", str(trimmed)])
     return trimmed
 
@@ -140,6 +157,7 @@ def main() -> int:
 
     CACHE.mkdir(exist_ok=True)
     done = skipped = 0
+    failed: list[str] = []
     for entry in entries:
         if args.only and entry["id"] != args.only:
             continue
@@ -155,13 +173,26 @@ def main() -> int:
                   f"[{entry['start']}-{entry['end']}]")
             continue
         print(f"> {entry['id']}")
-        raw = download(entry)
-        trimmed = trim(entry, raw)
-        pha = matte(entry, trimmed)
-        silhouette(entry, pha)
-        done += 1
+        try:
+            raw = download(entry)
+            trimmed = trim(entry, raw)
+            pha = matte(entry, trimmed)
+            silhouette(entry, pha)
+            done += 1
+        except subprocess.CalledProcessError as e:
+            tail = (e.stderr or b"").decode(errors="replace").strip().splitlines()[-3:]
+            print(f"! {entry['id']} FAILED: {' '.join(str(c) for c in e.cmd[:2])}", file=sys.stderr)
+            for line in tail:
+                print(f"    {line}", file=sys.stderr)
+            failed.append(entry["id"])
+        except Exception as e:  # keep the batch going on any per-clip error
+            print(f"! {entry['id']} FAILED: {e}", file=sys.stderr)
+            failed.append(entry["id"])
 
     print(f"\nDone: {done} processed, {skipped} awaiting source URLs.")
+    if failed:
+        print(f"Failed ({len(failed)}): {', '.join(failed)}", file=sys.stderr)
+        return 1
     return 0
 
 
