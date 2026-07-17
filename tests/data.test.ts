@@ -1,10 +1,12 @@
 import { describe, expect, it } from 'vitest'
 import { getActiveSports, getPlayers, getPoolClips, getSports } from '@/lib/data'
+import clipsJson from '@/data/clips.json'
+import type { Clip } from '@/lib/types'
 
 describe('data integrity', () => {
   const sports = getSports()
   const players = getPlayers()
-  const clips = getPoolClips()
+  const clips = clipsJson as Clip[] // raw entries, including placeholders
   const playerIds = new Set(players.map((p) => p.id))
   const sportIds = new Set(sports.map((s) => s.id))
 
@@ -33,17 +35,27 @@ describe('data integrity', () => {
     }
   })
 
-  it('pool clips filter by sport and cover every in-pool player', () => {
+  it('every in-pool player has a clip entry (real or placeholder)', () => {
+    for (const s of sports) {
+      const clipPlayerIds = new Set(
+        clips.filter((c) => playerIds.has(c.playerId)).map((c) => c.playerId),
+      )
+      for (const p of getPlayers(s.id).filter((p) => p.inPool)) {
+        expect(clipPlayerIds.has(p.id), `${p.id} missing clip entry`).toBe(true)
+      }
+    }
+  })
+
+  it('the playable pool contains only real footage, scoped per sport', () => {
     for (const s of sports) {
       const sportPlayerIds = new Set(getPlayers(s.id).map((p) => p.id))
-      const sportClips = getPoolClips(s.id)
-      for (const clip of sportClips) {
+      for (const clip of getPoolClips(s.id)) {
+        expect(clip.src, clip.id).not.toBe('placeholder')
         expect(sportPlayerIds.has(clip.playerId), `clip ${clip.id}`).toBe(true)
       }
-      const clipPlayerIds = new Set(sportClips.map((c) => c.playerId))
-      for (const p of getPlayers(s.id).filter((p) => p.inPool)) {
-        expect(clipPlayerIds.has(p.id), `${p.id} missing clip`).toBe(true)
-      }
+    }
+    for (const s of getActiveSports()) {
+      expect(getPoolClips(s.id).length, `${s.id} playable pool`).toBeGreaterThan(0)
     }
   })
 

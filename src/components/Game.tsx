@@ -66,6 +66,7 @@ export default function Game({ sportId }: { sportId: string }) {
         src={clip.src}
         seed={clip.playerId}
         variant={SILHOUETTE_VARIANTS[sportId] ?? 'throw'}
+        speed={clip.speed}
         preloadSrc={nextClip?.src}
       />
 

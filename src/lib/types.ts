@@ -23,4 +23,6 @@ export interface Clip {
   id: string          // e.g. "dan-marino-01"
   playerId: string
   src: string         // "/clips/<id>.webm" or "placeholder"
+  speed?: number      // playbackRate approximating real time (source footage
+                      // is usually slow-mo); defaults to 4 when absent
 }

@@ -20,6 +20,14 @@ npm run build   # production build
 
 The game is fully client-side — no env vars, no database, no API routes.
 
+### Clip review tool (`/dev`)
+
+With the dev server running and `SHADOWFORM_DEV_TOOLS=1` in `.env.local`,
+`http://localhost:3000/dev` lists every clip: flag bad ones (drops them back
+to a placeholder in the game and marks the manifest), edit the source URL or
+start/end window, and reprocess through the pipeline right from the browser.
+Disabled entirely outside `next dev`.
+
 ## Content
 
 Clips currently render as animated placeholders. Real silhouette clips are

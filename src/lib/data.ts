@@ -28,8 +28,13 @@ export function getPlayer(id: string): Player {
   return p
 }
 
+/**
+ * The playable answer pool: only clips with real processed footage. Players
+ * whose clips are still placeholders (unsourced or flagged in /dev) never
+ * appear in a run.
+ */
 export function getPoolClips(sportId?: string): Clip[] {
-  const clips = clipsJson as Clip[]
+  const clips = (clipsJson as Clip[]).filter((c) => c.src !== 'placeholder')
   if (!sportId) return clips
   const sportPlayerIds = new Set(getPlayers(sportId).map((p) => p.id))
   return clips.filter((c) => sportPlayerIds.has(c.playerId))

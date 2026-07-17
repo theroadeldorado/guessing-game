@@ -181,6 +181,10 @@ def main() -> int:
             print(f"~ {entry['id']}: no source URL yet, skipping")
             skipped += 1
             continue
+        if entry.get("flagged") and not args.only:
+            print(f"~ {entry['id']}: flagged as bad, skipping (fix via /dev or --only)")
+            skipped += 1
+            continue
         if not args.force and (OUT / f"{entry['id']}.webm").exists():
             print(f"= {entry['id']}: already processed")
             continue
