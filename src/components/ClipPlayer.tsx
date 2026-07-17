@@ -38,11 +38,24 @@ export default function ClipPlayer({ src, seed, variant, speed, preloadSrc }: {
   const reducedMotion = useReducedMotion()
   const [playAnyway, setPlayAnyway] = useState(false)
   const [slowMo, setSlowMo] = useState(false)
+  const [needsTap, setNeedsTap] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   const isVideo = src !== 'placeholder'
   const paused = reducedMotion && !playAnyway
   const rate = slowMo ? 1 : (speed ?? DEFAULT_FULL_SPEED)
+
+  // iOS blocks even muted autoplay in Low Power Mode — fall back to a tap.
+  useEffect(() => {
+    if (!isVideo || paused) return
+    setNeedsTap(false)
+    const v = videoRef.current
+    v?.play().catch(() => setNeedsTap(true))
+  }, [isVideo, paused, src])
+
+  const tapToPlay = () => {
+    videoRef.current?.play().then(() => setNeedsTap(false)).catch(() => setNeedsTap(true))
+  }
 
   const applyRate = useCallback(() => {
     const v = videoRef.current
@@ -96,6 +109,15 @@ export default function ClipPlayer({ src, seed, variant, speed, preloadSrc }: {
       {paused && (
         <button
           onClick={() => setPlayAnyway(true)}
+          className="absolute inset-0 grid place-items-center text-4xl text-paper/70"
+          aria-label="Play clip"
+        >
+          ▶
+        </button>
+      )}
+      {isVideo && !paused && needsTap && (
+        <button
+          onClick={tapToPlay}
           className="absolute inset-0 grid place-items-center text-4xl text-paper/70"
           aria-label="Play clip"
         >

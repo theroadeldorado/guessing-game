@@ -148,7 +148,7 @@ def silhouette(entry: dict, pha: Path) -> None:
          "-c:v", "libvpx-vp9", "-b:v", "0", "-crf", "36", str(webm)])
     run(["ffmpeg", "-y", "-i", str(pha), "-vf", SILHOUETTE_VF, "-an",
          "-c:v", "libx264", "-preset", "slow", "-crf", "23",
-         "-pix_fmt", "yuv420p", str(mp4)])
+         "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(mp4)])
     # representative frame, not frame 1 — the matte warms up over the first
     # frames and clips may open before the athlete is fully visible
     run(["ffmpeg", "-y", "-i", str(webm), "-vf", "thumbnail=60",
