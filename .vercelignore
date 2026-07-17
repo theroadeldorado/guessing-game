@@ -1,0 +1,6 @@
+# Local-only silhouette pipeline: venv, source-video cache, scripts —
+# the app only needs the processed clips in public/clips.
+pipeline
+docs
+.playwright-mcp
+tests
