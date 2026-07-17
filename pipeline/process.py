@@ -7,7 +7,7 @@ One manifest per sport (manifest.nfl-qb.json, manifest.golf.json, ...);
 all of them are processed together.
 
 Per entry: yt-dlp download (cached) -> ffmpeg trim -> Robust Video Matting
-alpha matte -> ffmpeg silhouette composite (black figure, light background).
+alpha matte -> ffmpeg silhouette composite (white figure on black).
 
 Usage:
   python process.py            # process all manifest entries with a source
@@ -37,13 +37,13 @@ def load_manifest_entries() -> list[dict]:
         entries.extend(json.loads(path.read_text()))
     return entries
 
-# black figure on this flat warm-paper background — matches the app's
-# --color-paper token (#F5F2EC) so clips blend into the projection frame
+# White figure on black — the RVM alpha matte is already exactly that, so no
+# negate. Native aspect ratio preserved (no crop): fit within 720x720, and the
+# app letterboxes invisibly against its black clip box.
 SILHOUETTE_VF = (
-    "negate,format=gray,"
-    "scale=720:720:force_original_aspect_ratio=increase,crop=720:720,"
-    "eq=contrast=1.15,"
-    "colorlevels=romax=0.961:gomax=0.949:bomax=0.925"
+    "format=gray,"
+    "scale=720:720:force_original_aspect_ratio=decrease:force_divisible_by=2,"
+    "eq=contrast=1.15"
 )
 
 
@@ -78,10 +78,17 @@ def trim_window(entry: dict) -> tuple[str, str]:
 
 
 def trim(entry: dict, raw: Path) -> Path:
+    """Cached on the trim window: re-encodes only when start/end changed,
+    which in turn invalidates the matte via mtime."""
     trimmed = CACHE / f"{entry['id']}.trim.mp4"
+    meta = CACHE / f"{entry['id']}.trim.txt"
     start, end = trim_window(entry)
+    window = f"{start}|{end}"
+    if trimmed.exists() and meta.exists() and meta.read_text() == window:
+        return trimmed
     run(["ffmpeg", "-y", "-ss", start, "-to", end, "-i", str(raw),
          "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "18", str(trimmed)])
+    meta.write_text(window)
     return trimmed
 
 
@@ -105,10 +112,16 @@ def _fix_rvm_videowriter() -> None:
 
 
 def matte(entry: dict, trimmed: Path) -> Path:
-    """Robust Video Matting -> alpha video (white figure on black)."""
-    import torch  # deferred: heavy import, only needed for real processing
+    """Robust Video Matting -> alpha video (white figure on black).
 
+    Cached: skipped when the matte already exists and is newer than the
+    trimmed source, so --force restyling only reruns the cheap ffmpeg pass.
+    """
     pha = CACHE / f"{entry['id']}.pha.mp4"
+    if pha.exists() and pha.stat().st_mtime >= trimmed.stat().st_mtime:
+        return pha
+
+    import torch  # deferred: heavy import, only needed for real processing
     model = torch.hub.load("PeterL1n/RobustVideoMatting", "mobilenetv3", trust_repo=True).eval()
     convert_video = torch.hub.load("PeterL1n/RobustVideoMatting", "converter", trust_repo=True)
     _fix_rvm_videowriter()
@@ -126,7 +139,7 @@ def matte(entry: dict, trimmed: Path) -> Path:
 
 
 def silhouette(entry: dict, pha: Path) -> None:
-    """Alpha matte -> black figure on flat light bg; export webm + mp4 + poster."""
+    """Alpha matte -> white figure on black; export webm + mp4 + poster."""
     OUT.mkdir(parents=True, exist_ok=True)
     webm = OUT / f"{entry['id']}.webm"
     mp4 = OUT / f"{entry['id']}.mp4"
@@ -136,7 +149,10 @@ def silhouette(entry: dict, pha: Path) -> None:
     run(["ffmpeg", "-y", "-i", str(pha), "-vf", SILHOUETTE_VF, "-an",
          "-c:v", "libx264", "-preset", "slow", "-crf", "23",
          "-pix_fmt", "yuv420p", str(mp4)])
-    run(["ffmpeg", "-y", "-i", str(webm), "-vframes", "1", str(poster)])
+    # representative frame, not frame 1 — the matte warms up over the first
+    # frames and clips may open before the athlete is fully visible
+    run(["ffmpeg", "-y", "-i", str(webm), "-vf", "thumbnail=60",
+         "-frames:v", "1", str(poster)])
 
 
 def main() -> int:

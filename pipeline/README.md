@@ -55,8 +55,8 @@ torch hub automatically.
    python process.py --dry-run            # validate the manifest only
    ```
 
-5. **QA the output**: open `public/clips/<id>.webm`. You want a crisp black
-   figure on the warm paper background with no big blobs from other players
+5. **QA the output**: open `public/clips/<id>.webm`. You want a crisp
+   white figure on black with no big blobs from other players
    or refs. If the matte is ugly (common with grainy pre-1980s footage), try
    a different source video or window and re-run with `--force`.
 6. Flip the matching entry in `src/data/clips.json` from `"placeholder"` to
@@ -73,11 +73,11 @@ skipped unless you pass `--force`.
 yt-dlp (cached download)
   → ffmpeg trim to [start, end]
   → Robust Video Matting (temporally-consistent person matte, MPS-accelerated)
-  → ffmpeg: negate → black figure on #F5F2EC paper → 720×720 crop
+  → ffmpeg: white figure on black, native aspect ratio, fit within 720×720
   → <id>.webm (VP9, served) + <id>.mp4 (H.264 fallback) + <id>.jpg (poster)
 ```
 
-The paper background matches the app's clip frame exactly, so real clips
+The black background matches the app's clip box exactly, so real clips
 blend seamlessly where the placeholders sat.
 
 ## Content posture

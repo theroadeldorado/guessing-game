@@ -37,12 +37,12 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc }: {
   const paused = reducedMotion && !playAnyway
 
   return (
-    <div className="relative aspect-square w-full overflow-hidden rounded-sm bg-paper text-ink shadow-[0_0_60px_rgba(245,242,236,0.08)]">
+    <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-chalk bg-black text-paper">
       {isVideo ? (
         <video
           key={src}
           src={src}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
           autoPlay={!paused}
           loop
           muted
@@ -56,7 +56,7 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc }: {
       {paused && (
         <button
           onClick={() => setPlayAnyway(true)}
-          className="absolute inset-0 grid place-items-center text-4xl text-ink/70"
+          className="absolute inset-0 grid place-items-center text-4xl text-paper/70"
           aria-label="Play clip"
         >
           ▶
