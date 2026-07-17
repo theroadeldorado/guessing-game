@@ -138,21 +138,32 @@ def matte(entry: dict, trimmed: Path) -> Path:
     return pha
 
 
-def silhouette(entry: dict, pha: Path) -> None:
-    """Alpha matte -> white figure on black; export webm + mp4 + poster."""
+def silhouette(entry: dict, pha: Path, speed: float = 4.0) -> None:
+    """Alpha matte -> white figure on black.
+
+    Exports both speeds as separate files — playbackRate is unreliable on
+    iOS (4x means 120fps decode), so real time is baked in with setpts:
+      <id>.webm/.mp4       full speed (source slow-mo compressed by `speed`)
+      <id>-slo.webm/.mp4   the source's native slow motion
+    plus <id>.jpg poster.
+    """
     OUT.mkdir(parents=True, exist_ok=True)
-    webm = OUT / f"{entry['id']}.webm"
-    mp4 = OUT / f"{entry['id']}.mp4"
-    poster = OUT / f"{entry['id']}.jpg"
-    run(["ffmpeg", "-y", "-i", str(pha), "-vf", SILHOUETTE_VF, "-an",
-         "-c:v", "libvpx-vp9", "-b:v", "0", "-crf", "36", str(webm)])
-    run(["ffmpeg", "-y", "-i", str(pha), "-vf", SILHOUETTE_VF, "-an",
-         "-c:v", "libx264", "-preset", "slow", "-crf", "23",
-         "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(mp4)])
+    variants = {
+        "": f"{SILHOUETTE_VF},setpts=PTS/{speed},fps=30",
+        "-slo": SILHOUETTE_VF,
+    }
+    for suffix, vf in variants.items():
+        webm = OUT / f"{entry['id']}{suffix}.webm"
+        mp4 = OUT / f"{entry['id']}{suffix}.mp4"
+        run(["ffmpeg", "-y", "-i", str(pha), "-vf", vf, "-an",
+             "-c:v", "libvpx-vp9", "-b:v", "0", "-crf", "36", str(webm)])
+        run(["ffmpeg", "-y", "-i", str(pha), "-vf", vf, "-an",
+             "-c:v", "libx264", "-preset", "slow", "-crf", "23",
+             "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(mp4)])
     # representative frame, not frame 1 — the matte warms up over the first
     # frames and clips may open before the athlete is fully visible
-    run(["ffmpeg", "-y", "-i", str(webm), "-vf", "thumbnail=60",
-         "-frames:v", "1", str(poster)])
+    run(["ffmpeg", "-y", "-i", str(OUT / f"{entry['id']}.webm"),
+         "-vf", "thumbnail=30", "-frames:v", "1", str(OUT / f"{entry['id']}.jpg")])
 
 
 def main() -> int:
@@ -163,6 +174,10 @@ def main() -> int:
     args = ap.parse_args()
 
     entries = load_manifest_entries()
+
+    # per-clip real-time speed factor lives with the game data (tuned in /dev)
+    clips_json = ROOT.parent / "src" / "data" / "clips.json"
+    speeds = {c["id"]: c.get("speed", 4.0) for c in json.loads(clips_json.read_text())}
 
     # dry-run only validates the manifest; downloading tools aren't needed
     required_tools = () if args.dry_run else ("ffmpeg", "yt-dlp")
@@ -197,7 +212,7 @@ def main() -> int:
             raw = download(entry)
             trimmed = trim(entry, raw)
             pha = matte(entry, trimmed)
-            silhouette(entry, pha)
+            silhouette(entry, pha, speeds.get(entry["id"], 4.0))
             done += 1
         except subprocess.CalledProcessError as e:
             tail = (e.stderr or b"").decode(errors="replace").strip().splitlines()[-3:]

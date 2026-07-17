@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react'
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import PlaceholderSilhouette, { type SilhouetteVariant } from './PlaceholderSilhouette'
 
 const REDUCED_MOTION_QUERY = '(prefers-reduced-motion: reduce)'
@@ -19,20 +19,32 @@ function useReducedMotion(): boolean {
   )
 }
 
-export const DEFAULT_FULL_SPEED = 4 // most source footage is ~4x slow-mo
+/** Full-speed and slo-mo are separate pipeline exports (<id> / <id>-slo) —
+ * playbackRate is unreliable on iOS, so the toggle swaps files instead. */
+const sloVariant = (src: string) => src.replace(/\.webm$/, '-slo.webm')
+
+/** Both-format sources: Safari (especially iOS) can't decode VP9 WebM and
+ * needs the H.264 MP4 the pipeline exports alongside every clip. */
+function Sources({ webm }: { webm: string }) {
+  return (
+    <>
+      <source src={webm} type="video/webm" />
+      <source src={webm.replace(/\.webm$/, '.mp4')} type="video/mp4" />
+    </>
+  )
+}
 
 /**
- * The projection screen: a real clip loops muted, or the placeholder
- * silhouette animates. Source footage is mostly slow-mo, so real clips play
- * at `speed` (approximating real time) by default with a slo-mo toggle.
- * Reduced-motion users get a paused frame with an explicit play control.
- * `preloadSrc` warms the next clip while guessing.
+ * The projection screen: a real clip loops muted (full speed by default,
+ * slo-mo on toggle), or the placeholder silhouette animates. Reduced-motion
+ * users get a poster with an explicit play control; blocked autoplay (iOS
+ * Low Power Mode) falls back to tap-to-play. `preloadSrc` warms the next
+ * clip while guessing.
  */
-export default function ClipPlayer({ src, seed, variant, speed, preloadSrc }: {
+export default function ClipPlayer({ src, seed, variant, preloadSrc }: {
   src: string
   seed: string
   variant: SilhouetteVariant
-  speed?: number
   preloadSrc?: string
 }) {
   const reducedMotion = useReducedMotion()
@@ -43,7 +55,7 @@ export default function ClipPlayer({ src, seed, variant, speed, preloadSrc }: {
 
   const isVideo = src !== 'placeholder'
   const paused = reducedMotion && !playAnyway
-  const rate = slowMo ? 1 : (speed ?? DEFAULT_FULL_SPEED)
+  const activeSrc = slowMo ? sloVariant(src) : src
 
   // iOS blocks even muted autoplay in Low Power Mode — fall back to a tap.
   useEffect(() => {
@@ -51,42 +63,26 @@ export default function ClipPlayer({ src, seed, variant, speed, preloadSrc }: {
     setNeedsTap(false)
     const v = videoRef.current
     v?.play().catch(() => setNeedsTap(true))
-  }, [isVideo, paused, src])
+  }, [isVideo, paused, activeSrc])
 
   const tapToPlay = () => {
     videoRef.current?.play().then(() => setNeedsTap(false)).catch(() => setNeedsTap(true))
   }
 
-  const applyRate = useCallback(() => {
-    const v = videoRef.current
-    if (!v) return
-    // defaultPlaybackRate too: loading a resource resets playbackRate, and
-    // cached videos can finish loading before the loadedmetadata handler
-    // attaches — the default survives that reset.
-    v.defaultPlaybackRate = rate
-    v.playbackRate = rate
-  }, [rate])
-
-  useEffect(applyRate, [applyRate, src])
-
   return (
     <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-chalk bg-black text-paper">
       {isVideo ? (
-        // <source> pair, not a bare src: Safari (especially iOS) can't decode
-        // VP9 WebM and needs the H.264 MP4 the pipeline exports alongside it.
         <video
           ref={videoRef}
-          key={src}
+          key={activeSrc}
           className="h-full w-full object-contain"
           poster={src.replace(/\.webm$/, '.jpg')}
           autoPlay={!paused}
           loop
           muted
           playsInline
-          onLoadedMetadata={applyRate}
         >
-          <source src={src} type="video/webm" />
-          <source src={src.replace(/\.webm$/, '.mp4')} type="video/mp4" />
+          <Sources webm={activeSrc} />
         </video>
       ) : (
         <div className={paused ? 'h-full w-full [&_*]:!animate-none' : 'h-full w-full'}>
@@ -126,8 +122,7 @@ export default function ClipPlayer({ src, seed, variant, speed, preloadSrc }: {
       )}
       {preloadSrc && preloadSrc !== 'placeholder' && (
         <video preload="auto" muted className="hidden" aria-hidden>
-          <source src={preloadSrc} type="video/webm" />
-          <source src={preloadSrc.replace(/\.webm$/, '.mp4')} type="video/mp4" />
+          <Sources webm={preloadSrc} />
         </video>
       )}
     </div>

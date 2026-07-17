@@ -102,11 +102,6 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
   const [busy, setBusy] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
-  // preview at the game's full-speed rate so speed tuning is live
-  useEffect(() => {
-    if (videoRef.current) videoRef.current.playbackRate = Number(speed) || 4
-  }, [speed])
-
   const dirty =
     source !== clip.source ||
     start !== clip.start ||
@@ -204,9 +199,6 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
             loop
             muted
             playsInline
-            onLoadedMetadata={() => {
-              if (videoRef.current) videoRef.current.playbackRate = Number(speed) || 4
-            }}
           />
         ) : (
           <div className="grid h-full place-items-center font-mono text-xs text-chalk-soft">
@@ -240,7 +232,7 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
             type="number"
             min="0.25"
             step="0.25"
-            title="playbackRate approximating real time"
+            title="real-time speed factor — baked into the files on reprocess"
             className="w-14 rounded-sm border border-chalk bg-room-deep px-2 py-1.5 text-paper focus:border-flag focus:outline-none"
           />
           ×
