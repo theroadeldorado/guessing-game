@@ -59,17 +59,22 @@ export default function ClipPlayer({ src, seed, variant, speed, preloadSrc }: {
   return (
     <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-chalk bg-black text-paper">
       {isVideo ? (
+        // <source> pair, not a bare src: Safari (especially iOS) can't decode
+        // VP9 WebM and needs the H.264 MP4 the pipeline exports alongside it.
         <video
           ref={videoRef}
           key={src}
-          src={src}
           className="h-full w-full object-contain"
+          poster={src.replace(/\.webm$/, '.jpg')}
           autoPlay={!paused}
           loop
           muted
           playsInline
           onLoadedMetadata={applyRate}
-        />
+        >
+          <source src={src} type="video/webm" />
+          <source src={src.replace(/\.webm$/, '.mp4')} type="video/mp4" />
+        </video>
       ) : (
         <div className={paused ? 'h-full w-full [&_*]:!animate-none' : 'h-full w-full'}>
           <PlaceholderSilhouette seed={seed} variant={variant} />
@@ -98,7 +103,10 @@ export default function ClipPlayer({ src, seed, variant, speed, preloadSrc }: {
         </button>
       )}
       {preloadSrc && preloadSrc !== 'placeholder' && (
-        <video src={preloadSrc} preload="auto" muted className="hidden" aria-hidden />
+        <video preload="auto" muted className="hidden" aria-hidden>
+          <source src={preloadSrc} type="video/webm" />
+          <source src={preloadSrc.replace(/\.webm$/, '.mp4')} type="video/mp4" />
+        </video>
       )}
     </div>
   )
