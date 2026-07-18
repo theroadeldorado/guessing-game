@@ -791,5 +791,50 @@
     "start": "00:00:00",
     "end": "00:00:20",
     "crop": "auto"
+  },
+  {
+    "id": "mike-weir-01",
+    "playerId": "mike-weir",
+    "source": "https://www.youtube.com/watch?v=RiEUPJNPY_Y",
+    "start": "00:00:00",
+    "end": "",
+    "crop": "auto",
+    "flagged": true
+  },
+  {
+    "id": "jose-maria-olazabal-01",
+    "playerId": "jose-maria-olazabal",
+    "source": "https://www.youtube.com/watch?v=kU7ozGWFLy8",
+    "start": "00:00:00",
+    "end": "",
+    "crop": "auto",
+    "flagged": true
+  },
+  {
+    "id": "camilo-villegas-01",
+    "playerId": "camilo-villegas",
+    "source": "https://www.youtube.com/watch?v=B6z8MsEwTGc",
+    "start": "00:00:00",
+    "end": "",
+    "crop": "auto",
+    "flagged": true
+  },
+  {
+    "id": "geoff-ogilvy-01",
+    "playerId": "geoff-ogilvy",
+    "source": "https://www.youtube.com/watch?v=qP2p6LpAChM",
+    "start": "00:00:00",
+    "end": "",
+    "crop": "auto",
+    "flagged": true
+  },
+  {
+    "id": "kj-choi-01",
+    "playerId": "kj-choi",
+    "source": "https://www.youtube.com/watch?v=f7Yl1WNt3Z4",
+    "start": "00:00:00",
+    "end": "",
+    "crop": "auto",
+    "flagged": true
   }
 ]

@@ -3999,5 +3999,60 @@
     ],
     "yearsActive": "2021–",
     "inPool": true
+  },
+  {
+    "id": "mike-weir",
+    "name": "Mike Weir",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "Canada"
+    ],
+    "yearsActive": "1998–",
+    "inPool": false
+  },
+  {
+    "id": "jose-maria-olazabal",
+    "name": "José María Olazábal",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "Spain"
+    ],
+    "yearsActive": "1985–",
+    "inPool": false
+  },
+  {
+    "id": "camilo-villegas",
+    "name": "Camilo Villegas",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "Colombia"
+    ],
+    "yearsActive": "2006–",
+    "inPool": false
+  },
+  {
+    "id": "geoff-ogilvy",
+    "name": "Geoff Ogilvy",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1998–2018",
+    "inPool": false
+  },
+  {
+    "id": "kj-choi",
+    "name": "K.J. Choi",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "South Korea"
+    ],
+    "yearsActive": "1994–",
+    "inPool": false
   }
 ]
