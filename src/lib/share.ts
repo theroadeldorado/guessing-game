@@ -1,11 +1,13 @@
 import type { ClipResult, RunState } from './game'
 
-/** Canonical site URL. Set NEXT_PUBLIC_SITE_URL to a custom domain when there
- *  is one; falls back to the current production alias. */
+/** Canonical site URL (the www apex redirects here, so OG/share URLs point
+ *  straight at it — no redirect for social scrapers to choke on). Override with
+ *  NEXT_PUBLIC_SITE_URL. */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://shadowformgame.com'
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://www.shadowformgame.com'
 ).replace(/\/+$/, '')
-export const SITE_HOST = SITE_URL.replace(/^https?:\/\//, '')
+/** Bare host for display on the card — drops protocol and a leading www. */
+export const SITE_HOST = SITE_URL.replace(/^https?:\/\//, '').replace(/^www\./, '')
 
 /**
  * A finished run, packed compactly enough to live in a share URL (no database).
