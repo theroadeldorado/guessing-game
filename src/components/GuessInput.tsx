@@ -1,8 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import type { Player } from '@/lib/types'
-import { searchPlayers } from '@/lib/search'
+import { type Named, searchPlayers } from '@/lib/search'
 
 /**
  * Autocomplete combobox. Guesses can only be submitted by selecting a
@@ -11,7 +10,7 @@ import { searchPlayers } from '@/lib/search'
  * Focusing the empty box reveals the full alphabetical list to scroll.
  */
 export default function GuessInput({ players, placeholder, disabledIds, onGuess }: {
-  players: Player[]
+  players: Named[]
   placeholder: string
   disabledIds: string[]
   onGuess: (playerId: string) => void
@@ -29,7 +28,7 @@ export default function GuessInput({ players, placeholder, disabledIds, onGuess 
     [players, query, focused, allSorted],
   )
 
-  const select = (p: Player) => {
+  const select = (p: Named) => {
     if (disabledIds.includes(p.id)) return
     onGuess(p.id)
     setQuery('')

@@ -1,6 +1,8 @@
 import type { Clip, Player } from './types'
-import { getPlayer, getPoolClips } from './data'
+import { getPlayer, getPlayers, getPoolClips } from './data'
+import { clipAlias } from './clipalias'
 import { hashSeed, mulberry32, shuffle } from './rng'
+import type { Named } from './search'
 
 /**
  * Daily Round: one hole a day. Guesses = strokes; the selectable field halves
@@ -194,30 +196,113 @@ export interface DailyProgress {
   lastResult: DailyResult
 }
 
-/** Fold a finished hole into the streak. A miss ends the streak; a skipped day
- *  (last hole not yesterday) starts fresh even after a success. */
+/** Fold a finished hole (already reduced to plain facts) into the streak. A
+ *  miss ends the streak; a skipped day starts fresh even after a success. */
+export function foldResult(
+  prev: DailyProgress | null,
+  today: string,
+  r: Omit<DailyResult, 'date'>,
+): DailyProgress {
+  const continues = !!prev && prev.alive && isYesterday(prev.lastDate, today)
+  const base = continues ? prev! : { streak: 0, toPar: 0 }
+  return {
+    lastDate: today,
+    streak: r.solved ? base.streak + 1 : base.streak,
+    toPar: r.solved ? base.toPar + r.scoreToPar : base.toPar,
+    alive: r.solved,
+    lastResult: { ...r, date: today },
+  }
+}
+
 export function applyResult(
   prev: DailyProgress | null,
   today: string,
   state: DailyState,
 ): DailyProgress {
-  const continues = !!prev && prev.alive && isYesterday(prev.lastDate, today)
-  const base = continues ? prev! : { streak: 0, toPar: 0 }
-  const stp = scoreToPar(state)
+  return foldResult(prev, today, {
+    par: state.hole.par,
+    yards: state.hole.yards,
+    strokes: state.solved ? state.strokes : state.hole.par + 2,
+    solved: state.solved,
+    scoreToPar: scoreToPar(state),
+    player: getPlayer(state.hole.clip.playerId).name,
+  })
+}
+
+// ---- server-side play (answer never reaches the client) -------------------
+
+/** Guessable options for the current guess — slim {id,name}, narrowed field. */
+function fieldFor(state: DailyState): Named[] {
+  return narrowedField(state, getPlayers('golf')).map((p) => ({ id: p.id, name: p.name }))
+}
+
+/** Client-safe view of today's hole — everything to play EXCEPT the answer. */
+export interface DailyHoleView {
+  date: string
+  weekday: number
+  par: number
+  yards: number
+  budget: number
+  video: string
+  crop?: string
+  field: Named[]
+}
+
+/**
+ * Opaque per-day token for the daily video URL. Deliberately NOT the clip's
+ * normal alias (which is in the bundled clips.json), so a bundle reader can't
+ * map today's video back to the golfer. Resolved server-side in proxy.ts.
+ */
+export function dailyVideoToken(date: string): string {
+  return clipAlias(`daily-v1:${date}`)
+}
+
+export function dailyHoleView(date: string = golfDate()): DailyHoleView {
+  const state = startDaily(date)
+  const h = state.hole
   return {
-    lastDate: today,
-    streak: state.solved ? base.streak + 1 : base.streak,
-    toPar: state.solved ? base.toPar + stp : base.toPar,
-    alive: state.solved,
-    lastResult: {
-      date: today,
-      par: state.hole.par,
-      yards: state.hole.yards,
-      strokes: state.solved ? state.strokes : state.hole.par + 2,
-      solved: state.solved,
-      scoreToPar: stp,
-      player: getPlayer(state.hole.clip.playerId).name,
-    },
+    date: h.date,
+    weekday: h.weekday,
+    par: h.par,
+    yards: h.yards,
+    budget: h.budget,
+    video: `/c/daily/${dailyVideoToken(h.date)}.webm`,
+    crop: h.clip.crop,
+    field: fieldFor(state),
+  }
+}
+
+/** Server-authoritative result for a guess history — the answer only appears
+ *  once the hole is done (solved, or the budget is spent). */
+export interface DailyGuessResult {
+  phase: 'guessing' | 'done'
+  solved: boolean
+  guesses: number
+  budget: number
+  strokes: number
+  scoreToPar: number
+  par: number
+  yards: number
+  weekday: number
+  field: Named[]
+  answer?: string
+}
+
+export function dailyGuessResult(date: string, guesses: string[]): DailyGuessResult {
+  const state = resumeDaily(date, guesses)
+  const done = state.phase === 'done'
+  return {
+    phase: state.phase,
+    solved: state.solved,
+    guesses: state.guesses.length,
+    budget: state.hole.budget,
+    strokes: done ? (state.solved ? state.strokes : state.hole.par + 2) : state.guesses.length,
+    scoreToPar: done ? scoreToPar(state) : 0,
+    par: state.hole.par,
+    yards: state.hole.yards,
+    weekday: state.hole.weekday,
+    field: done ? [] : fieldFor(state),
+    answer: done ? getPlayer(state.hole.clip.playerId).name : undefined,
   }
 }
 

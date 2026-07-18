@@ -1,19 +1,17 @@
 'use client'
 
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import {
-  applyResult,
+  foldResult,
   golfDate,
-  narrowedField,
-  resumeDaily,
-  startDaily,
-  submitDailyGuess,
   weekdayName,
+  type DailyGuessResult,
+  type DailyHoleView,
   type DailyProgress,
-  type DailyState,
 } from '@/lib/daily'
-import { getPlayer, getPlayers, getSport } from '@/lib/data'
+import { getSport } from '@/lib/data'
+import type { Named } from '@/lib/search'
 import {
   clearDailyActive,
   loadDaily,
@@ -23,56 +21,99 @@ import {
 } from '@/lib/storage'
 import ClipPlayer from '@/components/ClipPlayer'
 import GuessInput from '@/components/GuessInput'
-import HintChips from '@/components/HintChips'
 import DailyRecap from './DailyRecap'
+
+const postGuesses = (guesses: string[]): Promise<DailyGuessResult> =>
+  fetch('/api/daily', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ guesses }),
+  }).then((r) => r.json())
 
 export default function DailyGame() {
   const today = useMemo(() => golfDate(), [])
   const prev = useMemo(() => loadDaily('golf'), [])
   const alreadyPlayed = prev?.lastDate === today
 
-  const [state, setState] = useState<DailyState | null>(() => {
-    if (alreadyPlayed) return null
-    // Resume in-progress guesses so a refresh can't reset the budget.
-    const active = loadDailyActive('golf')
-    if (active && active.date === today && active.guesses.length) {
-      return resumeDaily(today, active.guesses)
-    }
-    return startDaily(today)
-  })
+  const [hole, setHole] = useState<DailyHoleView | null>(null)
+  const [field, setField] = useState<Named[]>([])
+  const [guesses, setGuesses] = useState<string[]>([])
+  const [result, setResult] = useState<DailyGuessResult | null>(null)
   const [progress, setProgress] = useState<DailyProgress | null>(prev)
   const [justFinished, setJustFinished] = useState(false)
-  const saved = useRef(false)
+  const [busy, setBusy] = useState(false)
+  const folded = useRef(false)
 
-  // Persist the running guesses each turn (survives a refresh mid-hole).
+  // Load today's hole (answer stays on the server), resuming any saved guesses.
   useEffect(() => {
-    if (state && state.phase === 'guessing') {
-      saveDailyActive('golf', { date: today, guesses: state.guesses })
+    if (alreadyPlayed) return
+    let cancelled = false
+    ;(async () => {
+      const view: DailyHoleView = await fetch('/api/daily').then((r) => r.json())
+      if (cancelled) return
+      setHole(view)
+      const active = loadDailyActive('golf')
+      const resume = active?.date === today && active.guesses.length ? active.guesses : []
+      if (resume.length) {
+        const res = await postGuesses(resume)
+        if (cancelled) return
+        setGuesses(resume)
+        setResult(res)
+        setField(res.phase === 'done' ? [] : res.field)
+      } else {
+        setField(view.field)
+      }
+    })()
+    return () => {
+      cancelled = true
     }
-  }, [state, today])
+  }, [alreadyPlayed, today])
 
-  // Fold the finished hole into the streak exactly once.
+  // Fold a finished hole into the streak exactly once.
   useEffect(() => {
-    if (state?.phase === 'done' && !saved.current) {
-      saved.current = true
-      const next = applyResult(prev, today, state)
+    if (result?.phase === 'done' && !folded.current) {
+      folded.current = true
+      const next = foldResult(prev, today, {
+        par: result.par,
+        yards: result.yards,
+        strokes: result.strokes,
+        solved: result.solved,
+        scoreToPar: result.scoreToPar,
+        player: result.answer ?? '—',
+      })
       saveDaily('golf', next)
       clearDailyActive('golf')
       setProgress(next)
       setJustFinished(true)
     }
-  }, [state, prev, today])
+  }, [result, prev, today])
 
-  // Already played today, or just finished → the recap (play locked till tomorrow).
+  const guess = useCallback(
+    async (id: string) => {
+      if (busy || guesses.includes(id)) return
+      setBusy(true)
+      const next = [...guesses, id]
+      setGuesses(next)
+      saveDailyActive('golf', { date: today, guesses: next })
+      try {
+        const res = await postGuesses(next)
+        setResult(res)
+        if (res.phase !== 'done') setField(res.field)
+      } finally {
+        setBusy(false)
+      }
+    },
+    [busy, guesses, today],
+  )
+
   if (alreadyPlayed && progress) return <DailyRecap progress={progress} justFinished={false} />
   if (justFinished && progress) return <DailyRecap progress={progress} justFinished />
-  if (!state) return null
+  if (!hole) {
+    return <div className="p-16 text-center font-mono text-sm text-chalk-soft">Walking to the tee…</div>
+  }
 
   const sport = getSport('golf')
-  const player = getPlayer(state.hole.clip.playerId)
-  const field = narrowedField(state, getPlayers('golf'))
-  const used = state.guesses.length
-  const left = state.hole.budget - used
+  const left = hole.budget - guesses.length
 
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-4 py-5">
@@ -81,7 +122,7 @@ export default function DailyGame() {
           Shadow<span className="text-flag">Form</span>
         </Link>
         <span className="font-mono text-sm text-chalk-soft">
-          {weekdayName(today)} · Par {state.hole.par} ·{' '}
+          {weekdayName(today)} · Par {hole.par} ·{' '}
           <span className="text-paper">
             {left} {left === 1 ? 'shot' : 'shots'} left
           </span>
@@ -89,19 +130,17 @@ export default function DailyGame() {
       </header>
 
       <p className="text-center font-mono text-[10px] uppercase tracking-[0.3em] text-chalk-soft">
-        Daily Round · {state.hole.yards} yd
+        Daily Round · {hole.yards} yd
       </p>
 
-      <ClipPlayer src={state.hole.clip.src} seed={player.id} variant="swing" crop={state.hole.clip.crop} />
+      <ClipPlayer src={hole.video} seed="daily" variant="swing" crop={hole.crop} />
 
-      <HintChips player={player} detailLabel={sport.detailLabel} level={Math.min(used, 2)} />
-
-      <div key={used} className={used > 0 ? 'sf-shake mt-auto' : 'mt-auto'}>
+      <div key={guesses.length} className={guesses.length > 0 ? 'sf-shake mt-auto' : 'mt-auto'}>
         <GuessInput
           players={field}
           placeholder={sport.inputPlaceholder}
-          disabledIds={state.guesses}
-          onGuess={(id) => setState((s) => (s ? submitDailyGuess(s, id) : s))}
+          disabledIds={guesses}
+          onGuess={guess}
         />
       </div>
     </div>

@@ -1,4 +1,8 @@
-import type { Player } from './types'
+/** Anything with a display name — Player, or a slim {id,name} guess option. */
+export interface Named {
+  id: string
+  name: string
+}
 
 export function normalize(s: string): string {
   return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
@@ -24,7 +28,7 @@ function score(query: string, name: string): number {
   return -1
 }
 
-export function searchPlayers(players: Player[], query: string, limit = 8): Player[] {
+export function searchPlayers<T extends Named>(players: T[], query: string, limit = 8): T[] {
   const q = normalize(query).trim()
   if (!q) return []
   return players
