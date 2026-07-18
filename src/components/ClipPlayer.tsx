@@ -24,11 +24,15 @@ function useReducedMotion(): boolean {
 const sloVariant = (src: string) => src.replace(/\.webm$/, '-slo.webm')
 
 /** Both-format sources: Safari (especially iOS) can't decode VP9 WebM and
- * needs the H.264 MP4 the pipeline exports alongside every clip. */
+ * needs the H.264 MP4 the pipeline exports alongside every clip. The explicit
+ * `codecs="vp9"` is load-bearing — without it iOS Safari reports generic
+ * `video/webm` as playable, *selects* the WebM, then fails to decode it (source
+ * fallback only fires at selection time, not on decode failure). Naming the
+ * codec makes canPlayType return "" on iOS so it falls through to the MP4. */
 function Sources({ webm }: { webm: string }) {
   return (
     <>
-      <source src={webm} type="video/webm" />
+      <source src={webm} type='video/webm; codecs="vp9"' />
       <source src={webm.replace(/\.webm$/, '.mp4')} type="video/mp4" />
     </>
   )
