@@ -45,13 +45,14 @@ describe('setClip* on a clip with no clips.json row', () => {
     expect(clipsOut).toBeNull() // never written
   })
 
-  it('setClipSrc creates the row when pointing at a real webm', () => {
+  it('setClipSrc creates the row with an opaque aliased src', () => {
     const src = setClipSrc('no-row-01', true)
-    expect(src).toBe('/clips/no-row-01.webm')
+    expect(src).toMatch(/^\/c\/[a-z0-9]+\.webm$/) // opaque alias, no player name
+    expect(src).not.toContain('no-row')
     expect(clipsOut?.find((c) => c.id === 'no-row-01')).toMatchObject({
       id: 'no-row-01',
       playerId: 'benched',
-      src: '/clips/no-row-01.webm',
+      src,
     })
   })
 

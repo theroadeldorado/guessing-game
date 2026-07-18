@@ -4,6 +4,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import type { Player } from './types'
+import { clipAlias } from './clipalias'
 
 const REPO = process.cwd()
 const PIPELINE = path.join(REPO, 'pipeline')
@@ -151,7 +152,8 @@ export function ensurePoolPlayer(id: string): void {
 export function setClipSrc(id: string, real: boolean): string {
   const clips = JSON.parse(fs.readFileSync(CLIPS_JSON, 'utf8')) as ClipRow[]
   const webm = path.join(REPO, 'public', 'clips', `${id}.webm`)
-  const src = real && fs.existsSync(webm) ? `/clips/${id}.webm` : 'placeholder'
+  // Public URL is the opaque alias (proxy.ts maps it back to the real file).
+  const src = real && fs.existsSync(webm) ? `/c/${clipAlias(id)}.webm` : 'placeholder'
   const row = clips.find((c) => c.id === id)
   if (row) {
     row.src = src
