@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { type Crop, cropStyle, MAX_ZOOM, parseCrop, serializeCrop } from '@/lib/crop'
 
 interface DevClip {
   id: string
@@ -10,12 +11,16 @@ interface DevClip {
   source: string
   start: string
   end: string
+  crop: string
   flagged?: boolean
   src: string
+  file?: string
   speed?: number
 }
 
 type Filter = 'all' | 'real' | 'flagged' | 'placeholder'
+
+const clamp = (n: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, n))
 
 export default function ClipReviewer() {
   const [clips, setClips] = useState<DevClip[]>([])
@@ -69,7 +74,8 @@ export default function ClipReviewer() {
         </nav>
         <p className="font-mono text-xs text-chalk-soft">
           Flag pulls a clip out of the game. Edit source/start/end, then Save & reprocess. Times
-          are HH:MM:SS with optional decimal seconds — e.g. 00:00:01.5 for 1½s.
+          are HH:MM:SS with optional decimal seconds — e.g. 00:00:01.5 for 1½s. Drag the clip to
+          pan and scroll to zoom the crop; Save applies framing instantly (no reprocess).
         </p>
       </header>
       <div className="mx-auto grid max-w-6xl grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4">
@@ -99,15 +105,64 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
   const [start, setStart] = useState(clip.start)
   const [end, setEnd] = useState(clip.end)
   const [speed, setSpeed] = useState(String(clip.speed ?? 4))
+  const [crop, setCrop] = useState<Crop>(() => parseCrop(clip.crop))
+  const [aspect, setAspect] = useState(1)
   const [status, setStatus] = useState('')
   const [busy, setBusy] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
+  const boxRef = useRef<HTMLDivElement>(null)
+  const drag = useRef<{ x: number; y: number; cx: number; cy: number } | null>(null)
 
+  const cropStr = serializeCrop(crop)
   const dirty =
     source !== clip.source ||
     start !== clip.start ||
     end !== clip.end ||
+    cropStr !== (clip.crop || 'auto') ||
     Number(speed) !== (clip.speed ?? 4)
+
+  // Show the loop even when flagged out of the game: the processed file stays
+  // on disk (clip.file) so it can be re-framed and unflagged when ready.
+  const rawSrc = clip.src !== 'placeholder' ? clip.src : clip.file
+  const videoSrc = rawSrc ? `${rawSrc}${bust ? `?v=${bust}` : ''}` : null
+
+  // Base fit fractions for the drag math (mirror lib/crop's cropStyle).
+  const bwf = aspect >= 1 ? 1 : aspect
+  const bhf = aspect >= 1 ? 1 / aspect : 1
+  const dispWf = bwf * crop.zoom
+  const dispHf = bhf * crop.zoom
+
+  // Non-passive wheel so we can preventDefault the page scroll while zooming.
+  useEffect(() => {
+    const box = boxRef.current
+    if (!box || !videoSrc) return
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault()
+      setCrop((c) => ({ ...c, zoom: clamp(c.zoom * (1 - e.deltaY * 0.0015), 1, MAX_ZOOM) }))
+    }
+    box.addEventListener('wheel', onWheel, { passive: false })
+    return () => box.removeEventListener('wheel', onWheel)
+  }, [videoSrc])
+
+  const onPointerDown = (e: React.PointerEvent) => {
+    if (!videoSrc) return
+    e.currentTarget.setPointerCapture(e.pointerId)
+    drag.current = { x: e.clientX, y: e.clientY, cx: crop.cx, cy: crop.cy }
+  }
+  const onPointerMove = (e: React.PointerEvent) => {
+    const d = drag.current
+    const box = boxRef.current
+    if (!d || !box) return
+    const s = box.clientWidth
+    setCrop((c) => ({
+      ...c,
+      cx: clamp(d.cx - (e.clientX - d.x) / s / dispWf, 0, 1),
+      cy: clamp(d.cy - (e.clientY - d.y) / s / dispHf, 0, 1),
+    }))
+  }
+  const endDrag = () => {
+    drag.current = null
+  }
 
   const patch = async (body: Record<string, unknown>) => {
     const res = await fetch('/api/dev/clips', {
@@ -115,7 +170,10 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id: clip.id, ...body }),
     })
-    if (!res.ok) throw new Error((await res.json()).error ?? res.statusText)
+    if (!res.ok) {
+      const msg = await res.json().then((d) => d.error).catch(() => null)
+      throw new Error(msg || res.statusText)
+    }
     return res.json()
   }
 
@@ -138,8 +196,8 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
     setBusy(true)
     setStatus('')
     try {
-      await patch({ source, start, end, speed: Number(speed) || 4 })
-      onChanged({ source, start, end, speed: Number(speed) || 4 })
+      await patch({ source, start, end, crop: cropStr, speed: Number(speed) || 4 })
+      onChanged({ source, start, end, crop: cropStr, speed: Number(speed) || 4 })
       setStatus('Saved')
     } catch (e) {
       setStatus(`Error: ${(e as Error).message}`)
@@ -152,8 +210,8 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
     setBusy(true)
     setStatus('Saving…')
     try {
-      await patch({ source, start, end, speed: Number(speed) || 4 })
-      onChanged({ source, start, end, speed: Number(speed) || 4 })
+      await patch({ source, start, end, crop: cropStr, speed: Number(speed) || 4 })
+      onChanged({ source, start, end, crop: cropStr, speed: Number(speed) || 4 })
       setStatus('Reprocessing… (new sources take a minute or two)')
       const res = await fetch('/api/dev/reprocess', {
         method: 'POST',
@@ -175,8 +233,6 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
     }
   }
 
-  const videoSrc = clip.src !== 'placeholder' ? `${clip.src}${bust ? `?v=${bust}` : ''}` : null
-
   return (
     <div
       className={`flex flex-col gap-2 rounded-sm border p-3 ${
@@ -189,13 +245,27 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
         </span>
         <span className="font-mono text-[10px] text-chalk-soft">{clip.sportId}</span>
       </div>
-      <div className="aspect-square w-full overflow-hidden rounded-sm border border-chalk bg-black">
+      <div
+        ref={boxRef}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={endDrag}
+        onPointerLeave={endDrag}
+        className={`relative aspect-square w-full overflow-hidden rounded-sm border border-chalk bg-black ${
+          videoSrc ? 'cursor-move touch-none' : ''
+        }`}
+      >
         {videoSrc ? (
           <video
             ref={videoRef}
             key={videoSrc}
             src={videoSrc}
-            className="h-full w-full object-contain"
+            onLoadedMetadata={(e) => {
+              const v = e.currentTarget
+              if (v.videoWidth && v.videoHeight) setAspect(v.videoWidth / v.videoHeight)
+            }}
+            className="pointer-events-none select-none"
+            style={cropStyle(aspect, crop)}
             autoPlay
             loop
             muted
@@ -206,7 +276,34 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
             {clip.flagged ? '🚩 flagged' : 'placeholder'}
           </div>
         )}
+        {clip.flagged && videoSrc && (
+          <span className="pointer-events-none absolute left-2 top-2 rounded-sm bg-red-500/80 px-1.5 py-0.5 font-mono text-[10px] text-ink">
+            🚩 flagged
+          </span>
+        )}
       </div>
+      {videoSrc && (
+        <div className="flex items-center gap-2 font-mono text-[11px] text-chalk-soft">
+          <span className="uppercase tracking-wider">Crop</span>
+          <input
+            type="range"
+            min={1}
+            max={MAX_ZOOM}
+            step={0.05}
+            value={crop.zoom}
+            onChange={(e) => setCrop((c) => ({ ...c, zoom: Number(e.target.value) }))}
+            className="min-w-0 flex-1 accent-flag"
+            title="drag the clip to pan · scroll to zoom"
+          />
+          <span className="tabular-nums">{crop.zoom.toFixed(1)}×</span>
+          <button
+            onClick={() => setCrop({ cx: 0.5, cy: 0.5, zoom: 1 })}
+            className="rounded-sm border border-chalk px-2 py-0.5 uppercase tracking-wider hover:border-paper hover:text-paper"
+          >
+            reset
+          </button>
+        </div>
+      )}
       <input
         value={source}
         onChange={(e) => setSource(e.target.value)}

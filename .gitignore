@@ -43,6 +43,7 @@ next-env.d.ts
 # pipeline artifacts
 pipeline/cache/
 pipeline/.venv/
+pipeline/__pycache__/
 
 # local test artifacts
 .playwright-mcp/

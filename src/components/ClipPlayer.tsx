@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import PlaceholderSilhouette, { type SilhouetteVariant } from './PlaceholderSilhouette'
+import { cropStyle, isAuto, parseCrop } from '@/lib/crop'
 
 const REDUCED_MOTION_QUERY = '(prefers-reduced-motion: reduce)'
 
@@ -45,21 +46,27 @@ function Sources({ webm }: { webm: string }) {
  * Low Power Mode) falls back to tap-to-play. `preloadSrc` warms the next
  * clip while guessing.
  */
-export default function ClipPlayer({ src, seed, variant, preloadSrc }: {
+export default function ClipPlayer({ src, seed, variant, preloadSrc, crop }: {
   src: string
   seed: string
   variant: SilhouetteVariant
   preloadSrc?: string
+  crop?: string
 }) {
   const reducedMotion = useReducedMotion()
   const [playAnyway, setPlayAnyway] = useState(false)
   const [slowMo, setSlowMo] = useState(false)
   const [needsTap, setNeedsTap] = useState(false)
+  const [aspect, setAspect] = useState(1)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   const isVideo = src !== 'placeholder'
   const paused = reducedMotion && !playAnyway
   const activeSrc = slowMo ? sloVariant(src) : src
+  // Framing is a CSS viewport transform; AUTO clips keep the plain object-contain
+  // path (unchanged), so only deliberately-cropped clips take the transform.
+  const framing = parseCrop(crop)
+  const cropped = !isAuto(framing)
 
   // iOS blocks even muted autoplay in Low Power Mode — fall back to a tap.
   useEffect(() => {
@@ -79,7 +86,12 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc }: {
         <video
           ref={videoRef}
           key={activeSrc}
-          className="h-full w-full object-contain"
+          className={cropped ? 'absolute' : 'h-full w-full object-contain'}
+          style={cropped ? cropStyle(aspect, framing) : undefined}
+          onLoadedMetadata={(e) => {
+            const v = e.currentTarget
+            if (cropped && v.videoWidth && v.videoHeight) setAspect(v.videoWidth / v.videoHeight)
+          }}
           poster={src.replace(/\.webm$/, '.jpg')}
           autoPlay={!paused}
           loop

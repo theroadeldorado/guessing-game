@@ -39,7 +39,9 @@ def load_manifest_entries() -> list[dict]:
 
 # White figure on black — the RVM alpha matte is already exactly that, so no
 # negate. Native aspect ratio preserved (no crop): fit within 720x720, and the
-# app letterboxes invisibly against its black clip box.
+# app letterboxes invisibly against its black clip box. Framing (pan/zoom) is a
+# render-time CSS transform driven by the `crop` field in clips.json, not baked
+# here, so it stays re-editable in the /dev tool.
 SILHOUETTE_VF = (
     "format=gray,"
     "scale=720:720:force_original_aspect_ratio=decrease:force_divisible_by=2,"
@@ -53,11 +55,17 @@ def run(cmd: list[str]) -> None:
 
 
 def download(entry: dict) -> Path:
+    """Cached on the source URL: re-downloads (and thus re-trims/re-mattes via
+    mtime) when the clip's YouTube source changes, not just when it's absent."""
     raw = CACHE / f"{entry['id']}.source.mp4"
-    if raw.exists():
+    meta = CACHE / f"{entry['id']}.source.txt"
+    source = entry["source"]
+    if raw.exists() and meta.exists() and meta.read_text() == source:
         return raw
+    raw.unlink(missing_ok=True)  # yt-dlp skips an existing output; clear the stale one
     run(["yt-dlp", "-f", "bv*[height<=1080]+ba/b", "--merge-output-format", "mp4",
-         "-o", str(raw), entry["source"]])
+         "--force-overwrites", "-o", str(raw), source])
+    meta.write_text(source)
     return raw
 
 
@@ -81,14 +89,16 @@ def trim_window(entry: dict) -> tuple[float, float]:
 
 
 def trim(entry: dict, raw: Path) -> Path:
-    """Cached on the trim window: re-encodes only when start/end changed,
-    which in turn invalidates the matte via mtime. Times are normalized to
-    seconds so ffmpeg never sees a raw, possibly-malformed timestamp string."""
+    """Cached on the trim window AND the source's mtime: re-encodes when
+    start/end change or the raw was re-downloaded, which in turn invalidates the
+    matte via mtime. Times are normalized to seconds so ffmpeg never sees a raw,
+    possibly-malformed timestamp string."""
     trimmed = CACHE / f"{entry['id']}.trim.mp4"
     meta = CACHE / f"{entry['id']}.trim.txt"
     start, end = trim_window(entry)
     window = f"{start:.3f}|{end:.3f}"
-    if trimmed.exists() and meta.exists() and meta.read_text() == window:
+    if (trimmed.exists() and meta.exists() and meta.read_text() == window
+            and trimmed.stat().st_mtime >= raw.stat().st_mtime):
         return trimmed
     run(["ffmpeg", "-y", "-ss", f"{start:.3f}", "-to", f"{end:.3f}", "-i", str(raw),
          "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "18", str(trimmed)])

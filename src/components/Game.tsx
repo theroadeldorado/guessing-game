@@ -67,6 +67,7 @@ export default function Game({ sportId }: { sportId: string }) {
         seed={clip.playerId}
         variant={SILHOUETTE_VARIANTS[sportId] ?? 'throw'}
         preloadSrc={nextClip?.src}
+        crop={clip.crop}
       />
 
       {state.phase === 'reveal' ? (

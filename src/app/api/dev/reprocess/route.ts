@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { execFile } from 'node:child_process'
 import path from 'node:path'
 import { promisify } from 'node:util'
-import { devToolsEnabled, setClipSrc, updateManifestEntry } from '@/lib/devtools'
+import { devToolsEnabled, ensurePoolPlayer, setClipSrc, updateManifestEntry } from '@/lib/devtools'
 
 const execFileAsync = promisify(execFile)
 
@@ -18,6 +18,14 @@ export async function POST(req: Request) {
   }
   const { id } = await req.json()
   if (!id) return NextResponse.json({ error: 'id required' }, { status: 400 })
+
+  // Reprocessing means "make this clip playable" — require (and, if benched,
+  // promote) a pool player before spending minutes on download + matting.
+  try {
+    ensurePoolPlayer(id)
+  } catch (e) {
+    return NextResponse.json({ ok: false, log: (e as Error).message }, { status: 400 })
+  }
 
   const pipeline = path.join(process.cwd(), 'pipeline')
   const python = path.join(pipeline, '.venv', 'bin', 'python')

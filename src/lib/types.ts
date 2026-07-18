@@ -25,4 +25,5 @@ export interface Clip {
   src: string         // "/clips/<id>.webm" or "placeholder"
   speed?: number      // playbackRate approximating real time (source footage
                       // is usually slow-mo); defaults to 4 when absent
+  crop?: string       // render-time framing: "auto" or "cx,cy,zoom" (see lib/crop)
 }

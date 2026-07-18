@@ -3,10 +3,12 @@
 // production — every consumer guards on NODE_ENV first.
 import fs from 'node:fs'
 import path from 'node:path'
+import type { Player } from './types'
 
 const REPO = process.cwd()
 const PIPELINE = path.join(REPO, 'pipeline')
 const CLIPS_JSON = path.join(REPO, 'src', 'data', 'clips.json')
+const PLAYERS_JSON = path.join(REPO, 'src', 'data', 'players.json')
 
 /** The review tool is opt-in: dev server AND SHADOWFORM_DEV_TOOLS=1 (.env.local). */
 export function devToolsEnabled(): boolean {
@@ -30,6 +32,7 @@ export interface DevClip extends ManifestEntry {
   sportId: string
   playerName: string
   src: string // current clips.json src ("placeholder" or /clips/...)
+  file?: string // processed webm on disk, present even when flagged out of the game
   speed?: number // playbackRate approximating real time (default 4)
 }
 
@@ -46,13 +49,16 @@ function writeJson(file: string, value: unknown) {
 }
 
 export function listDevClips(): DevClip[] {
-  const players = JSON.parse(
-    fs.readFileSync(path.join(REPO, 'src', 'data', 'players.json'), 'utf8'),
-  ) as { id: string; name: string; sportId: string }[]
+  const players = JSON.parse(fs.readFileSync(PLAYERS_JSON, 'utf8')) as {
+    id: string
+    name: string
+    sportId: string
+  }[]
   const clips = JSON.parse(fs.readFileSync(CLIPS_JSON, 'utf8')) as {
     id: string
     src: string
     speed?: number
+    crop?: string
   }[]
   const playerById = new Map(players.map((p) => [p.id, p]))
   const clipById = new Map(clips.map((c) => [c.id, c]))
@@ -63,11 +69,14 @@ export function listDevClips(): DevClip[] {
     for (const e of entries) {
       const player = playerById.get(e.playerId)
       const clip = clipById.get(e.id)
+      const webm = path.join(REPO, 'public', 'clips', `${e.id}.webm`)
       out.push({
         ...e,
         sportId: player?.sportId ?? 'unknown',
         playerName: player?.name ?? e.playerId,
         src: clip?.src ?? 'placeholder',
+        file: fs.existsSync(webm) ? `/clips/${e.id}.webm` : undefined,
+        crop: clip?.crop ?? 'auto',
         speed: clip?.speed,
       })
     }
@@ -99,27 +108,79 @@ export function updateManifestEntry(
 
 interface ClipRow {
   id: string
+  playerId: string
   src: string
   speed?: number
+  crop?: string
 }
 
-/** Point clips.json at the real webm (if it exists) or the placeholder. */
+/** The playerId for a clip, from whichever manifest defines it. */
+function manifestPlayerId(id: string): string {
+  for (const file of manifestPaths()) {
+    const entries = JSON.parse(fs.readFileSync(file, 'utf8')) as ManifestEntry[]
+    const entry = entries.find((e) => e.id === id)
+    if (entry) return entry.playerId
+  }
+  throw new Error(`No manifest entry for ${id}`)
+}
+
+/**
+ * Gate the make-a-clip-real flow on a poolable player, keeping the invariant
+ * that every clips.json row references an in-pool player. Reprocessing a clip
+ * means you intend to play it, so a benched player is promoted into the pool;
+ * a player that doesn't exist yet is a hard error (we can't invent its bio).
+ */
+export function ensurePoolPlayer(id: string): void {
+  const playerId = manifestPlayerId(id)
+  const players = JSON.parse(fs.readFileSync(PLAYERS_JSON, 'utf8')) as Player[]
+  const player = players.find((p) => p.id === playerId)
+  if (!player) {
+    throw new Error(`No player '${playerId}' in players.json — add it there first.`)
+  }
+  if (!player.inPool) {
+    player.inPool = true
+    writeJson(PLAYERS_JSON, players)
+  }
+}
+
+/**
+ * Point clips.json at the real webm, or back at the placeholder. Only a real
+ * src creates a missing row — a placeholder row for a clip with no footage is
+ * pointless and would reference a possibly out-of-pool player.
+ */
 export function setClipSrc(id: string, real: boolean): string {
   const clips = JSON.parse(fs.readFileSync(CLIPS_JSON, 'utf8')) as ClipRow[]
-  const clip = clips.find((c) => c.id === id)
-  if (!clip) throw new Error(`No clips.json entry for ${id}`)
   const webm = path.join(REPO, 'public', 'clips', `${id}.webm`)
-  clip.src = real && fs.existsSync(webm) ? `/clips/${id}.webm` : 'placeholder'
+  const src = real && fs.existsSync(webm) ? `/clips/${id}.webm` : 'placeholder'
+  const row = clips.find((c) => c.id === id)
+  if (row) {
+    row.src = src
+  } else {
+    if (src === 'placeholder') return src // nothing worth persisting
+    clips.push({ id, playerId: manifestPlayerId(id), src })
+  }
   writeJson(CLIPS_JSON, clips)
-  return clip.src
+  return src
 }
 
-/** Persist the real-time playbackRate multiplier for a clip (default 4). */
+/** Persist the real-time playbackRate multiplier (default 4). No-op until the
+ *  clip has a row — speed is meaningless before there's footage to play. */
 export function setClipSpeed(id: string, speed: number): void {
   const clips = JSON.parse(fs.readFileSync(CLIPS_JSON, 'utf8')) as ClipRow[]
-  const clip = clips.find((c) => c.id === id)
-  if (!clip) throw new Error(`No clips.json entry for ${id}`)
-  if (Number.isFinite(speed) && speed > 0 && speed !== 4) clip.speed = speed
-  else delete clip.speed
+  const row = clips.find((c) => c.id === id)
+  if (!row) return
+  if (Number.isFinite(speed) && speed > 0 && speed !== 4) row.speed = speed
+  else delete row.speed
+  writeJson(CLIPS_JSON, clips)
+}
+
+/** Persist the render-time framing ('auto' or 'cx,cy,zoom'). No-op until the
+ *  clip has a row — there's nothing to frame before it's processed. */
+export function setClipCrop(id: string, crop: string): void {
+  const clips = JSON.parse(fs.readFileSync(CLIPS_JSON, 'utf8')) as ClipRow[]
+  const row = clips.find((c) => c.id === id)
+  if (!row) return
+  if (crop && crop !== 'auto') row.crop = crop
+  else delete row.crop
   writeJson(CLIPS_JSON, clips)
 }
