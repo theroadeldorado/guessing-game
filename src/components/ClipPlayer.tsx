@@ -58,6 +58,19 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc, crop }: {
   const [aspect, setAspect] = useState(1)
   const videoRef = useRef<HTMLVideoElement>(null)
 
+  // React does NOT reliably render the `muted` HTML attribute, and iOS Safari
+  // checks the element's muted state to decide autoplay eligibility. Set it
+  // imperatively the instant the node mounts — before Safari evaluates autoplay
+  // — or it treats the video as unmuted, refuses to autoplay/preload, and you
+  // get a frozen poster with no error to fall back on.
+  const attachVideo = (el: HTMLVideoElement | null) => {
+    videoRef.current = el
+    if (el) {
+      el.defaultMuted = true
+      el.muted = true
+    }
+  }
+
   const isVideo = src !== 'placeholder'
   const paused = reducedMotion && !playAnyway
   const activeSrc = mp4Variant(slowMo ? sloVariant(src) : src)
@@ -66,20 +79,18 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc, crop }: {
   const framing = parseCrop(crop)
   const cropped = !isAuto(framing)
 
-  // iOS blocks even muted autoplay in Low Power Mode — fall back to a tap. Set
-  // muted before play() and wait for playable data, which iOS wants before it
-  // will honor a programmatic play().
+  // Drive playback directly rather than waiting on `canplay`: on iOS an
+  // autoplay-eligible video only fires canplay once it decides to play, so
+  // gating play() on canplay can deadlock into a frozen frame. play() itself
+  // kicks the load; if it's genuinely blocked (Low Power Mode) we get a
+  // rejection and fall back to tap-to-play.
   useEffect(() => {
     if (!isVideo || paused) return
     const v = videoRef.current
     if (!v) return
     setNeedsTap(false)
-    v.defaultMuted = true
     v.muted = true
-    const start = () => void v.play().catch(() => setNeedsTap(true))
-    if (v.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) start()
-    else v.addEventListener('canplay', start, { once: true })
-    return () => v.removeEventListener('canplay', start)
+    void v.play().catch(() => setNeedsTap(true))
   }, [isVideo, paused, activeSrc])
 
   const tapToPlay = () => {
@@ -90,7 +101,7 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc, crop }: {
     <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-chalk bg-black text-paper">
       {isVideo ? (
         <video
-          ref={videoRef}
+          ref={attachVideo}
           key={activeSrc}
           src={activeSrc}
           className={cropped ? 'absolute' : 'h-full w-full object-contain'}
