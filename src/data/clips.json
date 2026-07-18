@@ -1276,16 +1276,6 @@
     "crop": "0.418,0.575,1.30"
   },
   {
-    "id": "annika-sorenstam-01",
-    "playerId": "annika-sorenstam",
-    "src": "placeholder"
-  },
-  {
-    "id": "nelly-korda-01",
-    "playerId": "nelly-korda",
-    "src": "placeholder"
-  },
-  {
     "id": "patrick-reed-01",
     "playerId": "patrick-reed",
     "src": "/clips/patrick-reed-01.webm",
