@@ -2,6 +2,7 @@ import { ImageResponse } from 'next/og'
 import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { getSport } from '@/lib/data'
+import { labelFor, parseDailyShare, shareStrokes, toParText, WEEKDAYS } from '@/lib/daily'
 import { outcomeOf, parseShareData, SITE_HOST } from '@/lib/share'
 
 // ShadowForm palette (globals.css)
@@ -21,6 +22,92 @@ const PIP: Record<string, { background: string; border?: string }> = {
 export const contentType = 'image/png'
 const SIZE = { width: 1200, height: 630 }
 
+const RED = '#f87171'
+
+/** Golf-scorecard mark for the OG card: circle(s) under par, square(s) over. */
+function scoreMarkOG(toPar: number, strokes: number) {
+  const color = toPar < 0 ? FLAG : toPar > 0 ? RED : PAPER
+  const shaped = toPar <= -1 || toPar >= 1
+  const doubled = toPar <= -2 || toPar >= 2
+  const radius = toPar <= -1 ? 999 : 22
+  return (
+    <div
+      style={{
+        position: 'relative',
+        width: 168,
+        height: 168,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color,
+      }}
+    >
+      {shaped && (
+        <div
+          style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, border: `10px solid ${color}`, borderRadius: radius }}
+        />
+      )}
+      {doubled && (
+        <div
+          style={{ position: 'absolute', top: 17, left: 17, right: 17, bottom: 17, border: `10px solid ${color}`, borderRadius: toPar <= -1 ? 999 : 13 }}
+        />
+      )}
+      <div style={{ fontSize: 108 }}>{String(strokes)}</div>
+    </div>
+  )
+}
+
+/** The Daily Round result card — spoiler-free (score + streak, never the golfer). */
+async function renderDaily(params: URLSearchParams, anton: Buffer) {
+  const s = parseDailyShare(params)
+  const strokes = shareStrokes(s)
+  const label = labelFor(s.solved, strokes, s.par)
+  const day = WEEKDAYS[((s.weekday % 7) + 7) % 7]
+
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          background: ROOM,
+          padding: 64,
+          fontFamily: 'Anton',
+          color: PAPER,
+        }}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+          <div style={{ display: 'flex', fontSize: 48, letterSpacing: 2 }}>
+            <span>SHADOW</span>
+            <span style={{ color: FLAG }}>FORM</span>
+          </div>
+          <div style={{ fontSize: 24, color: CHALK_SOFT, letterSpacing: 4 }}>DAILY ROUND</div>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div style={{ fontSize: 28, color: CHALK_SOFT, letterSpacing: 4, marginBottom: 14 }}>
+            {`${day} · ${s.yards} YD · PAR ${s.par}`}
+          </div>
+          {scoreMarkOG(s.scoreToPar, strokes)}
+          <div style={{ fontSize: 72, marginTop: 10 }}>{label.toUpperCase()}</div>
+          <div style={{ fontSize: 36, color: s.toPar < 0 ? FLAG : CHALK_SOFT, marginTop: 4 }}>
+            {`STREAK ${s.streak} · ${toParText(s.toPar).toUpperCase()}`}
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+          <div style={{ fontSize: 42, letterSpacing: 1 }}>KEEP YOUR STREAK</div>
+          <div style={{ fontSize: 32, color: FLAG }}>{SITE_HOST}</div>
+        </div>
+      </div>
+    ),
+    { ...SIZE, fonts: [{ name: 'Anton', data: anton, weight: 400, style: 'normal' }] },
+  )
+}
+
 /**
  * The shareable result card. Rendered from URL params (no DB) so the same image
  * serves both the link's OG/Twitter preview and the file attached to the native
@@ -29,6 +116,10 @@ const SIZE = { width: 1200, height: 630 }
  */
 export async function GET(request: Request) {
   const params = new URL(request.url).searchParams
+  const anton = await readFile(join(process.cwd(), 'assets', 'Anton-Regular.ttf'))
+
+  if (params.has('d')) return renderDaily(params, anton)
+
   const isResult = params.has('s')
   const d = parseShareData(params)
   let sport
@@ -37,7 +128,6 @@ export async function GET(request: Request) {
   } catch {
     sport = getSport('golf')
   }
-  const anton = await readFile(join(process.cwd(), 'assets', 'Anton-Regular.ttf'))
   const noun = d.solved === 1 ? sport.athleteNoun : sport.athleteNounPlural
   const pips = [...d.results].slice(0, 60)
 

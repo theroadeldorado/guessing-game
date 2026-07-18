@@ -1,16 +1,18 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 import {
   advance, createRun, currentClip, hintLevel, submitGuess,
   type RunState,
 } from '@/lib/game'
-import { getPlayer, getPlayers, getPoolClips, getSport } from '@/lib/data'
+import { getPlayer, getPlayers, getPoolClips, getSport, multipleChoiceOptions } from '@/lib/data'
 import { loadBest, recordScore } from '@/lib/storage'
 import type { SilhouetteVariant } from './PlaceholderSilhouette'
 import ClipPlayer from './ClipPlayer'
 import DownMarkers from './DownMarkers'
 import GuessInput from './GuessInput'
+import MultipleChoice from './MultipleChoice'
 import HintChips from './HintChips'
 import RevealCard from './RevealCard'
 import GameOver from './GameOver'
@@ -53,9 +55,17 @@ export default function Game({ sportId }: { sportId: string }) {
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-4 py-5">
       <header className="flex items-baseline justify-between border-b border-chalk pb-3">
-        <span className="font-display text-xl uppercase tracking-wide text-paper">
-          Shadow<span className="text-flag">Form</span>
-        </span>
+        <div className="flex items-baseline gap-3">
+          <span className="font-display text-xl uppercase tracking-wide text-paper">
+            Shadow<span className="text-flag">Form</span>
+          </span>
+          <Link
+            href="/daily"
+            className="font-mono text-xs uppercase tracking-wider text-chalk-soft transition-colors hover:text-flag"
+          >
+            ⛳ Daily
+          </Link>
+        </div>
         <span className="font-mono text-sm text-chalk-soft">
           <span className="text-paper">{state.score}</span> pts · {sport.athleteNoun}{' '}
           {state.index + 1}/{state.clipOrder.length}
@@ -82,13 +92,22 @@ export default function Game({ sportId }: { sportId: string }) {
           <DownMarkers level={level} />
           <HintChips player={player} detailLabel={sport.detailLabel} level={level} />
           <div key={level} className={level > 0 ? 'sf-shake mt-auto' : 'mt-auto'}>
-            <GuessInput
-              key={clip.id}
-              players={getPlayers(sportId)}
-              placeholder={sport.inputPlaceholder}
-              disabledIds={state.wrongGuesses}
-              onGuess={(id) => setState(submitGuess(state, id))}
-            />
+            {/* Guess 1: type-to-search. After a miss: 12-option same-era grid. */}
+            {level === 0 ? (
+              <GuessInput
+                key={clip.id}
+                players={getPlayers(sportId)}
+                placeholder={sport.inputPlaceholder}
+                disabledIds={state.wrongGuesses}
+                onGuess={(id) => setState(submitGuess(state, id))}
+              />
+            ) : (
+              <MultipleChoice
+                options={multipleChoiceOptions(sportId, clip.playerId, 12, clip.id)}
+                disabledIds={state.wrongGuesses}
+                onGuess={(id) => setState(submitGuess(state, id))}
+              />
+            )}
           </div>
         </>
       )}

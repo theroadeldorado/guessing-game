@@ -8,6 +8,7 @@ import { searchPlayers } from '@/lib/search'
  * Autocomplete combobox. Guesses can only be submitted by selecting a
  * suggestion (keyboard or pointer) — free text never submits, so spelling
  * never costs a guess. Already-guessed players render dimmed and inert.
+ * Focusing the empty box reveals the full alphabetical list to scroll.
  */
 export default function GuessInput({ players, placeholder, disabledIds, onGuess }: {
   players: Player[]
@@ -17,7 +18,16 @@ export default function GuessInput({ players, placeholder, disabledIds, onGuess 
 }) {
   const [query, setQuery] = useState('')
   const [highlight, setHighlight] = useState(0)
-  const results = useMemo(() => searchPlayers(players, query), [players, query])
+  const [focused, setFocused] = useState(false)
+
+  const allSorted = useMemo(
+    () => [...players].sort((a, b) => a.name.localeCompare(b.name)),
+    [players],
+  )
+  const results = useMemo(
+    () => (query.trim() === '' ? (focused ? allSorted : []) : searchPlayers(players, query)),
+    [players, query, focused, allSorted],
+  )
 
   const select = (p: Player) => {
     if (disabledIds.includes(p.id)) return
@@ -51,6 +61,8 @@ export default function GuessInput({ players, placeholder, disabledIds, onGuess 
           setHighlight(0)
         }}
         onKeyDown={onKeyDown}
+        onFocus={() => setFocused(true)}
+        onBlur={() => setFocused(false)}
         placeholder={placeholder}
         role="combobox"
         aria-expanded={results.length > 0}
