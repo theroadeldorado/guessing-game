@@ -185,6 +185,8 @@ def main() -> int:
     ap.add_argument("--only", help="process a single clip id")
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--include-flagged", action="store_true",
+                    help="also process flagged (unreviewed) clips; they stay flagged")
     args = ap.parse_args()
 
     entries = load_manifest_entries()
@@ -210,7 +212,7 @@ def main() -> int:
             print(f"~ {entry['id']}: no source URL yet, skipping")
             skipped += 1
             continue
-        if entry.get("flagged") and not args.only:
+        if entry.get("flagged") and not args.only and not args.include_flagged:
             print(f"~ {entry['id']}: flagged as bad, skipping (fix via /dev or --only)")
             skipped += 1
             continue

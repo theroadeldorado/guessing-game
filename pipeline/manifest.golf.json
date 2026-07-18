@@ -50,9 +50,9 @@
   {
     "id": "gary-player-01",
     "playerId": "gary-player",
-    "source": "https://www.youtube.com/shorts/R5XkBZJni4A",
+    "source": "https://www.youtube.com/shorts/cilhMpafmig",
     "start": "",
-    "end": "00:00:12",
+    "end": "00:00:03.2",
     "crop": "auto"
   },
   {
@@ -104,7 +104,7 @@
     "playerId": "greg-norman",
     "source": "https://www.youtube.com/shorts/ise02PwFazA",
     "start": "00:00:00",
-    "end": "00:00:01.5",
+    "end": "00:00:01.6",
     "crop": "auto"
   },
   {
@@ -202,7 +202,7 @@
     "playerId": "jim-furyk",
     "source": "https://www.youtube.com/watch?v=d7jePVzL47E",
     "start": "",
-    "end": "00:00:18",
+    "end": "00:00:22",
     "crop": "auto"
   },
   {
@@ -210,7 +210,7 @@
     "playerId": "retief-goosen",
     "source": "https://www.youtube.com/shorts/AIvlMTvXJ3w",
     "start": "00:00:06",
-    "end": "00:00:18",
+    "end": "00:00:22",
     "crop": "auto"
   },
   {
@@ -249,8 +249,8 @@
     "id": "henrik-stenson-01",
     "playerId": "henrik-stenson",
     "source": "https://www.youtube.com/shorts/KEbagn-0Gwo",
-    "start": "",
-    "end": "",
+    "start": "00:00:00",
+    "end": "00:00:33",
     "crop": "auto"
   },
   {
@@ -266,7 +266,7 @@
     "playerId": "dustin-johnson",
     "source": "https://www.youtube.com/shorts/V-DCr8se7l8",
     "start": "",
-    "end": "00:00:22",
+    "end": "00:00:28",
     "crop": "auto"
   },
   {
@@ -306,7 +306,7 @@
     "playerId": "brooks-koepka",
     "source": "https://www.youtube.com/shorts/nK6DuDiLDlI",
     "start": "00:00:00",
-    "end": "00:00:30",
+    "end": "00:00:40",
     "crop": "auto"
   },
   {
@@ -330,7 +330,7 @@
     "playerId": "collin-morikawa",
     "source": "https://www.youtube.com/shorts/7XpbVkPcBNc",
     "start": "",
-    "end": "00:00:20",
+    "end": "00:00:24",
     "crop": "auto"
   },
   {
@@ -445,7 +445,7 @@
     "playerId": "shane-lowry",
     "source": "https://www.youtube.com/shorts/sKwaZnZI6n8",
     "start": "00:00:00",
-    "end": "00:00:28",
+    "end": "00:00:26.5",
     "crop": "auto"
   },
   {
@@ -583,10 +583,9 @@
     "id": "daniel-berger-01",
     "playerId": "daniel-berger",
     "source": "https://www.youtube.com/shorts/y4Vy9XZ3KPg",
-    "start": "",
-    "end": "+5",
-    "crop": "auto",
-    "flagged": true
+    "start": "00:00:00",
+    "end": "00:00:24",
+    "crop": "auto"
   },
   {
     "id": "billy-horschel-01",
@@ -652,26 +651,24 @@
     "playerId": "russell-henley",
     "source": "https://www.youtube.com/shorts/iewqtW_Mw_w",
     "start": "",
-    "end": "+4",
-    "crop": "auto",
-    "flagged": true
+    "end": "00:00:36",
+    "crop": "auto"
   },
   {
     "id": "robert-macintyre-01",
     "playerId": "robert-macintyre",
-    "source": "https://www.youtube.com/shorts/D_8OfSzqMfI",
+    "source": "https://www.youtube.com/shorts/DV2ToJaYdjc",
     "start": "",
-    "end": "00:00:40",
+    "end": "00:00:15",
     "crop": "auto"
   },
   {
     "id": "tommy-fleetwood-01",
     "playerId": "tommy-fleetwood",
-    "source": "https://www.youtube.com/shorts/WeQtARJuK3w",
-    "start": "",
-    "end": "",
-    "crop": "auto",
-    "flagged": true
+    "source": "https://www.youtube.com/shorts/pu0TjO79zRA",
+    "start": "00:00:00",
+    "end": "00:00:17",
+    "crop": "auto"
   },
   {
     "id": "tyrrell-hatton-01",
@@ -685,10 +682,9 @@
     "id": "lucas-glover-01",
     "playerId": "lucas-glover",
     "source": "https://www.youtube.com/shorts/sFO-CJ7P9HQ",
-    "start": "",
-    "end": "",
-    "crop": "auto",
-    "flagged": true
+    "start": "00:00:00",
+    "end": "00:00:24",
+    "crop": "auto"
   },
   {
     "id": "chris-kirk-01",
@@ -729,10 +725,9 @@
     "id": "brendon-todd-01",
     "playerId": "brendon-todd",
     "source": "https://www.youtube.com/shorts/I0qYzFydIso",
-    "start": "",
-    "end": "",
-    "crop": "auto",
-    "flagged": true
+    "start": "00:00:00",
+    "end": "00:00:30",
+    "crop": "auto"
   },
   {
     "id": "cameron-champ-01",
@@ -747,24 +742,23 @@
     "playerId": "cameron-young",
     "source": "https://www.youtube.com/shorts/IGSVMr3OU_4",
     "start": "00:00:00",
-    "end": "00:00:30",
+    "end": "00:00:34",
     "crop": "auto"
   },
   {
     "id": "matt-kuchar-01",
     "playerId": "matt-kuchar",
-    "source": "https://www.youtube.com/shorts/CMJRGITgjwQ",
+    "source": "https://www.youtube.com/shorts/Y--fMh56qIc",
     "start": "",
-    "end": "",
-    "crop": "auto",
-    "flagged": true
+    "end": "00:00:08",
+    "crop": "auto"
   },
   {
     "id": "matt-wolff-01",
     "playerId": "matt-wolff",
     "source": "https://www.youtube.com/shorts/h1D3X9VDY68",
     "start": "00:00:00",
-    "end": "00:00:33",
+    "end": "00:00:36",
     "crop": "auto"
   },
   {
@@ -797,7 +791,7 @@
     "playerId": "mike-weir",
     "source": "https://www.youtube.com/watch?v=RiEUPJNPY_Y",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -869,7 +863,7 @@
     "playerId": "brandt-snedeker",
     "source": "https://www.youtube.com/watch?v=2cD6CPZhiEY",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -887,7 +881,7 @@
     "playerId": "mark-calcavecchia",
     "source": "https://www.youtube.com/watch?v=RxlOv_oXmCY",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -905,7 +899,7 @@
     "playerId": "paul-casey",
     "source": "https://www.youtube.com/watch?v=v7SwUN0Db1k",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -914,7 +908,7 @@
     "playerId": "kenny-perry",
     "source": "https://www.youtube.com/watch?v=dYYi9v85nc8",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -932,7 +926,7 @@
     "playerId": "bruce-lietzke",
     "source": "https://www.youtube.com/watch?v=e1_PHoR7H_U",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -968,7 +962,7 @@
     "playerId": "paul-azinger",
     "source": "https://www.youtube.com/watch?v=QNQqsDsj9dg",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -977,7 +971,7 @@
     "playerId": "david-toms",
     "source": "https://www.youtube.com/watch?v=mCBALKE52Ew",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -995,7 +989,7 @@
     "playerId": "chris-dimarco",
     "source": "https://www.youtube.com/watch?v=tA1iotgtMyc",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1004,7 +998,7 @@
     "playerId": "fuzzy-zoeller",
     "source": "https://www.youtube.com/watch?v=G1VjVN9jS_o",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1013,7 +1007,7 @@
     "playerId": "stewart-cink",
     "source": "https://www.youtube.com/watch?v=gcmRz40rzf0",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1031,7 +1025,7 @@
     "playerId": "peter-jacobsen",
     "source": "https://www.youtube.com/watch?v=a8sz0AGo3-k",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1049,7 +1043,7 @@
     "playerId": "jesper-parnevik",
     "source": "https://www.youtube.com/watch?v=-aPRveUc6xA",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1058,7 +1052,7 @@
     "playerId": "stephen-ames",
     "source": "https://www.youtube.com/watch?v=1FPVtcysKFs",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1067,7 +1061,7 @@
     "playerId": "steve-elkington",
     "source": "https://www.youtube.com/watch?v=yCQWuMwJ0G4",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1121,7 +1115,7 @@
     "playerId": "david-graham",
     "source": "https://www.youtube.com/watch?v=xzWmkd5cqvQ",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1130,7 +1124,7 @@
     "playerId": "robert-karlsson",
     "source": "https://www.youtube.com/watch?v=3eoHzdOVQWE",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1139,7 +1133,7 @@
     "playerId": "larry-mize",
     "source": "https://www.youtube.com/watch?v=b_PIbDpTjr4",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1148,7 +1142,7 @@
     "playerId": "darren-clarke",
     "source": "https://www.youtube.com/watch?v=JVmHG7jKibk",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1184,7 +1178,7 @@
     "playerId": "lee-janzen",
     "source": "https://www.youtube.com/watch?v=AHtz9QPHMUU",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1193,7 +1187,7 @@
     "playerId": "stuart-appleby",
     "source": "https://www.youtube.com/watch?v=yBjDFo0sgUw",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1202,7 +1196,7 @@
     "playerId": "bob-tway",
     "source": "https://www.youtube.com/watch?v=_fmzNxBEbj0",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1229,7 +1223,7 @@
     "playerId": "scott-simpson",
     "source": "https://www.youtube.com/watch?v=vnqEKfGOffM",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1247,7 +1241,7 @@
     "playerId": "anthony-kim",
     "source": "https://www.youtube.com/watch?v=hcR4FND24EQ",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1256,7 +1250,7 @@
     "playerId": "hunter-mahan",
     "source": "https://www.youtube.com/watch?v=uckaHZHVzBU",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1265,7 +1259,7 @@
     "playerId": "robert-allenby",
     "source": "https://www.youtube.com/watch?v=tykSswFyQV8",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1274,7 +1268,7 @@
     "playerId": "mark-mcnulty",
     "source": "https://www.youtube.com/watch?v=LZ--Ld0KZJ4",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1301,7 +1295,7 @@
     "playerId": "nick-watney",
     "source": "https://www.youtube.com/watch?v=ViblKCdTJuo",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1337,7 +1331,7 @@
     "playerId": "abraham-ancer",
     "source": "https://www.youtube.com/watch?v=VLQqczcdygA",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1346,7 +1340,7 @@
     "playerId": "steve-flesch",
     "source": "https://www.youtube.com/watch?v=rVFO3UdluPw",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1391,7 +1385,7 @@
     "playerId": "joey-sindelar",
     "source": "https://www.youtube.com/watch?v=K9S-EPVFD-Y",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1400,7 +1394,7 @@
     "playerId": "rory-sabbatini",
     "source": "https://www.youtube.com/watch?v=bSrhzs3J9vc",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1409,7 +1403,7 @@
     "playerId": "ryan-moore",
     "source": "https://www.youtube.com/watch?v=Zvj8bjzouJ0",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1427,7 +1421,7 @@
     "playerId": "graham-delaet",
     "source": "https://www.youtube.com/watch?v=Jefb7VSmGZA",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1436,7 +1430,7 @@
     "playerId": "jeff-maggert",
     "source": "https://www.youtube.com/watch?v=seKsMyDvqAc",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1445,7 +1439,7 @@
     "playerId": "bill-haas",
     "source": "https://www.youtube.com/watch?v=B4kWZovixdc",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1454,7 +1448,7 @@
     "playerId": "jeff-sluman",
     "source": "https://www.youtube.com/watch?v=55aQID0F1SY",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1472,7 +1466,7 @@
     "playerId": "charley-hoffman",
     "source": "https://www.youtube.com/watch?v=cXPyj7u4axc",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1481,7 +1475,7 @@
     "playerId": "rocco-mediate",
     "source": "https://www.youtube.com/watch?v=50VXUU7YUC8",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1490,7 +1484,7 @@
     "playerId": "miguel-angel-jimenez",
     "source": "https://www.youtube.com/watch?v=jXKKEB-ciCw",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1499,7 +1493,7 @@
     "playerId": "fred-funk",
     "source": "https://www.youtube.com/watch?v=aJmiVfx0irk",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1580,7 +1574,7 @@
     "playerId": "jay-haas",
     "source": "https://www.youtube.com/watch?v=py2eb6Fnjms",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1589,7 +1583,7 @@
     "playerId": "charles-howell-iii",
     "source": "https://www.youtube.com/watch?v=Q4NXT8B6bCw",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1598,7 +1592,7 @@
     "playerId": "chad-campbell",
     "source": "https://www.youtube.com/watch?v=hBZiPeMG97Y",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1616,7 +1610,7 @@
     "playerId": "chez-reavie",
     "source": "https://www.youtube.com/watch?v=XmKBlBjdNpo",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1652,7 +1646,7 @@
     "playerId": "ryan-palmer",
     "source": "https://www.youtube.com/watch?v=dqp7TGOhuMk",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1679,7 +1673,7 @@
     "playerId": "kirk-triplett",
     "source": "https://www.youtube.com/watch?v=ahoOvFnpVTQ",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1715,7 +1709,7 @@
     "playerId": "jake-knapp",
     "source": "https://www.youtube.com/watch?v=vCY69SmVHy0",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1724,25 +1718,25 @@
     "playerId": "branden-grace",
     "source": "https://www.youtube.com/watch?v=Li1uEZNqi9g",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
   {
     "id": "lebron-james-01",
     "playerId": "lebron-james",
-    "source": "",
-    "start": "00:00:00",
-    "end": "",
+    "source": "https://www.youtube.com/shorts/CcrN50_7FD4",
+    "start": "00:00:31",
+    "end": "00:00:42",
     "crop": "auto",
     "flagged": true
   },
   {
     "id": "charles-barkley-01",
     "playerId": "charles-barkley",
-    "source": "https://www.youtube.com/watch?v=DFtoeQlO0Ho",
+    "source": "https://www.youtube.com/shorts/GMJjwdGqJsk",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:24",
     "crop": "auto",
     "flagged": true
   },
@@ -1751,7 +1745,7 @@
     "playerId": "stephen-curry",
     "source": "https://www.youtube.com/watch?v=SFCu2JPul_4",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:45",
     "crop": "auto",
     "flagged": true
   },
@@ -1760,7 +1754,7 @@
     "playerId": "donald-trump",
     "source": "https://www.youtube.com/shorts/3zkm9IJL3oM",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
