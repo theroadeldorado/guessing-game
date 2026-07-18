@@ -223,9 +223,11 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
         setStatus(`Pipeline failed — see log in terminal.\n${(data.log ?? '').split('\n').slice(-3).join('\n')}`)
         return
       }
-      onChanged({ flagged: false, src: data.src })
+      // The flag is preserved server-side; a flagged clip stays out of the
+      // game but its fresh webm (data.file) is shown here for review.
+      onChanged({ flagged: data.flagged, src: data.src, file: data.file ?? clip.file })
       onReprocessed()
-      setStatus('Reprocessed ✓')
+      setStatus(data.flagged ? 'Reprocessed ✓ (still flagged — unflag to release)' : 'Reprocessed ✓')
     } catch (e) {
       setStatus(`Error: ${(e as Error).message}`)
     } finally {

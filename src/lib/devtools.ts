@@ -85,6 +85,16 @@ export function listDevClips(): DevClip[] {
   return out
 }
 
+/** Read a manifest entry (or null) without mutating it. */
+export function manifestEntry(id: string): ManifestEntry | null {
+  for (const file of manifestPaths()) {
+    const entries = JSON.parse(fs.readFileSync(file, 'utf8')) as ManifestEntry[]
+    const entry = entries.find((e) => e.id === id)
+    if (entry) return entry
+  }
+  return null
+}
+
 /** Update manifest fields for one clip id. Returns the updated entry. */
 export function updateManifestEntry(
   id: string,

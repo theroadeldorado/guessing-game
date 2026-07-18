@@ -2,14 +2,15 @@ import { NextResponse } from 'next/server'
 import { execFile } from 'node:child_process'
 import path from 'node:path'
 import { promisify } from 'node:util'
-import { devToolsEnabled, ensurePoolPlayer, setClipSrc, updateManifestEntry } from '@/lib/devtools'
+import { devToolsEnabled, ensurePoolPlayer, manifestEntry, setClipSrc } from '@/lib/devtools'
 
 const execFileAsync = promisify(execFile)
 
 /**
- * POST { id } — run the silhouette pipeline for one clip (--only id --force)
- * and, on success, point clips.json at the fresh webm and clear the flag.
- * Downloads + matting can take a couple of minutes on a new source; window
+ * POST { id } — run the silhouette pipeline for one clip (--only id --force).
+ * The flag is PRESERVED: a flagged clip stays flagged (out of the game pool)
+ * so it can be reviewed in /dev and released manually; only unflagged clips go
+ * live. Downloads + matting take a couple of minutes on a new source; window
  * tweaks on an existing source finish in seconds thanks to the matte cache.
  */
 export async function POST(req: Request) {
@@ -39,9 +40,17 @@ export async function POST(req: Request) {
     if (/FAILED/.test(log)) {
       return NextResponse.json({ ok: false, log: log.slice(-2000) }, { status: 500 })
     }
-    updateManifestEntry(id, { flagged: false })
-    const src = setClipSrc(id, true)
-    return NextResponse.json({ ok: true, src, log: log.slice(-2000) })
+    // Keep the flag as-is: flagged clips stay out of the pool (placeholder src)
+    // but the fresh webm sits on disk for review; unflagged clips go live.
+    const flagged = !!manifestEntry(id)?.flagged
+    const src = setClipSrc(id, !flagged)
+    return NextResponse.json({
+      ok: true,
+      src,
+      flagged,
+      file: `/clips/${id}.webm`,
+      log: log.slice(-2000),
+    })
   } catch (err) {
     const e = err as { stdout?: string; stderr?: string; message: string }
     const log = `${e.stdout ?? ''}${e.stderr ?? ''}` || e.message
