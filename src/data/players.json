@@ -4054,5 +4054,1160 @@
     ],
     "yearsActive": "1994–",
     "inPool": false
+  },
+  {
+    "id": "david-frost",
+    "name": "David Frost",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "South Africa"
+    ],
+    "yearsActive": "1984–",
+    "inPool": false
+  },
+  {
+    "id": "lanny-wadkins",
+    "name": "Lanny Wadkins",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1971–1994",
+    "inPool": false
+  },
+  {
+    "id": "tom-lehman",
+    "name": "Tom Lehman",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1991–",
+    "inPool": false
+  },
+  {
+    "id": "brandt-snedeker",
+    "name": "Brandt Snedeker",
+    "sportId": "golf",
+    "era": "2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2006–",
+    "inPool": false
+  },
+  {
+    "id": "chip-beck",
+    "name": "Chip Beck",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1979–",
+    "inPool": false
+  },
+  {
+    "id": "mark-calcavecchia",
+    "name": "Mark Calcavecchia",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1981–",
+    "inPool": false
+  },
+  {
+    "id": "andy-bean",
+    "name": "Andy Bean",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1975–",
+    "inPool": false
+  },
+  {
+    "id": "paul-casey",
+    "name": "Paul Casey",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "2000–",
+    "inPool": false
+  },
+  {
+    "id": "kenny-perry",
+    "name": "Kenny Perry",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1982–",
+    "inPool": false
+  },
+  {
+    "id": "scott-hoch",
+    "name": "Scott Hoch",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1979–",
+    "inPool": false
+  },
+  {
+    "id": "bruce-lietzke",
+    "name": "Bruce Lietzke",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1975–2003",
+    "inPool": false
+  },
+  {
+    "id": "mark-mccumber",
+    "name": "Mark McCumber",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1978–",
+    "inPool": false
+  },
+  {
+    "id": "hal-sutton",
+    "name": "Hal Sutton",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1981–",
+    "inPool": false
+  },
+  {
+    "id": "gil-morgan",
+    "name": "Gil Morgan",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1973–",
+    "inPool": false
+  },
+  {
+    "id": "paul-azinger",
+    "name": "Paul Azinger",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1981–",
+    "inPool": false
+  },
+  {
+    "id": "david-toms",
+    "name": "David Toms",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1992–",
+    "inPool": false
+  },
+  {
+    "id": "dan-pohl",
+    "name": "Dan Pohl",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1977–",
+    "inPool": false
+  },
+  {
+    "id": "chris-dimarco",
+    "name": "Chris DiMarco",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1990–",
+    "inPool": false
+  },
+  {
+    "id": "fuzzy-zoeller",
+    "name": "Fuzzy Zoeller",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1975–",
+    "inPool": false
+  },
+  {
+    "id": "stewart-cink",
+    "name": "Stewart Cink",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1995–",
+    "inPool": false
+  },
+  {
+    "id": "calvin-peete",
+    "name": "Calvin Peete",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1975–",
+    "inPool": false
+  },
+  {
+    "id": "peter-jacobsen",
+    "name": "Peter Jacobsen",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1976–",
+    "inPool": false
+  },
+  {
+    "id": "ian-baker-finch",
+    "name": "Ian Baker-Finch",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1979–",
+    "inPool": false
+  },
+  {
+    "id": "jesper-parnevik",
+    "name": "Jesper Parnevik",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "Sweden"
+    ],
+    "yearsActive": "1988–",
+    "inPool": false
+  },
+  {
+    "id": "stephen-ames",
+    "name": "Stephen Ames",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "Canada"
+    ],
+    "yearsActive": "1987–",
+    "inPool": false
+  },
+  {
+    "id": "steve-elkington",
+    "name": "Steve Elkington",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1985–",
+    "inPool": false
+  },
+  {
+    "id": "bo-van-pelt",
+    "name": "Bo Van Pelt",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2000–",
+    "inPool": false
+  },
+  {
+    "id": "tim-simpson",
+    "name": "Tim Simpson",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1977–",
+    "inPool": false
+  },
+  {
+    "id": "bob-estes",
+    "name": "Bob Estes",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1988–",
+    "inPool": false
+  },
+  {
+    "id": "john-mahaffey",
+    "name": "John Mahaffey",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1971–",
+    "inPool": false
+  },
+  {
+    "id": "john-cook",
+    "name": "John Cook",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1979–",
+    "inPool": false
+  },
+  {
+    "id": "david-graham",
+    "name": "David Graham",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1970–",
+    "inPool": false
+  },
+  {
+    "id": "robert-karlsson",
+    "name": "Robert Karlsson",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "Sweden"
+    ],
+    "yearsActive": "1989–",
+    "inPool": false
+  },
+  {
+    "id": "larry-mize",
+    "name": "Larry Mize",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1982–",
+    "inPool": false
+  },
+  {
+    "id": "darren-clarke",
+    "name": "Darren Clarke",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "Northern Ireland"
+    ],
+    "yearsActive": "1990–",
+    "inPool": false
+  },
+  {
+    "id": "michael-campbell",
+    "name": "Michael Campbell",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "New Zealand"
+    ],
+    "yearsActive": "1993–",
+    "inPool": false
+  },
+  {
+    "id": "ken-green",
+    "name": "Ken Green",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1979–",
+    "inPool": false
+  },
+  {
+    "id": "loren-roberts",
+    "name": "Loren Roberts",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1981–",
+    "inPool": false
+  },
+  {
+    "id": "lee-janzen",
+    "name": "Lee Janzen",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1990–",
+    "inPool": false
+  },
+  {
+    "id": "stuart-appleby",
+    "name": "Stuart Appleby",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1995–",
+    "inPool": false
+  },
+  {
+    "id": "bob-tway",
+    "name": "Bob Tway",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1985–",
+    "inPool": false
+  },
+  {
+    "id": "brad-faxon",
+    "name": "Brad Faxon",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1983–",
+    "inPool": false
+  },
+  {
+    "id": "david-edwards",
+    "name": "David Edwards",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1978–",
+    "inPool": false
+  },
+  {
+    "id": "scott-simpson",
+    "name": "Scott Simpson",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1979–",
+    "inPool": false
+  },
+  {
+    "id": "bill-glasson",
+    "name": "Bill Glasson",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1984–",
+    "inPool": false
+  },
+  {
+    "id": "anthony-kim",
+    "name": "Anthony Kim",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2006–",
+    "inPool": false
+  },
+  {
+    "id": "hunter-mahan",
+    "name": "Hunter Mahan",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2003–",
+    "inPool": false
+  },
+  {
+    "id": "robert-allenby",
+    "name": "Robert Allenby",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1992–",
+    "inPool": false
+  },
+  {
+    "id": "mark-mcnulty",
+    "name": "Mark McNulty",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "Zimbabwe"
+    ],
+    "yearsActive": "1977–",
+    "inPool": false
+  },
+  {
+    "id": "scott-verplank",
+    "name": "Scott Verplank",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1985–",
+    "inPool": false
+  },
+  {
+    "id": "chris-perry",
+    "name": "Chris Perry",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1984–",
+    "inPool": false
+  },
+  {
+    "id": "nick-watney",
+    "name": "Nick Watney",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2005–",
+    "inPool": false
+  },
+  {
+    "id": "gary-koch",
+    "name": "Gary Koch",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1975–",
+    "inPool": false
+  },
+  {
+    "id": "john-huston",
+    "name": "John Huston",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1986–",
+    "inPool": false
+  },
+  {
+    "id": "wayne-levi",
+    "name": "Wayne Levi",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1977–",
+    "inPool": false
+  },
+  {
+    "id": "abraham-ancer",
+    "name": "Abraham Ancer",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Mexico"
+    ],
+    "yearsActive": "2015–",
+    "inPool": false
+  },
+  {
+    "id": "steve-flesch",
+    "name": "Steve Flesch",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1995–",
+    "inPool": false
+  },
+  {
+    "id": "roger-maltbie",
+    "name": "Roger Maltbie",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1973–",
+    "inPool": false
+  },
+  {
+    "id": "craig-parry",
+    "name": "Craig Parry",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1987–",
+    "inPool": false
+  },
+  {
+    "id": "chris-riley",
+    "name": "Chris Riley",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1998–",
+    "inPool": false
+  },
+  {
+    "id": "steve-pate",
+    "name": "Steve Pate",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1983–",
+    "inPool": false
+  },
+  {
+    "id": "joey-sindelar",
+    "name": "Joey Sindelar",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1983–",
+    "inPool": false
+  },
+  {
+    "id": "rory-sabbatini",
+    "name": "Rory Sabbatini",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "South Africa"
+    ],
+    "yearsActive": "1998–",
+    "inPool": false
+  },
+  {
+    "id": "ryan-moore",
+    "name": "Ryan Moore",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2005–",
+    "inPool": false
+  },
+  {
+    "id": "mike-reid",
+    "name": "Mike Reid",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1977–",
+    "inPool": false
+  },
+  {
+    "id": "graham-delaet",
+    "name": "Graham DeLaet",
+    "sportId": "golf",
+    "era": "2010s",
+    "detail": [
+      "Canada"
+    ],
+    "yearsActive": "2008–",
+    "inPool": false
+  },
+  {
+    "id": "jeff-maggert",
+    "name": "Jeff Maggert",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1991–",
+    "inPool": false
+  },
+  {
+    "id": "bill-haas",
+    "name": "Bill Haas",
+    "sportId": "golf",
+    "era": "2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2005–",
+    "inPool": false
+  },
+  {
+    "id": "jeff-sluman",
+    "name": "Jeff Sluman",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1983–",
+    "inPool": false
+  },
+  {
+    "id": "michael-bradley",
+    "name": "Michael Bradley",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1992–",
+    "inPool": false
+  },
+  {
+    "id": "charley-hoffman",
+    "name": "Charley Hoffman",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2004–",
+    "inPool": false
+  },
+  {
+    "id": "rocco-mediate",
+    "name": "Rocco Mediate",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1985–",
+    "inPool": false
+  },
+  {
+    "id": "miguel-angel-jimenez",
+    "name": "Miguel Angel Jimenez",
+    "sportId": "golf",
+    "era": "1990s–2010s",
+    "detail": [
+      "Spain"
+    ],
+    "yearsActive": "1988–",
+    "inPool": false
+  },
+  {
+    "id": "fred-funk",
+    "name": "Fred Funk",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1989–",
+    "inPool": false
+  },
+  {
+    "id": "bobby-wadkins",
+    "name": "Bobby Wadkins",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1975–",
+    "inPool": false
+  },
+  {
+    "id": "sam-torrance",
+    "name": "Sam Torrance",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "Scotland"
+    ],
+    "yearsActive": "1972–",
+    "inPool": false
+  },
+  {
+    "id": "john-senden",
+    "name": "John Senden",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1997–",
+    "inPool": false
+  },
+  {
+    "id": "peter-lonard",
+    "name": "Peter Lonard",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1993–",
+    "inPool": false
+  },
+  {
+    "id": "mark-brooks",
+    "name": "Mark Brooks",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1983–",
+    "inPool": false
+  },
+  {
+    "id": "dudley-hart",
+    "name": "Dudley Hart",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1991–",
+    "inPool": false
+  },
+  {
+    "id": "shigeki-maruyama",
+    "name": "Shigeki Maruyama",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "Japan"
+    ],
+    "yearsActive": "1992–",
+    "inPool": false
+  },
+  {
+    "id": "bob-may",
+    "name": "Bob May",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1991–",
+    "inPool": false
+  },
+  {
+    "id": "jay-haas",
+    "name": "Jay Haas",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1976–",
+    "inPool": false
+  },
+  {
+    "id": "charles-howell-iii",
+    "name": "Charles Howell III",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2000–",
+    "inPool": false
+  },
+  {
+    "id": "chad-campbell",
+    "name": "Chad Campbell",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2000–",
+    "inPool": false
+  },
+  {
+    "id": "hubert-green",
+    "name": "Hubert Green",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1970–",
+    "inPool": false
+  },
+  {
+    "id": "chez-reavie",
+    "name": "Chez Reavie",
+    "sportId": "golf",
+    "era": "2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2007–",
+    "inPool": false
+  },
+  {
+    "id": "carlos-franco",
+    "name": "Carlos Franco",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "Paraguay"
+    ],
+    "yearsActive": "1993–",
+    "inPool": false
+  },
+  {
+    "id": "david-howell",
+    "name": "David Howell",
+    "sportId": "golf",
+    "era": "2000s",
+    "detail": [
+      "England"
+    ],
+    "yearsActive": "1995–",
+    "inPool": false
+  },
+  {
+    "id": "jack-renner",
+    "name": "Jack Renner",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1977–",
+    "inPool": false
+  },
+  {
+    "id": "ryan-palmer",
+    "name": "Ryan Palmer",
+    "sportId": "golf",
+    "era": "2000s–2010s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2003–",
+    "inPool": false
+  },
+  {
+    "id": "rodger-davis",
+    "name": "Rodger Davis",
+    "sportId": "golf",
+    "era": "1980s–1990s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1974–",
+    "inPool": false
+  },
+  {
+    "id": "larry-nelson",
+    "name": "Larry Nelson",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1974–",
+    "inPool": false
+  },
+  {
+    "id": "kirk-triplett",
+    "name": "Kirk Triplett",
+    "sportId": "golf",
+    "era": "1990s–2000s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1990–",
+    "inPool": false
+  },
+  {
+    "id": "isao-aoki",
+    "name": "Isao Aoki",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "Japan"
+    ],
+    "yearsActive": "1971–",
+    "inPool": false
+  },
+  {
+    "id": "graham-marsh",
+    "name": "Graham Marsh",
+    "sportId": "golf",
+    "era": "1970s–1980s",
+    "detail": [
+      "Australia"
+    ],
+    "yearsActive": "1970–",
+    "inPool": false
+  },
+  {
+    "id": "don-pooley",
+    "name": "Don Pooley",
+    "sportId": "golf",
+    "era": "1980s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "1976–",
+    "inPool": false
+  },
+  {
+    "id": "jake-knapp",
+    "name": "Jake Knapp",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2023–",
+    "inPool": false
+  },
+  {
+    "id": "branden-grace",
+    "name": "Branden Grace",
+    "sportId": "golf",
+    "era": "2010s",
+    "detail": [
+      "South Africa"
+    ],
+    "yearsActive": "2007–",
+    "inPool": false
+  },
+  {
+    "id": "lebron-james",
+    "name": "LeBron James",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "NBA"
+    ],
+    "yearsActive": "2003–",
+    "inPool": false
+  },
+  {
+    "id": "charles-barkley",
+    "name": "Charles Barkley",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "NBA"
+    ],
+    "yearsActive": "1984–2000",
+    "inPool": false
+  },
+  {
+    "id": "stephen-curry",
+    "name": "Stephen Curry",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "NBA"
+    ],
+    "yearsActive": "2009–",
+    "inPool": false
+  },
+  {
+    "id": "donald-trump",
+    "name": "Donald Trump",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "Celebrity"
+    ],
+    "yearsActive": "2010s–2020s",
+    "inPool": false
+  },
+  {
+    "id": "michael-jordan",
+    "name": "Michael Jordan",
+    "sportId": "golf",
+    "era": "1990s",
+    "detail": [
+      "NBA"
+    ],
+    "yearsActive": "1984–2003",
+    "inPool": false
+  },
+  {
+    "id": "tony-romo-golf",
+    "name": "Tony Romo",
+    "sportId": "golf",
+    "era": "2010s–2020s",
+    "detail": [
+      "NFL"
+    ],
+    "yearsActive": "2016–",
+    "inPool": false
   }
 ]
