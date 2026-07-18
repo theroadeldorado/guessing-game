@@ -1,9 +1,5 @@
-import Game from '@/components/GameLoader'
+import Landing from './Landing'
 
 export default function Home() {
-  return (
-    <main className="min-h-dvh">
-      <Game />
-    </main>
-  )
+  return <Landing />
 }

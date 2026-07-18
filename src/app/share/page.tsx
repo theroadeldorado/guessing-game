@@ -67,7 +67,7 @@ export default async function SharePage({ searchParams }: { searchParams: Search
         <p className="break-all text-2xl leading-relaxed">{resultsEmoji(d.results)}</p>
       )}
       <Link
-        href="/"
+        href="/range"
         className="mt-2 rounded-sm bg-paper px-8 py-3 font-display text-lg uppercase tracking-wide text-ink transition-colors hover:bg-flag"
       >
         Play ShadowForm

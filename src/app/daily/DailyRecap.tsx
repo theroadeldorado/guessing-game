@@ -117,7 +117,7 @@ export default function DailyRecap({
           {copied ? 'Copied!' : 'Share'}
         </button>
         <Link
-          href="/"
+          href="/range"
           className="flex-1 rounded-sm bg-paper px-6 py-3 font-display text-lg uppercase tracking-wide text-ink transition-colors hover:bg-flag"
         >
           Play the Range

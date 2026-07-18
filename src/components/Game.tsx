@@ -56,9 +56,9 @@ export default function Game({ sportId }: { sportId: string }) {
     <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-4 py-5">
       <header className="flex items-baseline justify-between border-b border-chalk pb-3">
         <div className="flex items-baseline gap-3">
-          <span className="font-display text-xl uppercase tracking-wide text-paper">
+          <Link href="/" className="font-display text-xl uppercase tracking-wide text-paper">
             Shadow<span className="text-flag">Form</span>
-          </span>
+          </Link>
           <Link
             href="/daily"
             className="font-mono text-xs uppercase tracking-wider text-chalk-soft transition-colors hover:text-flag"
