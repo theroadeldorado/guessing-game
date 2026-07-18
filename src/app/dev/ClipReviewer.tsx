@@ -68,7 +68,8 @@ export default function ClipReviewer() {
           ))}
         </nav>
         <p className="font-mono text-xs text-chalk-soft">
-          Flag pulls a clip out of the game. Edit source/start/end, then Save & reprocess.
+          Flag pulls a clip out of the game. Edit source/start/end, then Save & reprocess. Times
+          are HH:MM:SS with optional decimal seconds — e.g. 00:00:01.5 for 1½s.
         </p>
       </header>
       <div className="mx-auto grid max-w-6xl grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4">
@@ -216,7 +217,7 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
         <input
           value={start}
           onChange={(e) => setStart(e.target.value)}
-          placeholder="start (00:00:04)"
+          placeholder="start (00:00:01.5)"
           className="min-w-0 flex-1 rounded-sm border border-chalk bg-room-deep px-2 py-1.5 font-mono text-xs text-paper placeholder:text-chalk-soft focus:border-flag focus:outline-none"
         />
         <input

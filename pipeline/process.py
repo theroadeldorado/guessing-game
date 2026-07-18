@@ -62,31 +62,35 @@ def download(entry: dict) -> Path:
 
 
 def parse_ts(ts: str) -> float:
-    """'HH:MM:SS.d' / 'MM:SS' / 'SS' -> seconds."""
-    return sum(float(p) * 60 ** i for i, p in enumerate(reversed(ts.split(":"))))
+    """Colon-separated, last field is seconds and may be fractional:
+    'HH:MM:SS.d' / 'MM:SS.d' / 'SS.d' -> seconds. Sub-second precision is
+    expressed as a decimal on the seconds field, e.g. '00:00:01.5' -> 1.5."""
+    return sum(float(p) * 60 ** i for i, p in enumerate(reversed(ts.strip().split(":"))))
 
 
 DEFAULT_WINDOW = 4.0  # seconds, when an entry has no end timestamp
 
 
-def trim_window(entry: dict) -> tuple[str, str]:
-    """Resolve (start, end), tolerating empty values: start defaults to the
-    beginning, end to start + 4s (Shorts are often already just the swing)."""
-    start = entry.get("start") or "0"
-    end = entry.get("end") or str(parse_ts(start) + DEFAULT_WINDOW)
+def trim_window(entry: dict) -> tuple[float, float]:
+    """Resolve (start, end) in seconds, tolerating empty values: start defaults
+    to the beginning, end to start + 4s (Shorts are often already just the swing)."""
+    start = parse_ts(entry.get("start") or "0")
+    end_raw = entry.get("end")
+    end = parse_ts(end_raw) if end_raw else start + DEFAULT_WINDOW
     return start, end
 
 
 def trim(entry: dict, raw: Path) -> Path:
     """Cached on the trim window: re-encodes only when start/end changed,
-    which in turn invalidates the matte via mtime."""
+    which in turn invalidates the matte via mtime. Times are normalized to
+    seconds so ffmpeg never sees a raw, possibly-malformed timestamp string."""
     trimmed = CACHE / f"{entry['id']}.trim.mp4"
     meta = CACHE / f"{entry['id']}.trim.txt"
     start, end = trim_window(entry)
-    window = f"{start}|{end}"
+    window = f"{start:.3f}|{end:.3f}"
     if trimmed.exists() and meta.exists() and meta.read_text() == window:
         return trimmed
-    run(["ffmpeg", "-y", "-ss", start, "-to", end, "-i", str(raw),
+    run(["ffmpeg", "-y", "-ss", f"{start:.3f}", "-to", f"{end:.3f}", "-i", str(raw),
          "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "18", str(trimmed)])
     meta.write_text(window)
     return trimmed
