@@ -969,7 +969,7 @@
   {
     "id": "bobby-jones-01",
     "playerId": "bobby-jones",
-    "src": "/c/8ndnj11londhl.webm",
+    "src": "placeholder",
     "speed": 1.25,
     "crop": "0.168,0.511,2.95"
   },
@@ -998,7 +998,7 @@
     "playerId": "sam-snead",
     "src": "/c/j7m38c1munj6w.webm",
     "speed": 1,
-    "crop": "0.395,0.528,1.35"
+    "crop": "0.388,0.510,1.35"
   },
   {
     "id": "arnold-palmer-01",
@@ -1011,7 +1011,8 @@
     "id": "jack-nicklaus-01",
     "playerId": "jack-nicklaus",
     "src": "/c/1ng1b316ta5tv.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.085,0.516,6.00"
   },
   {
     "id": "gary-player-01",
@@ -1191,6 +1192,7 @@
     "id": "rory-mcilroy-01",
     "playerId": "rory-mcilroy",
     "src": "/c/19vaawp1b3cnvh.webm",
+    "crop": "0.538,0.545,1.00",
     "speed": 8
   },
   {
@@ -1243,20 +1245,20 @@
     "id": "viktor-hovland-01",
     "playerId": "viktor-hovland",
     "src": "/c/1522xa11tv7yjh.webm",
-    "speed": 8
+    "speed": 1,
+    "crop": "0.439,0.562,1.00"
   },
   {
     "id": "ludvig-aberg-01",
     "playerId": "ludvig-aberg",
     "src": "/c/9s0s586ns35k.webm",
-    "crop": "0.491,0.427,1.35",
-    "speed": 8
+    "crop": "0.452,0.601,1.35"
   },
   {
     "id": "hideki-matsuyama-01",
     "playerId": "hideki-matsuyama",
     "src": "/c/encoke1b4ef1e.webm",
-    "speed": 12,
+    "speed": 1,
     "crop": "0.500,0.500,1.25"
   },
   {

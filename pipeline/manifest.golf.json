@@ -5,14 +5,15 @@
     "source": "https://www.youtube.com/watch?v=GXIo8jj3cl0",
     "start": "00:05:10",
     "end": "00:05:14",
-    "crop": "auto"
+    "crop": "auto",
+    "flagged": true
   },
   {
     "id": "byron-nelson-golf-01",
     "playerId": "byron-nelson-golf",
-    "source": "https://www.youtube.com/watch?v=vxN7YIgibZY",
+    "source": "https://www.youtube.com/shorts/wcMrfowGeXA",
     "start": "00:00:00",
-    "end": "00:00:02.5",
+    "end": "00:00:22",
     "crop": "auto"
   },
   {
@@ -26,9 +27,9 @@
   {
     "id": "sam-snead-01",
     "playerId": "sam-snead",
-    "source": "https://www.youtube.com/shorts/KeLxcxwwK9E",
+    "source": "https://www.youtube.com/shorts/EjMW0gqi87M",
     "start": "00:00:00",
-    "end": "00:00:03.5",
+    "end": "00:00:02.7",
     "crop": "auto"
   },
   {
@@ -42,9 +43,9 @@
   {
     "id": "jack-nicklaus-01",
     "playerId": "jack-nicklaus",
-    "source": "https://www.youtube.com/watch?v=PFm8nRYVVjQ",
-    "start": "00:00:57",
-    "end": "00:01:03",
+    "source": "https://www.youtube.com/watch?v=qMnrQYyxOho",
+    "start": "00:03:30",
+    "end": "00:03:33.5",
     "crop": "auto"
   },
   {
@@ -288,9 +289,9 @@
   {
     "id": "rory-mcilroy-01",
     "playerId": "rory-mcilroy",
-    "source": "https://www.youtube.com/shorts/A0ty-e8e5cc",
+    "source": "https://www.youtube.com/shorts/a35LSkubUpU",
     "start": "00:00:00",
-    "end": "00:00:20",
+    "end": "00:00:30",
     "crop": "auto"
   },
   {
@@ -352,15 +353,15 @@
   {
     "id": "viktor-hovland-01",
     "playerId": "viktor-hovland",
-    "source": "https://www.youtube.com/shorts/vfIuY7cFin4",
+    "source": "https://www.youtube.com/shorts/Zl7mAaI5oos",
     "start": "00:00:00",
-    "end": "00:00:32",
+    "end": "00:00:14",
     "crop": "auto"
   },
   {
     "id": "ludvig-aberg-01",
     "playerId": "ludvig-aberg",
-    "source": "https://www.youtube.com/shorts/8LDQwcq-a38",
+    "source": "https://www.youtube.com/shorts/fBnOz3r7yhg",
     "start": "00:00:00",
     "end": "00:00:40",
     "crop": "auto"
@@ -368,8 +369,8 @@
   {
     "id": "hideki-matsuyama-01",
     "playerId": "hideki-matsuyama",
-    "source": "https://www.youtube.com/shorts/Q5AmqzFUypM",
-    "start": "00:00:00",
+    "source": "https://www.youtube.com/shorts/Z7IvOGVKfrg",
+    "start": "00:00:04",
     "end": "00:00:48",
     "crop": "auto"
   },
@@ -509,7 +510,7 @@
     "id": "tom-kim-01",
     "playerId": "tom-kim",
     "source": "https://www.youtube.com/shorts/SHJfLvSfVtg",
-    "start": "00:00:05",
+    "start": "00:00:00",
     "end": "00:00:09",
     "crop": "auto"
   },
