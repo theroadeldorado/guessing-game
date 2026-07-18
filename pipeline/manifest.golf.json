@@ -384,7 +384,7 @@
   {
     "id": "john-daly-01",
     "playerId": "john-daly",
-    "source": "https://www.youtube.com/shorts/XsIojc44bVQ",
+    "source": "https://www.youtube.com/shorts/lvUlA_k4a7g",
     "start": "",
     "end": "00:00:34",
     "crop": "auto"
@@ -443,15 +443,15 @@
   {
     "id": "shane-lowry-01",
     "playerId": "shane-lowry",
-    "source": "https://www.youtube.com/shorts/sKwaZnZI6n8",
+    "source": "https://www.youtube.com/shorts/IbWQYwMIgn4",
     "start": "00:00:00",
-    "end": "00:00:26.5",
+    "end": "00:00:14",
     "crop": "auto"
   },
   {
     "id": "gary-woodland-01",
     "playerId": "gary-woodland",
-    "source": "https://www.youtube.com/shorts/LbQ2a6jtvfo",
+    "source": "https://www.youtube.com/shorts/-2CAtZtjgj4",
     "start": "00:00:00",
     "end": "00:00:20",
     "crop": "auto"
@@ -484,7 +484,7 @@
   {
     "id": "keegan-bradley-01",
     "playerId": "keegan-bradley",
-    "source": "https://www.youtube.com/shorts/yuvtk7JBPLU",
+    "source": "https://www.youtube.com/shorts/49aSOeNi7Ys",
     "start": "",
     "end": "00:00:22",
     "crop": "auto"
@@ -492,7 +492,7 @@
   {
     "id": "tony-finau-01",
     "playerId": "tony-finau",
-    "source": "https://www.youtube.com/shorts/VtaXzvucfOE",
+    "source": "https://www.youtube.com/shorts/2VfDSUPlN7M",
     "start": "",
     "end": "00:00:22",
     "crop": "auto"
@@ -524,16 +524,16 @@
   {
     "id": "min-woo-lee-01",
     "playerId": "min-woo-lee",
-    "source": "https://www.youtube.com/shorts/gLCElkXzA8A",
+    "source": "https://www.youtube.com/shorts/olbU4pkJNqw",
     "start": "",
-    "end": "00:00:10",
+    "end": "00:00:30",
     "crop": "auto"
   },
   {
     "id": "jimmy-walker-01",
     "playerId": "jimmy-walker",
     "source": "https://www.youtube.com/shorts/2Sm4aWiMo5M",
-    "start": "00:00:14",
+    "start": "00:00:18",
     "end": "00:00:22",
     "crop": "auto"
   },
@@ -541,8 +541,8 @@
     "id": "wyndham-clark-01",
     "playerId": "wyndham-clark",
     "source": "https://www.youtube.com/shorts/yOn149sbErY",
-    "start": "00:00:01",
-    "end": "00:00:20",
+    "start": "00:00:00",
+    "end": "00:00:02.3",
     "crop": "auto"
   },
   {
@@ -566,9 +566,9 @@
   {
     "id": "max-homa-01",
     "playerId": "max-homa",
-    "source": "https://www.youtube.com/shorts/H8KI30zHCVc",
-    "start": "",
-    "end": "00:00:24",
+    "source": "https://www.youtube.com/shorts/P20QgnhMRvs",
+    "start": "00:00:00",
+    "end": "00:00:44",
     "crop": "auto"
   },
   {
@@ -626,7 +626,7 @@
     "playerId": "sungjae-im",
     "source": "https://www.youtube.com/shorts/MQk912HCBVE",
     "start": "00:00:00",
-    "end": "00:00:20",
+    "end": "00:00:08",
     "crop": "auto"
   },
   {
@@ -673,8 +673,8 @@
   {
     "id": "tyrrell-hatton-01",
     "playerId": "tyrrell-hatton",
-    "source": "https://www.youtube.com/shorts/J8nXSp0D71U",
-    "start": "00:00:14",
+    "source": "https://www.youtube.com/shorts/xnx9nhXgACw",
+    "start": "00:00:00",
     "end": "00:00:40",
     "crop": "auto"
   },
@@ -698,7 +698,7 @@
   {
     "id": "corey-conners-01",
     "playerId": "corey-conners",
-    "source": "https://www.youtube.com/shorts/0ivEWwpkCT0",
+    "source": "https://www.youtube.com/shorts/umG-DxDrw0Y",
     "start": "",
     "end": "00:00:30",
     "crop": "auto"
@@ -764,7 +764,7 @@
   {
     "id": "ben-griffin-01",
     "playerId": "ben-griffin",
-    "source": "https://www.youtube.com/shorts/6WkS_QiaNxk",
+    "source": "https://www.youtube.com/shorts/SeUx2d8Mo9A",
     "start": "",
     "end": "00:00:24",
     "crop": "auto"
@@ -783,7 +783,7 @@
     "playerId": "chris-gotterup",
     "source": "https://www.youtube.com/shorts/UvSjLMhWdJE",
     "start": "00:00:00",
-    "end": "00:00:20",
+    "end": "00:00:09",
     "crop": "auto"
   },
   {
@@ -818,7 +818,7 @@
     "playerId": "geoff-ogilvy",
     "source": "https://www.youtube.com/watch?v=qP2p6LpAChM",
     "start": "00:00:00",
-    "end": "",
+    "end": "00:00:30",
     "crop": "auto",
     "flagged": true
   },
@@ -1754,7 +1754,7 @@
     "playerId": "donald-trump",
     "source": "https://www.youtube.com/shorts/3zkm9IJL3oM",
     "start": "00:00:00",
-    "end": "00:00:30",
+    "end": "",
     "crop": "auto",
     "flagged": true
   },

@@ -1004,7 +1004,8 @@
     "id": "arnold-palmer-01",
     "playerId": "arnold-palmer",
     "src": "/c/qp05bhwyj8h.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.077,0.519,6.00"
   },
   {
     "id": "jack-nicklaus-01",
@@ -1015,7 +1016,8 @@
   {
     "id": "gary-player-01",
     "playerId": "gary-player",
-    "src": "/c/17zv9fur1pw0e.webm"
+    "src": "/c/17zv9fur1pw0e.webm",
+    "speed": 1
   },
   {
     "id": "lee-trevino-01",
@@ -1119,13 +1121,14 @@
   {
     "id": "jim-furyk-01",
     "playerId": "jim-furyk",
-    "src": "/c/1vizsp48q3kd.webm"
+    "src": "/c/1vizsp48q3kd.webm",
+    "speed": 8
   },
   {
     "id": "retief-goosen-01",
     "playerId": "retief-goosen",
     "src": "/c/165lcac1shh1w8.webm",
-    "speed": 1,
+    "speed": 2,
     "crop": "0.338,0.567,1.45"
   },
   {
@@ -1171,13 +1174,13 @@
     "id": "dustin-johnson-01",
     "playerId": "dustin-johnson",
     "src": "/c/183eya81sqbyn8.webm",
-    "speed": 6
+    "speed": 8
   },
   {
     "id": "jason-day-01",
     "playerId": "jason-day",
     "src": "/c/15cwe0dwgn76p.webm",
-    "speed": 0.5
+    "speed": 1
   },
   {
     "id": "jordan-spieth-01",
@@ -1187,7 +1190,8 @@
   {
     "id": "rory-mcilroy-01",
     "playerId": "rory-mcilroy",
-    "src": "/c/19vaawp1b3cnvh.webm"
+    "src": "/c/19vaawp1b3cnvh.webm",
+    "speed": 8
   },
   {
     "id": "justin-thomas-01",
@@ -1266,8 +1270,8 @@
     "id": "john-daly-01",
     "playerId": "john-daly",
     "src": "/c/7b0wbp1i9i4fl.webm",
-    "speed": 16,
-    "crop": "0.495,0.557,1.35"
+    "speed": 1,
+    "crop": "0.495,0.557,1.00"
   },
   {
     "id": "rickie-fowler-01",
@@ -1296,13 +1300,14 @@
   {
     "id": "shane-lowry-01",
     "playerId": "shane-lowry",
-    "src": "/c/xd9pqu9yqlmy.webm"
+    "src": "/c/xd9pqu9yqlmy.webm",
+    "crop": "0.492,0.637,1.55"
   },
   {
     "id": "gary-woodland-01",
     "playerId": "gary-woodland",
     "src": "/c/fu5okd1cwx18p.webm",
-    "crop": "0.546,0.536,1.65"
+    "crop": "0.397,0.573,1.25"
   },
   {
     "id": "matt-fitzpatrick-01",
@@ -1327,13 +1332,14 @@
     "id": "keegan-bradley-01",
     "playerId": "keegan-bradley",
     "src": "/c/11fyxnek3hxau.webm",
-    "crop": "0.403,0.687,1.00"
+    "crop": "0.470,0.554,1.00"
   },
   {
     "id": "tony-finau-01",
     "playerId": "tony-finau",
     "src": "/c/yh0jutnckg8p.webm",
-    "crop": "0.496,0.480,1.50"
+    "crop": "0.511,0.541,1.05",
+    "speed": 1
   },
   {
     "id": "joaquin-niemann-01",
@@ -1359,19 +1365,21 @@
   {
     "id": "min-woo-lee-01",
     "playerId": "min-woo-lee",
-    "src": "/c/1p565zi179bqoi.webm"
+    "src": "/c/1p565zi179bqoi.webm",
+    "speed": 8
   },
   {
     "id": "jimmy-walker-01",
     "playerId": "jimmy-walker",
     "src": "/c/19h3dsefx83my.webm",
     "crop": "0.310,0.619,2.35",
-    "speed": 1
+    "speed": 2
   },
   {
     "id": "wyndham-clark-01",
     "playerId": "wyndham-clark",
-    "src": "/c/3qoiat1lqh20p.webm"
+    "src": "/c/3qoiat1lqh20p.webm",
+    "speed": 1
   },
   {
     "id": "jj-spaun-01",
@@ -1387,7 +1395,9 @@
   {
     "id": "max-homa-01",
     "playerId": "max-homa",
-    "src": "/c/518gb51tjl7kd.webm"
+    "src": "/c/518gb51tjl7kd.webm",
+    "speed": 1,
+    "crop": "0.462,0.515,1.55"
   },
   {
     "id": "sam-burns-01",
@@ -1398,7 +1408,9 @@
   {
     "id": "daniel-berger-01",
     "playerId": "daniel-berger",
-    "src": "placeholder"
+    "src": "/c/y2g9i47ge77k.webm",
+    "crop": "0.064,0.524,6.00",
+    "speed": 8
   },
   {
     "id": "billy-horschel-01",
@@ -1428,8 +1440,7 @@
     "id": "sungjae-im-01",
     "playerId": "sungjae-im",
     "src": "/c/sad0ut1fgimm9.webm",
-    "crop": "0.498,0.605,1.00",
-    "speed": 8
+    "crop": "0.498,0.605,1.00"
   },
   {
     "id": "si-woo-kim-01",
@@ -1446,30 +1457,35 @@
   {
     "id": "russell-henley-01",
     "playerId": "russell-henley",
-    "src": "placeholder"
+    "src": "/c/sir36x1vfwrpp.webm",
+    "crop": "0.392,0.475,1.95"
   },
   {
     "id": "robert-macintyre-01",
     "playerId": "robert-macintyre",
     "src": "/c/17dk5ha125p9yi.webm",
-    "speed": 8
+    "speed": 8,
+    "crop": "0.615,0.423,1.55"
   },
   {
     "id": "tommy-fleetwood-01",
     "playerId": "tommy-fleetwood",
-    "src": "placeholder"
+    "src": "/c/1k69zmbbeiuvb.webm",
+    "crop": "0.500,0.500,1.09",
+    "speed": 8
   },
   {
     "id": "tyrrell-hatton-01",
     "playerId": "tyrrell-hatton",
     "src": "/c/1h5zhdq11u3dxe.webm",
-    "crop": "0.414,0.645,1.50",
-    "speed": 8
+    "crop": "0.427,0.576,1.00"
   },
   {
     "id": "lucas-glover-01",
     "playerId": "lucas-glover",
-    "src": "placeholder"
+    "src": "/c/25tnw91js3wbp.webm",
+    "speed": 8,
+    "crop": "0.513,0.397,1.50"
   },
   {
     "id": "chris-kirk-01",
@@ -1480,7 +1496,8 @@
     "id": "corey-conners-01",
     "playerId": "corey-conners",
     "src": "/c/y2iwfa1bppgj6.webm",
-    "speed": 8
+    "speed": 1,
+    "crop": "0.500,0.500,1.35"
   },
   {
     "id": "marc-leishman-01",
@@ -1495,37 +1512,43 @@
   {
     "id": "brendon-todd-01",
     "playerId": "brendon-todd",
-    "src": "placeholder"
+    "src": "/c/vlp4wp1sprlz9.webm",
+    "crop": "0.432,0.452,1.30",
+    "speed": 8
   },
   {
     "id": "cameron-champ-01",
     "playerId": "cameron-champ",
     "src": "/c/1s7uwpkwou9zg.webm",
-    "speed": 8
+    "speed": 8,
+    "crop": "0.471,0.562,1.40"
   },
   {
     "id": "matt-kuchar-01",
     "playerId": "matt-kuchar",
-    "src": "placeholder"
+    "src": "/c/1wkq0su1endqfu.webm",
+    "crop": "0.427,0.519,1.00",
+    "speed": 1
   },
   {
     "id": "ben-griffin-01",
     "playerId": "ben-griffin",
     "src": "/c/ktrtuw1f6ed90.webm",
-    "speed": 5,
-    "crop": "0.537,0.626,1.00"
+    "speed": 1,
+    "crop": "0.297,0.423,2.70"
   },
   {
     "id": "cameron-young-01",
     "playerId": "cameron-young",
     "src": "/c/6xg9a9140fxkt.webm",
-    "crop": "0.504,0.625,1.00",
+    "crop": "0.459,0.566,1.00",
     "speed": 8
   },
   {
     "id": "matt-wolff-01",
     "playerId": "matt-wolff",
     "src": "/c/n5x01811xksow.webm",
-    "speed": 8
+    "speed": 8,
+    "crop": "0.398,0.649,1.35"
   }
 ]

@@ -4009,7 +4009,7 @@
       "Canada"
     ],
     "yearsActive": "1998–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "jose-maria-olazabal",
@@ -4020,7 +4020,7 @@
       "Spain"
     ],
     "yearsActive": "1985–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "camilo-villegas",
@@ -4031,7 +4031,7 @@
       "Colombia"
     ],
     "yearsActive": "2006–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "geoff-ogilvy",
@@ -4042,7 +4042,7 @@
       "Australia"
     ],
     "yearsActive": "1998–2018",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "kj-choi",
@@ -4053,7 +4053,7 @@
       "South Korea"
     ],
     "yearsActive": "1994–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "david-frost",
@@ -4086,7 +4086,7 @@
       "USA"
     ],
     "yearsActive": "1991–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "brandt-snedeker",
@@ -5153,7 +5153,7 @@
       "NBA"
     ],
     "yearsActive": "2003–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "charles-barkley",
@@ -5164,7 +5164,7 @@
       "NBA"
     ],
     "yearsActive": "1984–2000",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "stephen-curry",
@@ -5175,7 +5175,7 @@
       "NBA"
     ],
     "yearsActive": "2009–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "donald-trump",
@@ -5186,7 +5186,7 @@
       "Celebrity"
     ],
     "yearsActive": "2010s–2020s",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "michael-jordan",
@@ -5197,7 +5197,7 @@
       "NBA"
     ],
     "yearsActive": "1984–2003",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "tony-romo-golf",
