@@ -34,3 +34,33 @@ export function saveDaily(sportId: string, progress: DailyProgress): void {
     window.localStorage.setItem(dailyKey(sportId), JSON.stringify(progress))
   }
 }
+
+/** In-progress guesses for today's hole, so a refresh can't reset the budget. */
+export interface DailyActive {
+  date: string
+  guesses: string[]
+}
+
+const dailyActiveKey = (sportId: string) => `shadowform:daily-active:${sportId}`
+
+export function loadDailyActive(sportId: string): DailyActive | null {
+  if (typeof window === 'undefined') return null
+  try {
+    const raw = window.localStorage.getItem(dailyActiveKey(sportId))
+    return raw ? (JSON.parse(raw) as DailyActive) : null
+  } catch {
+    return null
+  }
+}
+
+export function saveDailyActive(sportId: string, active: DailyActive): void {
+  if (typeof window !== 'undefined') {
+    window.localStorage.setItem(dailyActiveKey(sportId), JSON.stringify(active))
+  }
+}
+
+export function clearDailyActive(sportId: string): void {
+  if (typeof window !== 'undefined') {
+    window.localStorage.removeItem(dailyActiveKey(sportId))
+  }
+}

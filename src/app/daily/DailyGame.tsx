@@ -6,6 +6,7 @@ import {
   applyResult,
   golfDate,
   narrowedField,
+  resumeDaily,
   startDaily,
   submitDailyGuess,
   weekdayName,
@@ -13,7 +14,13 @@ import {
   type DailyState,
 } from '@/lib/daily'
 import { getPlayer, getPlayers, getSport } from '@/lib/data'
-import { loadDaily, saveDaily } from '@/lib/storage'
+import {
+  clearDailyActive,
+  loadDaily,
+  loadDailyActive,
+  saveDaily,
+  saveDailyActive,
+} from '@/lib/storage'
 import ClipPlayer from '@/components/ClipPlayer'
 import GuessInput from '@/components/GuessInput'
 import HintChips from '@/components/HintChips'
@@ -24,12 +31,25 @@ export default function DailyGame() {
   const prev = useMemo(() => loadDaily('golf'), [])
   const alreadyPlayed = prev?.lastDate === today
 
-  const [state, setState] = useState<DailyState | null>(() =>
-    alreadyPlayed ? null : startDaily(today),
-  )
+  const [state, setState] = useState<DailyState | null>(() => {
+    if (alreadyPlayed) return null
+    // Resume in-progress guesses so a refresh can't reset the budget.
+    const active = loadDailyActive('golf')
+    if (active && active.date === today && active.guesses.length) {
+      return resumeDaily(today, active.guesses)
+    }
+    return startDaily(today)
+  })
   const [progress, setProgress] = useState<DailyProgress | null>(prev)
   const [justFinished, setJustFinished] = useState(false)
   const saved = useRef(false)
+
+  // Persist the running guesses each turn (survives a refresh mid-hole).
+  useEffect(() => {
+    if (state && state.phase === 'guessing') {
+      saveDailyActive('golf', { date: today, guesses: state.guesses })
+    }
+  }, [state, today])
 
   // Fold the finished hole into the streak exactly once.
   useEffect(() => {
@@ -37,6 +57,7 @@ export default function DailyGame() {
       saved.current = true
       const next = applyResult(prev, today, state)
       saveDaily('golf', next)
+      clearDailyActive('golf')
       setProgress(next)
       setJustFinished(true)
     }

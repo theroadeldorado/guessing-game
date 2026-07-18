@@ -12,6 +12,7 @@ import {
   narrowedField,
   parForDate,
   parseDailyShare,
+  resumeDaily,
   scoreToPar,
   shareStrokes,
   startDaily,
@@ -93,6 +94,18 @@ describe('submitDailyGuess + scoreToPar', () => {
     expect(submitDailyGuess(s1, wrongId)).toBe(s1) // duplicate no-op
     const solved = submitDailyGuess(s1, s0.hole.clip.playerId)
     expect(submitDailyGuess(solved, wrongId)).toBe(solved) // done no-op
+  })
+
+  it('resumeDaily replays persisted guesses so a refresh keeps the budget', () => {
+    const s0 = holeAt('2026-07-20')
+    const answer = s0.hole.clip.playerId
+    const wrong = getPlayers('golf').filter((p) => p.id !== answer).slice(0, 2).map((p) => p.id)
+    const resumed = resumeDaily('2026-07-20', wrong, pool)
+    expect(resumed.guesses).toEqual(wrong)
+    expect(resumed.phase).toBe('guessing') // budget consumed, not reset
+    const solved = resumeDaily('2026-07-20', [...wrong, answer], pool)
+    expect(solved.solved).toBe(true)
+    expect(solved.strokes).toBe(3)
   })
 })
 

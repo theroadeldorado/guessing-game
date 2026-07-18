@@ -115,6 +115,16 @@ export function startDaily(dateStr: string = dateKey(), pool?: Clip[]): DailySta
   return { hole: holeForDate(dateStr, pool), guesses: [], solved: false, strokes: 0, phase: 'guessing' }
 }
 
+/** Rebuild today's state by replaying persisted guesses (survives a refresh). */
+export function resumeDaily(dateStr: string, guesses: string[], pool?: Clip[]): DailyState {
+  let state = startDaily(dateStr, pool)
+  for (const id of guesses) {
+    if (state.phase !== 'guessing') break
+    state = submitDailyGuess(state, id)
+  }
+  return state
+}
+
 export function submitDailyGuess(state: DailyState, id: string): DailyState {
   if (state.phase !== 'guessing' || state.guesses.includes(id)) return state
   const guesses = [...state.guesses, id]
