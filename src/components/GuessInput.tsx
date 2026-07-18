@@ -54,7 +54,6 @@ export default function GuessInput({ players, placeholder, disabledIds, onGuess 
   return (
     <div className="relative">
       <input
-        autoFocus
         value={query}
         onChange={(e) => {
           setQuery(e.target.value)
