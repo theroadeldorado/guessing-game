@@ -970,30 +970,35 @@
     "id": "bobby-jones-01",
     "playerId": "bobby-jones",
     "src": "/clips/bobby-jones-01.webm",
-    "speed": 1.25
+    "speed": 1.25,
+    "crop": "0.168,0.511,2.95"
   },
   {
     "id": "gene-sarazen-01",
     "playerId": "gene-sarazen",
-    "src": "/clips/gene-sarazen-01.webm"
+    "src": "placeholder",
+    "speed": 1
   },
   {
     "id": "byron-nelson-golf-01",
     "playerId": "byron-nelson-golf",
     "src": "/clips/byron-nelson-golf-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.292,0.543,1.75"
   },
   {
     "id": "ben-hogan-01",
     "playerId": "ben-hogan",
     "src": "/clips/ben-hogan-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.392,0.499,1.00"
   },
   {
     "id": "sam-snead-01",
     "playerId": "sam-snead",
     "src": "/clips/sam-snead-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.395,0.528,1.35"
   },
   {
     "id": "arnold-palmer-01",
@@ -1010,7 +1015,7 @@
   {
     "id": "gary-player-01",
     "playerId": "gary-player",
-    "src": "placeholder"
+    "src": "/clips/gary-player-01.webm"
   },
   {
     "id": "lee-trevino-01",
@@ -1042,7 +1047,8 @@
     "id": "greg-norman-01",
     "playerId": "greg-norman",
     "src": "/clips/greg-norman-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.477,0.661,1.00"
   },
   {
     "id": "bernhard-langer-01",
@@ -1063,23 +1069,27 @@
   {
     "id": "payne-stewart-01",
     "playerId": "payne-stewart",
-    "src": "/clips/payne-stewart-01.webm"
+    "src": "/clips/payne-stewart-01.webm",
+    "crop": "0.098,0.488,5.55"
   },
   {
     "id": "fred-couples-01",
     "playerId": "fred-couples",
-    "src": "/clips/fred-couples-01.webm"
+    "src": "/clips/fred-couples-01.webm",
+    "speed": 1
   },
   {
     "id": "nick-price-01",
     "playerId": "nick-price",
-    "src": "/clips/nick-price-01.webm"
+    "src": "/clips/nick-price-01.webm",
+    "crop": "0.259,0.622,2.35"
   },
   {
     "id": "vijay-singh-01",
     "playerId": "vijay-singh",
     "src": "/clips/vijay-singh-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.382,0.399,1.05"
   },
   {
     "id": "ernie-els-01",
@@ -1090,18 +1100,21 @@
   {
     "id": "phil-mickelson-01",
     "playerId": "phil-mickelson",
-    "src": "/clips/phil-mickelson-01.webm"
+    "src": "/clips/phil-mickelson-01.webm",
+    "crop": "0.614,0.622,1.00"
   },
   {
     "id": "tiger-woods-01",
     "playerId": "tiger-woods",
-    "src": "/clips/tiger-woods-01.webm"
+    "src": "/clips/tiger-woods-01.webm",
+    "crop": "0.459,0.488,1.00"
   },
   {
     "id": "david-duval-01",
     "playerId": "david-duval",
     "src": "/clips/david-duval-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.081,0.515,6.00"
   },
   {
     "id": "jim-furyk-01",
@@ -1112,51 +1125,59 @@
     "id": "retief-goosen-01",
     "playerId": "retief-goosen",
     "src": "/clips/retief-goosen-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.338,0.567,1.45"
   },
   {
     "id": "padraig-harrington-01",
     "playerId": "padraig-harrington",
     "src": "/clips/padraig-harrington-01.webm",
-    "speed": 3.25
+    "crop": "0.427,0.485,1.35",
+    "speed": 2
   },
   {
     "id": "sergio-garcia-01",
     "playerId": "sergio-garcia",
     "src": "/clips/sergio-garcia-01.webm",
-    "speed": 1
+    "crop": "0.473,0.610,1.30",
+    "speed": 2
   },
   {
     "id": "adam-scott-01",
     "playerId": "adam-scott",
-    "src": "/clips/adam-scott-01.webm"
+    "src": "/clips/adam-scott-01.webm",
+    "crop": "0.460,0.632,1.00"
   },
   {
     "id": "justin-rose-01",
     "playerId": "justin-rose",
-    "src": "/clips/justin-rose-01.webm"
+    "src": "/clips/justin-rose-01.webm",
+    "crop": "0.441,0.592,1.20"
   },
   {
     "id": "henrik-stenson-01",
     "playerId": "henrik-stenson",
-    "src": "/clips/henrik-stenson-01.webm"
+    "src": "/clips/henrik-stenson-01.webm",
+    "crop": "0.458,0.458,1.40"
   },
   {
     "id": "bubba-watson-01",
     "playerId": "bubba-watson",
     "src": "/clips/bubba-watson-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.418,0.602,2.05"
   },
   {
     "id": "dustin-johnson-01",
     "playerId": "dustin-johnson",
-    "src": "/clips/dustin-johnson-01.webm"
+    "src": "/clips/dustin-johnson-01.webm",
+    "speed": 6
   },
   {
     "id": "jason-day-01",
     "playerId": "jason-day",
     "src": "/clips/jason-day-01.webm",
-    "speed": 1
+    "speed": 0.5
   },
   {
     "id": "jordan-spieth-01",
@@ -1171,27 +1192,36 @@
   {
     "id": "justin-thomas-01",
     "playerId": "justin-thomas",
-    "src": "/clips/justin-thomas-01.webm"
+    "src": "/clips/justin-thomas-01.webm",
+    "crop": "0.527,0.571,1.30"
   },
   {
     "id": "brooks-koepka-01",
     "playerId": "brooks-koepka",
-    "src": "/clips/brooks-koepka-01.webm"
+    "src": "/clips/brooks-koepka-01.webm",
+    "crop": "0.463,0.527,1.30",
+    "speed": 8
   },
   {
     "id": "bryson-dechambeau-01",
     "playerId": "bryson-dechambeau",
-    "src": "/clips/bryson-dechambeau-01.webm"
+    "src": "/clips/bryson-dechambeau-01.webm",
+    "crop": "0.465,0.422,1.65",
+    "speed": 8
   },
   {
     "id": "jon-rahm-01",
     "playerId": "jon-rahm",
-    "src": "/clips/jon-rahm-01.webm"
+    "src": "/clips/jon-rahm-01.webm",
+    "crop": "0.501,0.564,1.00",
+    "speed": 8
   },
   {
     "id": "collin-morikawa-01",
     "playerId": "collin-morikawa",
-    "src": "/clips/collin-morikawa-01.webm"
+    "src": "/clips/collin-morikawa-01.webm",
+    "crop": "0.414,0.670,1.25",
+    "speed": 1
   },
   {
     "id": "scottie-scheffler-01",
@@ -1202,38 +1232,48 @@
   {
     "id": "xander-schauffele-01",
     "playerId": "xander-schauffele",
-    "src": "/clips/xander-schauffele-01.webm"
+    "src": "/clips/xander-schauffele-01.webm",
+    "crop": "0.459,0.479,1.20"
   },
   {
     "id": "viktor-hovland-01",
     "playerId": "viktor-hovland",
-    "src": "/clips/viktor-hovland-01.webm"
+    "src": "/clips/viktor-hovland-01.webm",
+    "speed": 8
   },
   {
     "id": "ludvig-aberg-01",
     "playerId": "ludvig-aberg",
-    "src": "/clips/ludvig-aberg-01.webm"
+    "src": "/clips/ludvig-aberg-01.webm",
+    "crop": "0.491,0.427,1.35",
+    "speed": 8
   },
   {
     "id": "hideki-matsuyama-01",
     "playerId": "hideki-matsuyama",
-    "src": "/clips/hideki-matsuyama-01.webm"
+    "src": "/clips/hideki-matsuyama-01.webm",
+    "speed": 12,
+    "crop": "0.500,0.500,1.25"
   },
   {
     "id": "cameron-smith-01",
     "playerId": "cameron-smith",
-    "src": "/clips/cameron-smith-01.webm"
+    "src": "/clips/cameron-smith-01.webm",
+    "crop": "0.341,0.471,1.40",
+    "speed": 1
   },
   {
     "id": "john-daly-01",
     "playerId": "john-daly",
-    "src": "/clips/john-daly-01.webm"
+    "src": "/clips/john-daly-01.webm",
+    "speed": 16,
+    "crop": "0.495,0.557,1.35"
   },
   {
     "id": "rickie-fowler-01",
     "playerId": "rickie-fowler",
     "src": "/clips/rickie-fowler-01.webm",
-    "speed": 3.5
+    "crop": "0.418,0.575,1.30"
   },
   {
     "id": "annika-sorenstam-01",
@@ -1248,13 +1288,15 @@
   {
     "id": "patrick-reed-01",
     "playerId": "patrick-reed",
-    "src": "/clips/patrick-reed-01.webm"
+    "src": "/clips/patrick-reed-01.webm",
+    "crop": "0.485,0.545,1.40"
   },
   {
     "id": "patrick-cantlay-01",
     "playerId": "patrick-cantlay",
     "src": "/clips/patrick-cantlay-01.webm",
-    "speed": 8
+    "speed": 8,
+    "crop": "0.503,0.595,1.35"
   },
   {
     "id": "danny-willett-01",
@@ -1264,24 +1306,27 @@
   {
     "id": "shane-lowry-01",
     "playerId": "shane-lowry",
-    "src": "/clips/shane-lowry-01.webm",
-    "speed": 1.5
+    "src": "/clips/shane-lowry-01.webm"
   },
   {
     "id": "gary-woodland-01",
     "playerId": "gary-woodland",
-    "src": "/clips/gary-woodland-01.webm"
+    "src": "/clips/gary-woodland-01.webm",
+    "crop": "0.546,0.536,1.65"
   },
   {
     "id": "matt-fitzpatrick-01",
     "playerId": "matt-fitzpatrick",
     "src": "/clips/matt-fitzpatrick-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.486,0.551,1.25"
   },
   {
     "id": "francesco-molinari-01",
     "playerId": "francesco-molinari",
-    "src": "/clips/francesco-molinari-01.webm"
+    "src": "/clips/francesco-molinari-01.webm",
+    "crop": "0.472,0.659,1.50",
+    "speed": 8
   },
   {
     "id": "webb-simpson-01",
@@ -1291,29 +1336,35 @@
   {
     "id": "keegan-bradley-01",
     "playerId": "keegan-bradley",
-    "src": "/clips/keegan-bradley-01.webm"
+    "src": "/clips/keegan-bradley-01.webm",
+    "crop": "0.403,0.687,1.00"
   },
   {
     "id": "tony-finau-01",
     "playerId": "tony-finau",
-    "src": "/clips/tony-finau-01.webm"
+    "src": "/clips/tony-finau-01.webm",
+    "crop": "0.496,0.480,1.50"
   },
   {
     "id": "joaquin-niemann-01",
     "playerId": "joaquin-niemann",
-    "src": "placeholder"
+    "src": "/clips/joaquin-niemann-01.webm",
+    "speed": 1,
+    "crop": "0.501,0.562,1.00"
   },
   {
     "id": "tom-kim-01",
     "playerId": "tom-kim",
     "src": "/clips/tom-kim-01.webm",
-    "speed": 1
+    "speed": 1,
+    "crop": "0.410,0.583,1.45"
   },
   {
     "id": "akshay-bhatia-01",
     "playerId": "akshay-bhatia",
     "src": "/clips/akshay-bhatia-01.webm",
-    "speed": 3.5
+    "speed": 3.5,
+    "crop": "0.660,0.568,1.15"
   },
   {
     "id": "min-woo-lee-01",
@@ -1323,12 +1374,14 @@
   {
     "id": "jimmy-walker-01",
     "playerId": "jimmy-walker",
-    "src": "/clips/jimmy-walker-01.webm"
+    "src": "/clips/jimmy-walker-01.webm",
+    "crop": "0.310,0.619,2.35",
+    "speed": 1
   },
   {
     "id": "wyndham-clark-01",
     "playerId": "wyndham-clark",
-    "src": "placeholder"
+    "src": "/clips/wyndham-clark-01.webm"
   },
   {
     "id": "jj-spaun-01",
@@ -1338,7 +1391,8 @@
   {
     "id": "brian-harman-01",
     "playerId": "brian-harman",
-    "src": "/clips/brian-harman-01.webm"
+    "src": "placeholder",
+    "speed": 1
   },
   {
     "id": "max-homa-01",
@@ -1349,7 +1403,7 @@
     "id": "sam-burns-01",
     "playerId": "sam-burns",
     "src": "/clips/sam-burns-01.webm",
-    "speed": 6.5
+    "speed": 8
   },
   {
     "id": "daniel-berger-01",
@@ -1369,22 +1423,30 @@
   {
     "id": "kevin-kisner-01",
     "playerId": "kevin-kisner",
-    "src": "placeholder"
+    "src": "/clips/kevin-kisner-01.webm",
+    "speed": 8,
+    "crop": "0.427,0.411,1.55"
   },
   {
     "id": "kevin-na-01",
     "playerId": "kevin-na",
-    "src": "placeholder"
+    "src": "/clips/kevin-na-01.webm",
+    "crop": "0.418,0.528,1.20",
+    "speed": 8
   },
   {
     "id": "sungjae-im-01",
     "playerId": "sungjae-im",
-    "src": "placeholder"
+    "src": "/clips/sungjae-im-01.webm",
+    "crop": "0.498,0.605,1.00",
+    "speed": 8
   },
   {
     "id": "si-woo-kim-01",
     "playerId": "si-woo-kim",
-    "src": "placeholder"
+    "src": "/clips/si-woo-kim-01.webm",
+    "crop": "0.444,0.478,1.50",
+    "speed": 8
   },
   {
     "id": "sepp-straka-01",
@@ -1399,7 +1461,8 @@
   {
     "id": "robert-macintyre-01",
     "playerId": "robert-macintyre",
-    "src": "placeholder"
+    "src": "/clips/robert-macintyre-01.webm",
+    "speed": 8
   },
   {
     "id": "tommy-fleetwood-01",
@@ -1409,7 +1472,9 @@
   {
     "id": "tyrrell-hatton-01",
     "playerId": "tyrrell-hatton",
-    "src": "placeholder"
+    "src": "/clips/tyrrell-hatton-01.webm",
+    "crop": "0.414,0.645,1.50",
+    "speed": 8
   },
   {
     "id": "lucas-glover-01",
@@ -1424,7 +1489,8 @@
   {
     "id": "corey-conners-01",
     "playerId": "corey-conners",
-    "src": "placeholder"
+    "src": "/clips/corey-conners-01.webm",
+    "speed": 8
   },
   {
     "id": "marc-leishman-01",
@@ -1444,7 +1510,8 @@
   {
     "id": "cameron-champ-01",
     "playerId": "cameron-champ",
-    "src": "placeholder"
+    "src": "/clips/cameron-champ-01.webm",
+    "speed": 8
   },
   {
     "id": "matt-kuchar-01",
@@ -1455,6 +1522,20 @@
     "id": "ben-griffin-01",
     "playerId": "ben-griffin",
     "src": "/clips/ben-griffin-01.webm",
-    "speed": 5
+    "speed": 5,
+    "crop": "0.537,0.626,1.00"
+  },
+  {
+    "id": "cameron-young-01",
+    "playerId": "cameron-young",
+    "src": "/clips/cameron-young-01.webm",
+    "crop": "0.504,0.625,1.00",
+    "speed": 8
+  },
+  {
+    "id": "matt-wolff-01",
+    "playerId": "matt-wolff",
+    "src": "/clips/matt-wolff-01.webm",
+    "speed": 8
   }
 ]

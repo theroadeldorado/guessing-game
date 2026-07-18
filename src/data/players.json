@@ -3143,6 +3143,17 @@
     "inPool": true
   },
   {
+    "id": "matt-wolff",
+    "name": "Matt Wolff",
+    "sportId": "golf",
+    "era": "2020s",
+    "detail": [
+      "USA"
+    ],
+    "yearsActive": "2019–",
+    "inPool": true
+  },
+  {
     "id": "hideki-matsuyama",
     "name": "Hideki Matsuyama",
     "sportId": "golf",
@@ -3635,7 +3646,7 @@
       "USA"
     ],
     "yearsActive": "2019–",
-    "inPool": false
+    "inPool": true
   },
   {
     "id": "sahith-theegala",
