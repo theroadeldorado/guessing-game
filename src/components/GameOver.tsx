@@ -31,26 +31,12 @@ export default function GameOver({ state, sport, best, onRestart }: {
     setSharing(true)
     try {
       const data = toShareData(state, sport.id)
-      const query = shareQuery(data)
       const origin = typeof window !== 'undefined' ? window.location.origin : SITE_URL
-      const url = `${origin}/share?${query}`
+      const url = `${origin}/share?${shareQuery(data)}`
       const message = shareText(data, sport)
 
-      // Best case (mobile): attach the result card image + link to the native
-      // share sheet, so it lands in Messages/WhatsApp/etc. exactly like a text.
-      try {
-        const res = await fetch(`/api/og?${query}`)
-        if (res.ok && typeof File !== 'undefined') {
-          const file = new File([await res.blob()], 'shadowform.png', { type: 'image/png' })
-          if (navigator.canShare?.({ files: [file] })) {
-            await navigator.share({ files: [file], text: `${message}\n${url}` })
-            return
-          }
-        }
-      } catch {
-        // fall through to link-only share / copy
-      }
-
+      // Share the link only — its OG preview already renders the result card,
+      // so attaching the image would just duplicate it in the thread.
       if (navigator.share) {
         await navigator.share({ text: message, url })
         return
