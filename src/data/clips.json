@@ -2,7 +2,8 @@
   {
     "id": "johnny-unitas-01",
     "playerId": "johnny-unitas",
-    "src": "/clips/johnny-unitas-01.webm"
+    "src": "/clips/johnny-unitas-01.webm",
+    "speed": 1
   },
   {
     "id": "bart-starr-01",
@@ -17,7 +18,8 @@
   {
     "id": "roger-staubach-01",
     "playerId": "roger-staubach",
-    "src": "/clips/roger-staubach-01.webm"
+    "src": "/clips/roger-staubach-01.webm",
+    "speed": 1
   },
   {
     "id": "fran-tarkenton-01",
@@ -1066,8 +1068,7 @@
   {
     "id": "fred-couples-01",
     "playerId": "fred-couples",
-    "src": "/clips/fred-couples-01.webm",
-    "speed": 1
+    "src": "/clips/fred-couples-01.webm"
   },
   {
     "id": "nick-price-01",
