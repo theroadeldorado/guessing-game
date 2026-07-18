@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
-  createRun, currentClip, submitGuess, advance, hintLevel, shareText,
+  createRun, currentClip, submitGuess, advance, hintLevel,
   POINTS, MAX_GUESSES,
 } from '@/lib/game'
 import type { Clip } from '@/lib/types'
@@ -108,24 +108,5 @@ describe('advance', () => {
     }
     expect(s.phase).toBe('over')
     expect(s.score).toBe(300)
-  })
-})
-
-describe('shareText', () => {
-  it('maps guess counts to emoji and includes score and sport', () => {
-    let s = run()
-    s = submitGuess(s, currentClip(s).playerId) // 💯
-    s = advance(s)
-    s = submitGuess(s, 'w')
-    s = submitGuess(s, currentClip(s).playerId) // 🎯
-    s = advance(s)
-    for (let i = 0; i < MAX_GUESSES; i++) s = submitGuess(s, `w${i}`) // 💀
-    s = advance(s)
-    expect(shareText(s, { emoji: '🏈', athleteNounPlural: 'QBs' })).toBe(
-      '🏈 ShadowForm — 150 pts, 2 QBs\n💯🎯💀',
-    )
-    expect(shareText(s, { emoji: '⛳', athleteNounPlural: 'Golfers' })).toBe(
-      '⛳ ShadowForm — 150 pts, 2 Golfers\n💯🎯💀',
-    )
   })
 })

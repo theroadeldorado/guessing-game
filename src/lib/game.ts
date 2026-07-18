@@ -77,16 +77,3 @@ export function advance(state: RunState): RunState {
   return { ...state, index: state.index + 1, wrongGuesses: [], phase: 'guessing' }
 }
 
-const resultEmoji = (r: ClipResult): string =>
-  !r.solved ? '💀' : r.guessesUsed === 1 ? '💯' : r.guessesUsed === 2 ? '🎯' : '🤏'
-
-export interface ShareSport {
-  emoji: string
-  athleteNounPlural: string
-}
-
-export function shareText(state: RunState, sport: ShareSport): string {
-  const solved = state.history.filter((r) => r.solved).length
-  const emoji = state.history.map(resultEmoji).join('')
-  return `${sport.emoji} ShadowForm — ${state.score} pts, ${solved} ${sport.athleteNounPlural}\n${emoji}`
-}

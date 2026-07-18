@@ -1,10 +1,18 @@
 'use client'
 
 import { useState } from 'react'
-import { shareText, type RunState, type ClipResult, type ShareSport } from '@/lib/game'
+import type { ClipResult, RunState } from '@/lib/game'
+import { shareQuery, shareText, SITE_URL, toShareData } from '@/lib/share'
 
 const resultEmoji = (r: ClipResult) =>
   !r.solved ? '💀' : r.guessesUsed === 1 ? '💯' : r.guessesUsed === 2 ? '🎯' : '🤏'
+
+interface ShareSport {
+  id: string
+  emoji: string
+  athleteNoun: string
+  athleteNounPlural: string
+}
 
 /** Final whistle: score, run log, share, run it back. */
 export default function GameOver({ state, sport, best, onRestart }: {
@@ -14,13 +22,48 @@ export default function GameOver({ state, sport, best, onRestart }: {
   onRestart: () => void
 }) {
   const [copied, setCopied] = useState(false)
+  const [sharing, setSharing] = useState(false)
   const solved = state.history.filter((r) => r.solved).length
   const isNewBest = state.score >= best && state.score > 0
 
   const share = async () => {
-    await navigator.clipboard.writeText(shareText(state, sport))
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
+    if (sharing) return
+    setSharing(true)
+    try {
+      const data = toShareData(state, sport.id)
+      const query = shareQuery(data)
+      const origin = typeof window !== 'undefined' ? window.location.origin : SITE_URL
+      const url = `${origin}/share?${query}`
+      const message = shareText(data, sport)
+
+      // Best case (mobile): attach the result card image + link to the native
+      // share sheet, so it lands in Messages/WhatsApp/etc. exactly like a text.
+      try {
+        const res = await fetch(`/api/og?${query}`)
+        if (res.ok && typeof File !== 'undefined') {
+          const file = new File([await res.blob()], 'shadowform.png', { type: 'image/png' })
+          if (navigator.canShare?.({ files: [file] })) {
+            await navigator.share({ files: [file], text: `${message}\n${url}` })
+            return
+          }
+        }
+      } catch {
+        // fall through to link-only share / copy
+      }
+
+      if (navigator.share) {
+        await navigator.share({ text: message, url })
+        return
+      }
+
+      await navigator.clipboard.writeText(`${message}\n${url}`)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // user dismissed the share sheet, or share failed — no-op
+    } finally {
+      setSharing(false)
+    }
   }
 
   return (
@@ -40,7 +83,8 @@ export default function GameOver({ state, sport, best, onRestart }: {
       <div className="mt-2 flex w-full gap-3">
         <button
           onClick={share}
-          className="flex-1 rounded-sm border border-paper/40 px-6 py-3 font-display text-lg uppercase tracking-wide text-paper transition-colors hover:border-flag hover:text-flag"
+          disabled={sharing}
+          className="flex-1 rounded-sm border border-paper/40 px-6 py-3 font-display text-lg uppercase tracking-wide text-paper transition-colors hover:border-flag hover:text-flag disabled:opacity-50"
         >
           {copied ? 'Copied!' : 'Share'}
         </button>
