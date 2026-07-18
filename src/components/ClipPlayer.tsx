@@ -20,24 +20,22 @@ function useReducedMotion(): boolean {
   )
 }
 
+const swapExt = (src: string, ext: string) => src.replace(/\.webm(?=[?#]|$)/, ext)
+
 /** Full-speed and slo-mo are separate pipeline exports (<id> / <id>-slo) —
  * playbackRate is unreliable on iOS, so the toggle swaps files instead. */
-const sloVariant = (src: string) => src.replace(/\.webm$/, '-slo.webm')
+const sloVariant = (src: string) => swapExt(src, '-slo.webm')
 
-/** Both-format sources: Safari (especially iOS) can't decode VP9 WebM and
- * needs the H.264 MP4 the pipeline exports alongside every clip. The explicit
- * `codecs="vp9"` is load-bearing — without it iOS Safari reports generic
- * `video/webm` as playable, *selects* the WebM, then fails to decode it (source
- * fallback only fires at selection time, not on decode failure). Naming the
- * codec makes canPlayType return "" on iOS so it falls through to the MP4. */
-function Sources({ webm }: { webm: string }) {
-  return (
-    <>
-      <source src={webm} type='video/webm; codecs="vp9"' />
-      <source src={webm.replace(/\.webm$/, '.mp4')} type="video/mp4" />
-    </>
-  )
-}
+/**
+ * We serve the H.264 MP4 directly instead of offering both formats via
+ * <source>. Since iOS 17.4 Safari reports VP9 WebM as playable and *selects*
+ * the .webm, then fails to decode it reliably — and <source> fallback only
+ * fires at selection time, not on decode failure. The pipeline exports a
+ * matching MP4 (avc1 / yuv420p / faststart / no audio) for every clip, and
+ * H.264 MP4 plays on every current browser, so there's no reason to gamble on
+ * WebM selection. Verified server-side: video/mp4 with byte-range (206) support.
+ */
+const mp4Variant = (src: string) => swapExt(src, '.mp4')
 
 /**
  * The projection screen: a real clip loops muted (full speed by default,
@@ -62,18 +60,26 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc, crop }: {
 
   const isVideo = src !== 'placeholder'
   const paused = reducedMotion && !playAnyway
-  const activeSrc = slowMo ? sloVariant(src) : src
+  const activeSrc = mp4Variant(slowMo ? sloVariant(src) : src)
   // Framing is a CSS viewport transform; AUTO clips keep the plain object-contain
   // path (unchanged), so only deliberately-cropped clips take the transform.
   const framing = parseCrop(crop)
   const cropped = !isAuto(framing)
 
-  // iOS blocks even muted autoplay in Low Power Mode — fall back to a tap.
+  // iOS blocks even muted autoplay in Low Power Mode — fall back to a tap. Set
+  // muted before play() and wait for playable data, which iOS wants before it
+  // will honor a programmatic play().
   useEffect(() => {
     if (!isVideo || paused) return
-    setNeedsTap(false)
     const v = videoRef.current
-    v?.play().catch(() => setNeedsTap(true))
+    if (!v) return
+    setNeedsTap(false)
+    v.defaultMuted = true
+    v.muted = true
+    const start = () => void v.play().catch(() => setNeedsTap(true))
+    if (v.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) start()
+    else v.addEventListener('canplay', start, { once: true })
+    return () => v.removeEventListener('canplay', start)
   }, [isVideo, paused, activeSrc])
 
   const tapToPlay = () => {
@@ -86,20 +92,34 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc, crop }: {
         <video
           ref={videoRef}
           key={activeSrc}
+          src={activeSrc}
           className={cropped ? 'absolute' : 'h-full w-full object-contain'}
           style={cropped ? cropStyle(aspect, framing) : undefined}
-          onLoadedMetadata={(e) => {
-            const v = e.currentTarget
-            if (cropped && v.videoWidth && v.videoHeight) setAspect(v.videoWidth / v.videoHeight)
-          }}
-          poster={src.replace(/\.webm$/, '.jpg')}
+          poster={swapExt(src, '.jpg')}
+          preload="auto"
           autoPlay={!paused}
           loop
           muted
           playsInline
-        >
-          <Sources webm={activeSrc} />
-        </video>
+          onLoadedMetadata={(e) => {
+            const v = e.currentTarget
+            if (cropped && v.videoWidth && v.videoHeight) setAspect(v.videoWidth / v.videoHeight)
+          }}
+          onEnded={(e) => {
+            // Belt-and-suspenders: some iOS builds drop the loop on muted inline video.
+            const v = e.currentTarget
+            v.currentTime = 0
+            void v.play().catch(() => setNeedsTap(true))
+          }}
+          onError={(e) => {
+            const v = e.currentTarget
+            console.error('clip playback failed', {
+              currentSrc: v.currentSrc,
+              code: v.error?.code,
+              message: v.error?.message,
+            })
+          }}
+        />
       ) : (
         <div className={paused ? 'h-full w-full [&_*]:!animate-none' : 'h-full w-full'}>
           <PlaceholderSilhouette seed={seed} variant={variant} />
@@ -137,9 +157,14 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc, crop }: {
         </button>
       )}
       {preloadSrc && preloadSrc !== 'placeholder' && (
-        <video preload="auto" muted className="hidden" aria-hidden>
-          <Sources webm={preloadSrc} />
-        </video>
+        <video
+          src={mp4Variant(preloadSrc)}
+          preload="metadata"
+          muted
+          playsInline
+          className="hidden"
+          aria-hidden
+        />
       )}
     </div>
   )
