@@ -1,9 +1,9 @@
 export interface Sport {
   id: string             // "nfl-qb", "golf"
   label: string          // "NFL Quarterbacks"
-  athleteNoun: string    // "QB" — singular, used in the header counter
-  athleteNounPlural: string // "QBs" — used in share text and game over
-  emoji: string          // "🏈" — leads the share text
+  athleteNoun: string    // "QB", singular, used in the header counter
+  athleteNounPlural: string // "QBs", used in share text and game over
+  emoji: string          // "🏈", leads the share text
   detailLabel: string    // label for hint 2: "Teams" for QBs, "Country" for golfers
   inputPlaceholder: string // "Name the QB…"
   active: boolean        // false = back burner: hidden from the game, data kept

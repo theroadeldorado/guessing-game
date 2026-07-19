@@ -138,7 +138,7 @@ export function submitDailyGuess(state: DailyState, id: string): DailyState {
 }
 
 /**
- * The selectable golfers for the current guess — the field halved once per
+ * The selectable golfers for the current guess; the field halved once per
  * wrong guess so far, always including the correct answer. Nested and stable
  * per hole (later fields are subsets of earlier ones). Membership only; the
  * search box re-sorts. Feed the result to GuessInput's `players` prop.
@@ -192,7 +192,7 @@ export interface DailyProgress {
   lastDate: string // date of the last completed hole
   streak: number // holes made in a row (only successes count)
   toPar: number // cumulative strokes-to-par over those made holes
-  alive: boolean // false once a hole is failed — next day starts a new streak
+  alive: boolean // false once a hole is failed; next day starts a new streak
   lastResult: DailyResult
 }
 
@@ -231,12 +231,12 @@ export function applyResult(
 
 // ---- server-side play (answer never reaches the client) -------------------
 
-/** Guessable options for the current guess — slim {id,name}, narrowed field. */
+/** Guessable options for the current guess: slim {id,name}, narrowed field. */
 function fieldFor(state: DailyState): Named[] {
   return narrowedField(state, getPlayers('golf')).map((p) => ({ id: p.id, name: p.name }))
 }
 
-/** Client-safe view of today's hole — everything to play EXCEPT the answer. */
+/** Client-safe view of today's hole: everything to play EXCEPT the answer. */
 export interface DailyHoleView {
   date: string
   weekday: number
@@ -272,7 +272,7 @@ export function dailyHoleView(date: string = golfDate()): DailyHoleView {
   }
 }
 
-/** Server-authoritative result for a guess history — the answer only appears
+/** Server-authoritative result for a guess history; the answer only appears
  *  once the hole is done (solved, or the budget is spent). */
 export interface DailyGuessResult {
   phase: 'guessing' | 'done'
@@ -327,7 +327,7 @@ function etParts(now: Date) {
   return { y: get('year'), mo: get('month'), d: get('day'), h: hour === 24 ? 0 : hour, mi: get('minute') }
 }
 
-/** Today's puzzle date — the ET date, shifted so the day flips at 5am ET, so
+/** Today's puzzle date: the ET date, shifted so the day flips at 5am ET, so
  *  everyone worldwide is on the same hole and it rolls over at the tee time. */
 export function golfDate(now: Date = new Date()): string {
   const { y, mo, d, h } = etParts(now)
@@ -351,7 +351,7 @@ export function teeCountdown(now: Date = new Date()): string {
   return `${Math.floor(ms / 3_600_000)}h ${Math.floor((ms % 3_600_000) / 60_000)}m`
 }
 
-// ---- sharing (spoiler-free — never leaks the day's answer) -----------------
+// ---- sharing (spoiler-free, never leaks the day's answer) -----------------
 
 export interface DailyShare {
   weekday: number
@@ -422,13 +422,13 @@ export function parseDailyShare(p: URLSearchParams): DailyShare {
 export const shareStrokes = (s: DailyShare): number =>
   s.solved ? s.par + s.scoreToPar : s.par + 2
 
-/** Challenge copy for the native share sheet — no answer, ever. */
+/** Challenge copy for the native share sheet, no answer ever. */
 export function dailyShareText(s: DailyShare): string {
   const label = labelFor(s.solved, shareStrokes(s), s.par)
   const emoji = SCORE_EMOJI[label] ?? '⛳'
   const day = WEEKDAYS[((s.weekday % 7) + 7) % 7]
   return [
-    `ShadowForm Daily — ${label} ${emoji} on today's ${day} par ${s.par}`,
+    `ShadowForm Daily: ${label} ${emoji} on today's ${day} par ${s.par}`,
     `Streak ${s.streak} · ${toParText(s.toPar)}`,
     'Keep your streak alive:',
   ].join('\n')

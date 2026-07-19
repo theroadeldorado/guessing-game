@@ -7,7 +7,7 @@ import { devToolsEnabled, ensurePoolPlayer, manifestEntry, setClipSrc } from '@/
 const execFileAsync = promisify(execFile)
 
 /**
- * POST { id } — run the silhouette pipeline for one clip (--only id --force).
+ * POST { id }: run the silhouette pipeline for one clip (--only id --force).
  * The flag is PRESERVED: a flagged clip stays flagged (out of the game pool)
  * so it can be reviewed in /dev and released manually; only unflagged clips go
  * live. Downloads + matting take a couple of minutes on a new source; window
@@ -20,7 +20,7 @@ export async function POST(req: Request) {
   const { id } = await req.json()
   if (!id) return NextResponse.json({ error: 'id required' }, { status: 400 })
 
-  // Reprocessing means "make this clip playable" — require (and, if benched,
+  // Reprocessing means "make this clip playable", so require (and, if benched,
   // promote) a pool player before spending minutes on download + matting.
   try {
     ensurePoolPlayer(id)

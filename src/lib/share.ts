@@ -1,12 +1,12 @@
 import type { ClipResult, RunState } from './game'
 
 /** Canonical site URL (the www apex redirects here, so OG/share URLs point
- *  straight at it — no redirect for social scrapers to choke on). Override with
+ *  straight at it, no redirect for social scrapers to choke on). Override with
  *  NEXT_PUBLIC_SITE_URL. */
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL || 'https://www.shadowformgame.com'
 ).replace(/\/+$/, '')
-/** Bare host for display on the card — drops protocol and a leading www. */
+/** Bare host for display on the card, drops protocol and a leading www. */
 export const SITE_HOST = SITE_URL.replace(/^https?:\/\//, '').replace(/^www\./, '')
 
 /**

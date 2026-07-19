@@ -35,7 +35,7 @@ export default function GameOver({ state, sport, best, onRestart }: {
       const url = `${origin}/share?${shareQuery(data)}`
       const message = shareText(data, sport)
 
-      // Share the link only — its OG preview already renders the result card,
+      // Share the link only; its OG preview already renders the result card,
       // so attaching the image would just duplicate it in the thread.
       if (navigator.share) {
         await navigator.share({ text: message, url })
@@ -46,7 +46,7 @@ export default function GameOver({ state, sport, best, onRestart }: {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
     } catch {
-      // user dismissed the share sheet, or share failed — no-op
+      // user dismissed the share sheet, or share failed (no-op)
     } finally {
       setSharing(false)
     }

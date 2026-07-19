@@ -79,7 +79,7 @@ export default function DailyGame() {
         strokes: result.strokes,
         solved: result.solved,
         scoreToPar: result.scoreToPar,
-        player: result.answer ?? '—',
+        player: result.answer ?? '-',
       })
       saveDaily('golf', next)
       clearDailyActive('golf')

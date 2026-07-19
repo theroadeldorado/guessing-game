@@ -57,7 +57,7 @@ function scoreMarkOG(toPar: number, strokes: number) {
   )
 }
 
-/** The Daily Round result card — spoiler-free (score + streak, never the golfer). */
+/** The Daily Round result card: spoiler-free (score + streak, never the golfer). */
 async function renderDaily(params: URLSearchParams, anton: Buffer) {
   const s = parseDailyShare(params)
   const strokes = shareStrokes(s)
@@ -111,7 +111,7 @@ async function renderDaily(params: URLSearchParams, anton: Buffer) {
 /**
  * The shareable result card. Rendered from URL params (no DB) so the same image
  * serves both the link's OG/Twitter preview and the file attached to the native
- * share sheet. Colored pips instead of emoji — on-brand, and no twemoji fetch.
+ * share sheet. Colored pips instead of emoji: on-brand, and no twemoji fetch.
  * Satori is strict: every element with >1 child must be display:flex.
  */
 export async function GET(request: Request) {
@@ -160,7 +160,7 @@ export async function GET(request: Request) {
           <div style={{ height: 3, background: CHALK, marginTop: 24 }} />
         </div>
 
-        {/* middle — result card, or brand tagline when there's no score */}
+        {/* middle: result card, or brand tagline when there's no score */}
         {isResult ? (
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ display: 'flex', alignItems: 'baseline' }}>

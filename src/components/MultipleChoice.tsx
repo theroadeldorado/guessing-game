@@ -3,7 +3,7 @@
 import type { Player } from '@/lib/types'
 
 /**
- * Multiple-choice guess grid — shown in The Range after the first wrong guess.
+ * Multiple-choice guess grid, shown in The Cut after the first wrong guess.
  * Same contract as GuessInput: a pick calls onGuess(id); already-guessed
  * options render disabled.
  */

@@ -1,4 +1,4 @@
-/** Deterministic PRNG (mulberry32) — a `() => number` in [0, 1) from a seed. */
+/** Deterministic PRNG (mulberry32): a `() => number` in [0, 1) from a seed. */
 export function mulberry32(seed: number): () => number {
   let a = seed >>> 0
   return () => {
@@ -9,7 +9,7 @@ export function mulberry32(seed: number): () => number {
   }
 }
 
-/** Hash a string to a 32-bit seed (FNV-1a) — seed by clip id, date, etc. */
+/** Hash a string to a 32-bit seed (FNV-1a); seed by clip id, date, etc. */
 export function hashSeed(str: string): number {
   let h = 2166136261 >>> 0
   for (let i = 0; i < str.length; i++) {

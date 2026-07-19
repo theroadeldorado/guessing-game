@@ -12,7 +12,7 @@ export async function GET() {
  * PATCH { id, source?, start?, end?, crop?, flagged?, speed? }
  * Flagging pulls the clip out of the game (placeholder); unflagging restores
  * the real webm if it exists. `crop` ('auto' | 'cx,cy,zoom') is render-time
- * framing in clips.json — it takes effect immediately, no reprocess needed.
+ * framing in clips.json. It takes effect immediately, no reprocess needed.
  */
 export async function PATCH(req: Request) {
   if (!devToolsEnabled()) return NextResponse.json({ error: 'dev only' }, { status: 404 })

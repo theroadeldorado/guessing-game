@@ -1,4 +1,4 @@
-/** Anything with a display name — Player, or a slim {id,name} guess option. */
+/** Anything with a display name: Player, or a slim {id,name} guess option. */
 export interface Named {
   id: string
   name: string

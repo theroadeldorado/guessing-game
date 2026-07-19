@@ -50,7 +50,7 @@ export default function DailyRecap({
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
     } catch {
-      // dismissed / failed — no-op
+      // dismissed / failed (no-op)
     } finally {
       setSharing(false)
     }
@@ -117,10 +117,10 @@ export default function DailyRecap({
           {copied ? 'Copied!' : 'Share'}
         </button>
         <Link
-          href="/range"
+          href="/cut"
           className="flex-1 rounded-sm bg-paper px-6 py-3 font-display text-lg uppercase tracking-wide text-ink transition-colors hover:bg-flag"
         >
-          Play the Range
+          Play The Cut
         </Link>
       </div>
     </main>

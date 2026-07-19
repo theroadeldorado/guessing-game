@@ -5,7 +5,7 @@ import { type Named, searchPlayers } from '@/lib/search'
 
 /**
  * Autocomplete combobox. Guesses can only be submitted by selecting a
- * suggestion (keyboard or pointer) — free text never submits, so spelling
+ * suggestion (keyboard or pointer). Free text never submits, so spelling
  * never costs a guess. Already-guessed players render dimmed and inert.
  * Focusing the empty box reveals the full alphabetical list to scroll.
  */

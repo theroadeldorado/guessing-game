@@ -74,7 +74,7 @@ export default function ClipReviewer() {
         </nav>
         <p className="font-mono text-xs text-chalk-soft">
           Flag pulls a clip out of the game. Edit source/start/end, then Save & reprocess. Times
-          are HH:MM:SS with optional decimal seconds — e.g. 00:00:01.5 for 1½s. Drag the clip to
+          are HH:MM:SS with optional decimal seconds, e.g. 00:00:01.5 for 1½s. Drag the clip to
           pan and scroll to zoom the crop; Save applies framing instantly (no reprocess).
         </p>
       </header>
@@ -184,7 +184,7 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
       const next = !clip.flagged
       const { src } = await patch({ flagged: next })
       onChanged({ flagged: next, src })
-      setStatus(next ? 'Flagged — placeholder in game' : 'Unflagged')
+      setStatus(next ? 'Flagged (placeholder in game)' : 'Unflagged')
     } catch (e) {
       setStatus(`Error: ${(e as Error).message}`)
     } finally {
@@ -220,14 +220,14 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
       })
       const data = await res.json()
       if (!data.ok) {
-        setStatus(`Pipeline failed — see log in terminal.\n${(data.log ?? '').split('\n').slice(-3).join('\n')}`)
+        setStatus(`Pipeline failed. See log in terminal.\n${(data.log ?? '').split('\n').slice(-3).join('\n')}`)
         return
       }
       // The flag is preserved server-side; a flagged clip stays out of the
       // game but its fresh webm (data.file) is shown here for review.
       onChanged({ flagged: data.flagged, src: data.src, file: data.file ?? clip.file })
       onReprocessed()
-      setStatus(data.flagged ? 'Reprocessed ✓ (still flagged — unflag to release)' : 'Reprocessed ✓')
+      setStatus(data.flagged ? 'Reprocessed ✓ (still flagged, unflag to release)' : 'Reprocessed ✓')
     } catch (e) {
       setStatus(`Error: ${(e as Error).message}`)
     } finally {
@@ -332,7 +332,7 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
             type="number"
             min="0.25"
             step="0.25"
-            title="real-time speed factor — baked into the files on reprocess"
+            title="real-time speed factor, baked into the files on reprocess"
             className="w-14 rounded-sm border border-chalk bg-room-deep px-2 py-1.5 text-paper focus:border-flag focus:outline-none"
           />
           ×

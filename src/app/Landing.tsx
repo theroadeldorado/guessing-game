@@ -53,7 +53,7 @@ export default function Landing() {
         </div>
         <p className="text-sm leading-relaxed text-chalk-soft">
           One swing a day. Name the golfer under par to card a birdie or better and grow your
-          streak — one blow-up hole and you&apos;re back to the first tee tomorrow.
+          streak. One blow-up hole and you&apos;re back to the first tee tomorrow.
         </p>
         {played ? (
           <>
@@ -78,21 +78,30 @@ export default function Landing() {
         )}
       </section>
 
-      {/* The Range */}
+      {/* The Cut */}
       <section className="flex flex-col gap-3 rounded-sm border border-chalk p-5">
-        <h2 className="font-display text-2xl uppercase text-paper">The Range</h2>
+        <h2 className="font-display text-2xl uppercase text-paper">The Cut</h2>
         <p className="text-sm leading-relaxed text-chalk-soft">
-          Who&apos;s on the range? Endless practice — name as many golfers as you can from their
-          silhouette. Type to search, then multiple choice after a miss. How long can you keep the
-          run alive?
+          How many golfers can you name before you miss the cut? Every silhouette you nail stacks
+          points and keeps your run alive. Type to search, then it&apos;s multiple choice once you
+          slip. One bad read and you&apos;re cut.
         </p>
         <Link
-          href="/range"
+          href="/cut"
           className="block rounded-sm bg-paper px-6 py-3 text-center font-display text-lg uppercase tracking-wide text-ink transition-colors hover:bg-flag"
         >
-          Hit the Range
+          Make the Cut
         </Link>
       </section>
+
+      <footer className="mt-2 text-center">
+        <Link
+          href="/privacy"
+          className="font-mono text-[11px] uppercase tracking-[0.3em] text-chalk-soft transition-colors hover:text-flag"
+        >
+          Privacy
+        </Link>
+      </footer>
     </main>
   )
 }

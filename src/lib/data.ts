@@ -49,7 +49,7 @@ function decades(era: string): string[] {
 /**
  * `count` players for a multiple-choice guess, always including the correct
  * one. Distractors prefer the exact same era, then anyone sharing a decade,
- * then the rest of the sport — so there are always enough to fill the grid even
+ * then the rest of the sport, so there are always enough to fill the grid even
  * for sparse eras. Deterministic per `seed` (pass the clip id) so the options
  * are stable across re-renders.
  */

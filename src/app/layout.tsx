@@ -47,7 +47,7 @@ const splineMono =
   );
 
 const title =
-  "ShadowForm — guess the athlete from the silhouette";
+  "ShadowForm: guess the athlete from the silhouette";
 const description =
   "A looping silhouette of an athlete's signature motion. Three guesses. How long can you keep the run alive?";
 

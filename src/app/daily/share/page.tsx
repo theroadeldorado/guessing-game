@@ -24,7 +24,7 @@ export async function generateMetadata({
   const s = parseDailyShare(toParams(await searchParams))
   const ogUrl = `/api/og?${dailyShareQuery(s)}`
   const label = labelFor(s.solved, shareStrokes(s), s.par)
-  const title = `ShadowForm Daily — ${label}`
+  const title = `ShadowForm Daily: ${label}`
   const description = `Streak ${s.streak} · ${toParText(s.toPar)}. Think you can keep yours alive?`
   return {
     title,
@@ -52,7 +52,7 @@ export default async function DailySharePage({ searchParams }: { searchParams: S
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={ogUrl}
-        alt={`ShadowForm Daily — ${label}, streak ${s.streak}`}
+        alt={`ShadowForm Daily: ${label}, streak ${s.streak}`}
         width={1200}
         height={630}
         className="w-full rounded-md border border-chalk"

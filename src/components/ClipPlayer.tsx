@@ -22,14 +22,14 @@ function useReducedMotion(): boolean {
 
 const swapExt = (src: string, ext: string) => src.replace(/\.webm(?=[?#]|$)/, ext)
 
-/** Full-speed and slo-mo are separate pipeline exports (<id> / <id>-slo) —
+/** Full-speed and slo-mo are separate pipeline exports (<id> / <id>-slo).
  * playbackRate is unreliable on iOS, so the toggle swaps files instead. */
 const sloVariant = (src: string) => swapExt(src, '-slo.webm')
 
 /**
  * We serve the H.264 MP4 directly instead of offering both formats via
  * <source>. Since iOS 17.4 Safari reports VP9 WebM as playable and *selects*
- * the .webm, then fails to decode it reliably — and <source> fallback only
+ * the .webm, then fails to decode it reliably, and <source> fallback only
  * fires at selection time, not on decode failure. The pipeline exports a
  * matching MP4 (avc1 / yuv420p / faststart / no audio) for every clip, and
  * H.264 MP4 plays on every current browser, so there's no reason to gamble on
@@ -60,8 +60,8 @@ export default function ClipPlayer({ src, seed, variant, preloadSrc, crop }: {
 
   // React does NOT reliably render the `muted` HTML attribute, and iOS Safari
   // checks the element's muted state to decide autoplay eligibility. Set it
-  // imperatively the instant the node mounts — before Safari evaluates autoplay
-  // — or it treats the video as unmuted, refuses to autoplay/preload, and you
+  // imperatively the instant the node mounts, before Safari evaluates autoplay
+  // or it treats the video as unmuted, refuses to autoplay/preload, and you
   // get a frozen poster with no error to fall back on.
   const attachVideo = (el: HTMLVideoElement | null) => {
     videoRef.current = el

@@ -1,6 +1,6 @@
 // Server-only helpers for the dev clip-review tool. These read and write
 // repo files (pipeline manifests, clips.json), so they must never run in
-// production — every consumer guards on NODE_ENV first.
+// production; every consumer guards on NODE_ENV first.
 import fs from 'node:fs'
 import path from 'node:path'
 import type { Player } from './types'
@@ -146,7 +146,7 @@ export function ensurePoolPlayer(id: string): void {
   const players = JSON.parse(fs.readFileSync(PLAYERS_JSON, 'utf8')) as Player[]
   const player = players.find((p) => p.id === playerId)
   if (!player) {
-    throw new Error(`No player '${playerId}' in players.json — add it there first.`)
+    throw new Error(`No player '${playerId}' in players.json; add it there first.`)
   }
   if (!player.inPool) {
     player.inPool = true
@@ -156,7 +156,7 @@ export function ensurePoolPlayer(id: string): void {
 
 /**
  * Point clips.json at the real webm, or back at the placeholder. Only a real
- * src creates a missing row — a placeholder row for a clip with no footage is
+ * src creates a missing row; a placeholder row for a clip with no footage is
  * pointless and would reference a possibly out-of-pool player.
  */
 export function setClipSrc(id: string, real: boolean): string {
@@ -176,7 +176,7 @@ export function setClipSrc(id: string, real: boolean): string {
 }
 
 /** Persist the real-time playbackRate multiplier (default 4). No-op until the
- *  clip has a row — speed is meaningless before there's footage to play. */
+ *  clip has a row; speed is meaningless before there's footage to play. */
 export function setClipSpeed(id: string, speed: number): void {
   const clips = JSON.parse(fs.readFileSync(CLIPS_JSON, 'utf8')) as ClipRow[]
   const row = clips.find((c) => c.id === id)
@@ -187,7 +187,7 @@ export function setClipSpeed(id: string, speed: number): void {
 }
 
 /** Persist the render-time framing ('auto' or 'cx,cy,zoom'). No-op until the
- *  clip has a row — there's nothing to frame before it's processed. */
+ *  clip has a row; there's nothing to frame before it's processed. */
 export function setClipCrop(id: string, crop: string): void {
   const clips = JSON.parse(fs.readFileSync(CLIPS_JSON, 'utf8')) as ClipRow[]
   const row = clips.find((c) => c.id === id)

@@ -27,7 +27,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const d = parseShareData(toParams(await searchParams))
   const ogUrl = `/api/og?${shareQuery(d)}`
-  const title = `ShadowForm — ${d.score} pts`
+  const title = `ShadowForm: ${d.score} pts`
   const description = `I ID'd ${d.solved} ${sportNoun(d.sport, d.solved)} for ${d.score} pts. Think you can beat my run?`
   return {
     title,
@@ -54,7 +54,7 @@ export default async function SharePage({ searchParams }: { searchParams: Search
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={ogUrl}
-        alt={`ShadowForm — ${d.score} points, ${d.solved} ${sportNoun(d.sport, d.solved)} identified`}
+        alt={`ShadowForm: ${d.score} points, ${d.solved} ${sportNoun(d.sport, d.solved)} identified`}
         width={1200}
         height={630}
         className="w-full rounded-md border border-chalk"
@@ -67,7 +67,7 @@ export default async function SharePage({ searchParams }: { searchParams: Search
         <p className="break-all text-2xl leading-relaxed">{resultsEmoji(d.results)}</p>
       )}
       <Link
-        href="/range"
+        href="/cut"
         className="mt-2 rounded-sm bg-paper px-8 py-3 font-display text-lg uppercase tracking-wide text-ink transition-colors hover:bg-flag"
       >
         Play ShadowForm
