@@ -216,7 +216,7 @@ function ClipCard({ clip, bust, onChanged, onReprocessed }: {
       const res = await fetch('/api/dev/reprocess', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: clip.id }),
+        body: JSON.stringify({ id: clip.id, speed: Number(speed) || 4 }),
       })
       const data = await res.json()
       if (!data.ok) {

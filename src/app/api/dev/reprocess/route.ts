@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { execFile } from 'node:child_process'
 import path from 'node:path'
 import { promisify } from 'node:util'
-import { devToolsEnabled, ensurePoolPlayer, manifestEntry, setClipSrc } from '@/lib/devtools'
+import { devToolsEnabled, ensurePoolPlayer, manifestEntry, setClipSpeed, setClipSrc } from '@/lib/devtools'
 
 const execFileAsync = promisify(execFile)
 
@@ -17,8 +17,13 @@ export async function POST(req: Request) {
   if (!devToolsEnabled()) {
     return NextResponse.json({ error: 'dev only' }, { status: 404 })
   }
-  const { id } = await req.json()
+  const { id, speed } = await req.json()
   if (!id) return NextResponse.json({ error: 'id required' }, { status: 400 })
+  // Bake speed is passed straight to the pipeline: a brand-new clip has no
+  // clips.json row yet, so process.py can't look its speed up there (it would
+  // fall back to the 4x default and import way too fast). Persisted below once
+  // the row exists so later window-only reprocesses keep it.
+  const bakeSpeed = Number.isFinite(Number(speed)) && Number(speed) > 0 ? Number(speed) : undefined
 
   // Reprocessing means "make this clip playable", so require (and, if benched,
   // promote) a pool player before spending minutes on download + matting.
@@ -33,7 +38,8 @@ export async function POST(req: Request) {
   try {
     const { stdout, stderr } = await execFileAsync(
       python,
-      ['process.py', '--only', id, '--force'],
+      ['process.py', '--only', id, '--force',
+        ...(bakeSpeed !== undefined ? ['--speed', String(bakeSpeed)] : [])],
       { cwd: pipeline, timeout: 5 * 60 * 1000 },
     )
     const log = (stdout + stderr).trim()
@@ -44,6 +50,9 @@ export async function POST(req: Request) {
     // but the fresh webm sits on disk for review; unflagged clips go live.
     const flagged = !!manifestEntry(id)?.flagged
     const src = setClipSrc(id, !flagged)
+    // Persist the speed now that the clips.json row exists, so a later
+    // window-only reprocess (no --speed) still bakes at the same rate.
+    if (bakeSpeed !== undefined) setClipSpeed(id, bakeSpeed)
     return NextResponse.json({
       ok: true,
       src,

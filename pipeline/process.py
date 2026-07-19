@@ -187,6 +187,10 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--include-flagged", action="store_true",
                     help="also process flagged (unreviewed) clips; they stay flagged")
+    ap.add_argument("--speed", type=float,
+                    help="override the bake speed for clips processed this run "
+                         "(else the clips.json speed, else 4.0); used by /dev for a "
+                         "new clip whose clips.json row doesn't exist yet")
     args = ap.parse_args()
 
     entries = load_manifest_entries()
@@ -228,7 +232,8 @@ def main() -> int:
             raw = download(entry)
             trimmed = trim(entry, raw)
             pha = matte(entry, trimmed)
-            silhouette(entry, pha, speeds.get(entry["id"], 4.0))
+            speed = args.speed if args.speed is not None else speeds.get(entry["id"], 4.0)
+            silhouette(entry, pha, speed)
             done += 1
         except subprocess.CalledProcessError as e:
             tail = (e.stderr or b"").decode(errors="replace").strip().splitlines()[-3:]

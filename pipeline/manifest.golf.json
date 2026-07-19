@@ -470,7 +470,7 @@
     "playerId": "francesco-molinari",
     "source": "https://www.youtube.com/shorts/XN1M5kGAqvQ",
     "start": "00:00:00",
-    "end": "00:00:8",
+    "end": "00:00:30",
     "crop": "auto"
   },
   {
@@ -1486,8 +1486,7 @@
     "source": "https://www.youtube.com/watch?v=jXKKEB-ciCw",
     "start": "00:00:00",
     "end": "00:00:30",
-    "crop": "auto",
-    "flagged": true
+    "crop": "auto"
   },
   {
     "id": "fred-funk-01",
@@ -1726,9 +1725,9 @@
   {
     "id": "lebron-james-01",
     "playerId": "lebron-james",
-    "source": "https://www.youtube.com/shorts/CcrN50_7FD4",
-    "start": "00:00:31",
-    "end": "00:00:42",
+    "source": "https://www.youtube.com/shorts/0hPhp69x73k",
+    "start": "00:00:12",
+    "end": "00:00:20",
     "crop": "auto",
     "flagged": true
   },
